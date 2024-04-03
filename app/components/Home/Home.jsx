@@ -21,6 +21,7 @@ import videoImg  from "../../assets/image/videoImg.svg";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import { Volun, evanto, foodData, para } from "./data";
 import { FaPlay } from "react-icons/fa";
+import { TbTargetArrow } from "react-icons/tb";
 
 const Home = () => {
   return (
@@ -182,6 +183,51 @@ const Home = () => {
             </Styled.Darkness>
           </Styled.CharityData>
         </Styled.Charity>
+        <Styled.Latest>
+          <div className="container latest">
+            <div></div>
+            <h2 className="cause">Latest Causes</h2>
+            <p className="help">HELP US NOW</p>
+          </div>
+        </Styled.Latest>
+        <Styled.Card className="container">
+          <div className="cards">
+            <Styled.Card1>
+         <div className="card1">
+          <h3>Save Poor Childrens</h3>
+          <p>Aliq is notm hendr erit a augue insu image pellen tes.</p>
+          <h6><TbTargetArrow />  Goal: <span>$30,000</span></h6>
+          <h6>  Raised: <span>25,270</span></h6>
+          <div className="BtnRead">
+                <span className="btn"> Donate Now</span>
+              </div>
+         </div>
+         </Styled.Card1>
+         <Styled.Card2>
+         <div className="card2">
+          <h3>They Want to Study</h3>
+          <p>Aliq is notm hendr erit a augue insu image pellen tes.</p>
+          <h6><TbTargetArrow />  Goal: <span>$30,000</span></h6>
+          <h6>  Raised: <span>25,270</span></h6>
+          <div className="BtnRead">
+                <span className="btn"> Donate Now</span>
+              </div>
+         </div>
+         </Styled.Card2>
+         <Styled.Card3>
+         <div className="card3">
+          <h3>Healthy Food for All</h3>
+          <p>Aliq is notm hendr erit a augue insu image pellen tes.</p>
+          <h6><TbTargetArrow />  Goal: <span>$30,000</span></h6>
+          <h6>  Raised: <span>25,270</span></h6>
+          <div className="BtnRead">
+                <span className="btn"> Donate Now</span>
+              </div>
+         </div>
+         </Styled.Card3>
+         </div>
+        </Styled.Card>
+
         <Styled.Evanto className="container">
           {evanto.map((item) => {
             return <Image src={item.imgs} />;

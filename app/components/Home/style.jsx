@@ -51,11 +51,12 @@ export const Children = styled.div`
     padding: 100px;
   }
   .child {
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 54px;
+    line-height: 70px;
     margin-bottom: 49px;
-    font-weight: 600;
+    font-weight: 900;
     color: #424242;
+    font-family: "Playfair Display", serif;
   }
 `;
 export const Text = styled.div`
@@ -413,10 +414,11 @@ export const Child = styled.div`
 `;
 export const TextData = styled.div`
   .aliq {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 32px;
     color: #818181;
     font-weight: 400;
+    margin-right:60px;
     padding: 100px 100px 44px 0px;
   }
 `;
@@ -626,6 +628,7 @@ export const Food = styled.div`
 export const Blogs = styled.div`
   display: flex;
   gap: 20px;
+  margin-bottom:60px;
 `;
 
 export const News = styled.div`
@@ -670,15 +673,23 @@ export const BlogData = styled.div`
   a {
     color: #424242;
     text-decoration: none;
+    font-weight:700;
+    font-size:30px;
+    font-family: "Playfair Display", serif;
   }
   h3{
     margin-top:30px;
+  }
+  a:hover{
+    color: #f1ae44;
   }
   .para {
     font-size: 18px;
     line-height: 30px;
     color: #818181;
     font-weight: 400;
+    text-align:justify;
+    margin-right: 60px;
   }
   .son {
     display: flex;
@@ -711,14 +722,20 @@ export const Charity = styled.div`
     font-size: 40px;
     line-height: 48px;
     margin-bottom: 32px;
-    color: #424242;
     padding-top: 30px;
+    margin-right:140px;
+        color: #424242;
+    text-decoration: none;
+    font-weight:700;
+    font-family: "Playfair Display", serif;
   }
   .aliq {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 22px;
+    line-height: 32px;
     color: #818181;
     font-weight: 400;
+    margin-right:140px;
+    text-align:justify;
   }
 `;
 
@@ -858,13 +875,6 @@ export const About = styled.div`
 `;
 
 
-
-
-
-
-
-
-
 export const Sponsor = styled.div`
  .flex{
   display:flex;
@@ -948,5 +958,183 @@ export const Sponsor = styled.div`
   margin-right:140px;
   cursor: pointer;
 }
+`;
 
+export const Card = styled.div`
+ display: flex;
+  gap: 10px;
+  margin-bottom: 50px;
+  .cards{
+    display: flex;
+    gap: 60px;
+  }`;
+export const Card1 = styled.div`
+.card1{
+  margin:0 0 20px 20px;
+  padding:20px;
+background-color: #f2f0ec;
+}
+h3{
+  font-size:36px;
+  text-align: center;
+  font-weight:700;
+  font-family: "Playfair Display", serif;
+  padding-top:40px;
+}
+p{
+  font-weight:400;
+  font-size: 18px;
+    line-height: 32px;
+    color: #818181;
+    padding-top:20px;
+}
+h6 span{
+  color: #e36955;
+  line-height:24px;
+}
+h6{
+  padding-top:20px;
+}
+
+.btn {
+    -ms-transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    color: #fff;
+  }
+  .BtnRead:hover {
+    background: #f1ae44;
+    cursor: pointer;
+  }
+  .BtnRead {
+    width:160px;
+    background-color: ${color._e36955};
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0 10px 0 10px;
+    line-height: 49px;
+    border: none;
+    border-radius: 0;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    cursor: pointer;
+  }
+  
+`;
+export const Card2 = styled.div`
+.card2{
+  margin:0 0 20px 20px;
+  padding:20px;
+background-color: #f2f0ec;
+}
+h3{
+  font-size:36px;
+  text-align: center;
+  font-weight:700;
+  font-family: "Playfair Display", serif;
+  padding-top:40px;
+
+}
+p{
+  font-weight:400;
+  font-size: 18px;
+    line-height: 32px;
+    color: #818181;
+    padding-top:20px;
+
+}
+h6 span{
+  color: #e36955;
+  line-height:24px;
+}
+h6{
+  padding-top:20px;
+}
+
+.btn {
+    -ms-transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    color: #fff;
+  }
+  .BtnRead:hover {
+    background: #f1ae44;
+    cursor: pointer;
+  }
+  .BtnRead {
+    width:160px;
+    background-color: ${color._e36955};
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0 10px 0 10px;
+    line-height: 49px;
+    border: none;
+    border-radius: 0;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    cursor: pointer;
+  }
+`;
+export const Card3 = styled.div`
+.card3{
+  margin:0 0 20px 20px;
+  padding:20px;
+background-color: #f2f0ec;
+}
+h3{
+  font-size:36px;
+  text-align: center;
+  font-weight:700;
+  font-family: "Playfair Display", serif;
+  padding-top:40px;
+}
+p{
+  font-weight:400;
+  font-size: 18px;
+    line-height: 32px;
+    color: #818181;
+    padding-top:20px;
+}
+h6 span{
+  color: #e36955;
+  line-height:24px;
+}
+h6{
+  padding-top:20px;
+}
+.btn {
+    -ms-transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    color: #fff;
+  }
+  .BtnRead:hover {
+    background: #f1ae44;
+    cursor: pointer;
+  }
+  .BtnRead {
+    width:160px;
+    background-color: ${color._e36955};
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0 10px 0 10px;
+    line-height: 49px;
+    border: none;
+    border-radius: 0;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    cursor: pointer;
+  }
 `;
