@@ -38,9 +38,7 @@ const Home = () => {
               <div className="heading">
                 <p>WELCOME TO OXPITAN</p>
                 <h3>Lend the <br/>helping hand <br/>get involved</h3>
-                <div className="BtnRead">
-                <span className="btn">Discover More</span>
-              </div>
+                <Styled.Btn href="">Discover More</Styled.Btn>
               </div>
             </div>
           </Styled.Welcome>
@@ -125,22 +123,21 @@ const Home = () => {
             })}
           </Styled.Cards>
         </div>
-        <div className="itemCenter">
-          <div className="BtnDonate">
-            <span className="btn">Donate Now</span>
-          </div>
-        </div>
+              <Styled.DonationBtnCenterPadding>
+              <Styled.BtnDark href="">Start Donation</Styled.BtnDark>
+              </Styled.DonationBtnCenterPadding>
 
         <Styled.Fundraising src={mixerBg2.src}>
         <Styled.About>
           <div className="lives">
           Fundraising for the<br/> people and causes you <br/>care about
           </div>
-          <div className="btnStart">
-            <div className="BtnDonate">
-              <span className="btn">Start Donation</span>
-            </div>
-          </div>
+          <Styled.DonationBtnStart>
+              <Styled.Btn href="">Start Donation</Styled.Btn>
+              </Styled.DonationBtnStart>
+            {/* <Styled.Btn href="">Start Donation</Styled.Btn> */}
+              {/* <span className="btn">Start Donation</span> */}
+           
         </Styled.About>
       </Styled.Fundraising>
 
@@ -298,9 +295,13 @@ const Home = () => {
         <Styled.Cards className="container">
           {Volun.map((item, index) => {
             return (
-              <Styled.First>
+              <Styled.First backgroundColor={item.color}>
+                <div className="mainDiv">
+                <div>
                 <Image className="" src={item.img} />
-                <div className="brownBlock" style={{ background: item.color }}>
+                </div>
+                <div style={{width:"100%"}}>
+                <div className="brownBlock">
                   <div className="mid">
                     <h3>
                       <a href="" className="title">
@@ -309,6 +310,8 @@ const Home = () => {
                     </h3>
                     <span className="desig">{item.subName}</span>
                   </div>
+                </div>
+                </div>
                 </div>
               </Styled.First>
             );
@@ -319,11 +322,11 @@ const Home = () => {
             <div className="lives">
               Our fingerprints on the lives we touch never fade
             </div>
-            <div className="btnStart">
-              <div className="BtnDonate">
-                <span className="btn">Start Donation</span>
-              </div>
-            </div>
+           <Styled.DonationBtnCenter>
+              <Styled.Btn href="">Start Donation</Styled.Btn>
+              </Styled.DonationBtnCenter>
+                {/* <span className="btn">Start Donation</span> */}
+              
           </Styled.Finger>
         </Styled.FingerPrints>
         <Styled.Latest>
@@ -351,11 +354,10 @@ const Home = () => {
                 adipiscing ullam blandit hendrerit faucibus suspendisse.
               </p>
             </Styled.BlogData>
-            <div>
-              <div className="BtnBlog">
-                <span className="btn">Read More</span>
-              </div>
-            </div>
+        
+              <Styled.Btn href="">Read More</Styled.Btn>
+           
+           
           </Styled.News>
 
           <Styled.Blog>

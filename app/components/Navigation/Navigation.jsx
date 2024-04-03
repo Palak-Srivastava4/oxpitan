@@ -39,9 +39,10 @@ const Navbar = () => {
             <div className="imgLogo">
               <Image src={logo1} alt="logo" className="img" />
 
-              <div className="BtnDonate">
+              {/* <div className="BtnDonate">
                 <span className="btn">Donate Now</span>
-              </div>
+              </div> */}
+              <Styled.BtnDark href="">Donate Now</Styled.BtnDark>
             </div>
           </Styled.Image>
           <Styled.Nav>
