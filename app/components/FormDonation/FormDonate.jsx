@@ -19,9 +19,12 @@ const FormDonate = () => {
           <Styled.Input placeholder="Location" />
           <Styled.TextArea placeholder="Leave a comment" />
 
-          <div className="BtnDonate">
+          {/* <div className="BtnDonate">
             <span className="btn">Continue Now</span>
-          </div>
+          </div> */}
+          <Styled.ContinueBtn>
+          <Styled.Btn href="">Continue Now</Styled.Btn>
+          </Styled.ContinueBtn>
         </Styled.FormDetails>
       </div>
     </Styled.Form>
