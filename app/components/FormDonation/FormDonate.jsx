@@ -23,7 +23,7 @@ const FormDonate = () => {
             <span className="btn">Continue Now</span>
           </div> */}
           <Styled.ContinueBtn>
-          <Styled.Btn href="">Continue Now</Styled.Btn>
+          <Styled.Btn className="DonateBtn" href="">Continue Now</Styled.Btn>
           </Styled.ContinueBtn>
         </Styled.FormDetails>
       </div>

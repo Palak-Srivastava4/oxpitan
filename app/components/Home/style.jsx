@@ -2,6 +2,9 @@ import { color } from "@/app/Theme/color";
 import styled from "styled-components";
 
 export const MainContainer = styled.div`
+.contents{
+  overflow: hidden;
+}
   // .btn {
   //   -ms-transform: skewX(20deg);
   //   -webkit-transform: skewX(20deg);
@@ -63,13 +66,14 @@ export const Text = styled.div`
   flex: 0.6;
   position: relative;
 `;
-
 export const Education = styled.div``;
 export const Welcome = styled.div`
+.width{
+  width:100%;
+}
   .image {
-    width: 100vw;
+    width:100%;
     padding: 0px;
-    margin-left: -136px;
     position: relative;
     z-index: 0;
   }
@@ -78,128 +82,104 @@ export const Welcome = styled.div`
     top: 280px;
     z-index: 2;
   }
-  .bgColor {
-    width: 75%;
-    height: 122vh;
-    background-color: #863bae;
-    opacity: 0.9;
-    padding: 0;
-    margin-left: 0;
-    transform: skewX(-15deg);
-    margin-left: -548px;
-    position: absolute;
-    z-index: 1;
-  }
   .heading p {
     color: white;
     padding-top: 100px;
     text-decoration: underline;
     font-size: 20px;
     font-weight: 600;
-    margin-left: 60px;
+    margin-left: 260px;
   }
   .heading h3 {
     font-size: 96px;
     font-weight: 800;
     color: white;
-    margin-left: 60px;
+    margin-left: 260px;
     font-family: "Playfair Display", serif;
   }
-  .btn {
-    @extend %transition;
-    display: inline-block;
-    -ms-transform: skewX(20deg);
-    -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);
-    color: #fff;
-    text-align: center;
-  }
-  .BtnRead:hover {
-    background: ${color._e36955};
-    cursor: pointer;
-  }
-  .BtnRead {
-    width: 160px;
-    margin-left: 120px;
-    margin-top: 40px;
-    margin-bottom: 220px;
-    transform: translate(0, -50px);
-    background-color: #f1ae44;
-    font-size: 12px;
-    color: #fff;
-    font-weight: 600;
-    letter-spacing: 1px;
-    line-height: 49px;
-    border: none;
-    border-radius: 0;
-    -ms-transform: skewX(-20deg);
-    -webkit-transform: skewX(-20deg);
-    transform: skewX(-20deg);
-    cursor: pointer;
+  .yellowBtn{
+    margin-left:260px;
+    margin-top: 20px;
   }
 `;
+
+export const Bg = styled.a`
+height:122vh;
+width:662px;
+  font-size: 12px;
+  text-transform: uppercase;
+  background: #863bae;
+  opacity:0.9;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0 30px 0 35px;
+  line-height: 49px;
+  position: absolute;
+  z-index: 1;
+  display: inline-block;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  text-decoration: none;
+  border: none;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 1px;
+    z-index: -1;
+    background: #863bae;
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: skew(-12deg, 0deg);
+    -moz-transform: skew(-12deg, 0deg);
+    -ms-transform: skew(-12deg, 0deg);
+    -o-transform: skew(-12deg, 0deg);
+    transform: skew(-12deg, 0deg);
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+`;
+
+
 export const Hunger = styled.div`
   .flex {
     display: flex;
     margin-bottom: 80px;
   }
-  .left {
-    background-color: #424242;
-    color: white;
-    width: 75%;
-    margin-left: -396px;
-    transform: skewX(-15deg);
-    font-family: "Playfair Display", serif;
-  }
   .left h3 {
     font-size: 40px;
     font-weight: 900;
     padding: 20px;
+    padding-left:200px;
     text-align: left;
-    margin-left: 440px;
     margin-top: 60px;
     margin-bottom: 60px;
-    transform: skewX(15deg);
   }
   .right {
     display: flex;
-    margin-right: -110px;
     border-bottom: 1px solid lightgray;
   }
   .videoContainer {
     padding: 40px;
     margin-top: 30px;
     transform: translate(-90px, -40px);
+    position:relative;
+    z-index:2;
   }
-  .btn {
-    -ms-transform: skewX(20deg);
-    -webkit-transform: skewX(20deg);
-    transform: skewX(0deg);
-    color: #fff;
-    text-align: center;
+  .yellowBtn{
+    transform:translate(100px, 100px);
+    padding-left:20px;
   }
-  .BtnRead:hover {
-    background: ${color._e36955};
-    cursor: pointer;
-  }
-  .BtnRead {
-    width: 40px;
-    margin-left: 120px;
-    background-color: #f1ae44;
-    font-size: 12px;
-    color: #fff;
-    font-weight: 600;
-    letter-spacing: 1px;
-    line-height: 49px;
-    border: none;
-    border-radius: 0;
-    -ms-transform: skewX(-20deg);
-    -webkit-transform: skewX(-20deg);
-    transform: skewX(-20deg) !important;
-    transform: translateY(100px) !important;
-    cursor: pointer;
-  }
-
   .right h3 {
     text-align: left;
     padding-left: 0px;
@@ -216,9 +196,38 @@ export const Hunger = styled.div`
     color: #4d4d4d;
     font-size: 22px;
     font-weight: 400px;
-    margin-left: -50px;
   }
 `;
+
+export const LeftHunger = styled.a`
+  width:50%;
+  background: #424242;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 1px;
+    z-index: -1;
+    background: #424242;
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: skew(-12deg, 0deg);
+    -moz-transform: skew(-12deg, 0deg);
+    -ms-transform: skew(-12deg, 0deg);
+    -o-transform: skew(-12deg, 0deg);
+    transform: skew(-12deg, 0deg);
+  }
+`;
+
 
 export const CharityPoor = styled.div`
   display: flex;
@@ -913,24 +922,12 @@ export const About = styled.div`
   }
 `;
 
-export const Sponsor = styled.div`
+export const SponsorCause = styled.div`
   .flex {
     display: flex;
+    align-items:center;
+    justify-content:center;
     background-color: #863bae;
-    margin-bottom: -40px;
-  }
-  .left {
-    display: flex;
-    width: 100%;
-    color: black;
-    align-items: end;
-    justify-content: right;
-    padding-top: 20px;
-    padding-right: 100px;
-    flex-wrap: wrap;
-    background-color: #50bac3;
-    transform: skewX(-20deg);
-    margin-left: -38px;
   }
   .left h3 {
     font-size: 34px;
@@ -938,22 +935,21 @@ export const Sponsor = styled.div`
     color: white;
     padding: 20px;
     text-align: left;
-    transform: skewX(20deg);
     margin-left: 20px;
+    padding-left:60px;
     margin-top: 10px;
     font-family: "Playfair Display", serif;
+    text-align:center;
+  }
+  .left{
+    padding-top: 20px;
   }
   .right {
-    display: flex;
     width: 100%;
-    color: black;
-    align-items: end;
-    justify-content: right;
     padding-top: 20px;
-    padding-right: 100px;
-    flex-wrap: wrap;
   }
   .right h3 {
+    padding-left:60px;
     font-size: 34px;
     font-weight: 700;
     color: white;
@@ -962,41 +958,39 @@ export const Sponsor = styled.div`
     margin-left: 20px;
     margin-top: 10px;
     font-family: "Playfair Display", serif;
-  }
-  .btn {
-    -ms-transform: skewX(20deg);
-    -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);
-    color: #fff;
-    text-align: start;
-  }
-  #btn1 {
-    transform: skewX(40deg);
-  }
-
-  #btn2 {
-    transform: skewX(20deg);
-  }
-  .BtnRead:hover {
-    background: ${color._e36955};
-    cursor: pointer;
-  }
-  .BtnRead {
-    background-color: #f1ae44;
-    margin-bottom: 40px;
-    padding: 0 10px;
-    font-size: 12px;
-    color: #fff;
-    font-weight: 600;
-    letter-spacing: 1px;
-    line-height: 49px;
-    border: none;
-    border-radius: 0;
-    transform: skewX(-20deg);
-    margin-right: 140px;
-    cursor: pointer;
+    text-align:center;
   }
 `;
+
+export const Sponsor = styled.div`
+width:100%;
+  background: #50bac3;
+  color: black;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 1px;
+    z-index: -1;
+    background: #50bac3;
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: skew(-12deg, 0deg);
+    -moz-transform: skew(-12deg, 0deg);
+    -ms-transform: skew(-12deg, 0deg);
+    -o-transform: skew(-12deg, 0deg);
+    transform: skew(-12deg, 0deg);
+  }
+`;
+
 
 export const Btn = styled.a`
   font-size: 12px;
@@ -1005,7 +999,7 @@ export const Btn = styled.a`
   color: #fff;
   font-weight: 600;
   letter-spacing: 1px;
-  padding: 0 30px 0 35px;
+  padding: 0 10px 0 15px;
   line-height: 49px;
   position: relative;
   z-index: 1;
@@ -1051,16 +1045,23 @@ export const Btn = styled.a`
 
 export const Card = styled.div`
  display: flex;
-  gap: 10px;
+  gap: 0px;
   margin-bottom: 50px;
   .cards{
     display: flex;
-    gap: 60px;
-  }`;
+    gap: 20px;
+  }
+  .image{
+    padding:0;
+  }
+  `;
 export const Card1 = styled.div`
+.cardImg{
+   margin:0 0 20px 20px;
+}
 .card1{
+  width:370px;
   margin:0 0 20px 20px;
-  padding:20px;
 background-color: #f2f0ec;
 }
 h3{
@@ -1073,9 +1074,76 @@ h3{
 p{
   font-weight:400;
   font-size: 18px;
+  padding-left:20px;
     line-height: 32px;
     color: #818181;
     padding-top:20px;
+}
+h6 span{
+  color: #e36955;
+  line-height:24px;
+}
+h6{
+  padding-top:20px;
+}
+
+.btn {
+    -ms-transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    color: #fff;
+  }
+  .BtnRead:hover {
+    background: #f1ae44;
+    cursor: pointer;
+  }
+  .BtnRead {
+    width:160px;
+    background-color: ${color._e36955};
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0 10px 0 10px;
+    line-height: 49px;
+    border: none;
+    border-radius: 0;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    cursor: pointer;
+  }
+ 
+h6{
+  padding-left:20px;
+} 
+`;
+export const Card2 = styled.div`
+.cardImg{
+   margin:0 0 20px 20px;
+}
+.card2{
+  margin:0 0 20px 20px;
+  width:370px;
+background-color: #f2f0ec;
+}
+h3{
+  font-size:36px;
+  text-align: center;
+  font-weight:700;
+  font-family: "Playfair Display", serif;
+  padding-top:40px;
+
+}
+p{
+  font-weight:400;
+  font-size: 18px;
+    line-height: 32px;
+    padding-left:20px;
+    color: #818181;
+    padding-top:20px;
+
 }
 h6 span{
   color: #e36955;
@@ -1113,69 +1181,17 @@ h6{
     cursor: pointer;
   }
   
-`;
-export const Card2 = styled.div`
-.card2{
-  margin:0 0 20px 20px;
-  padding:20px;
-background-color: #f2f0ec;
-}
-h3{
-  font-size:36px;
-  text-align: center;
-  font-weight:700;
-  font-family: "Playfair Display", serif;
-  padding-top:40px;
-
-}
-p{
-  font-weight:400;
-  font-size: 18px;
-    line-height: 32px;
-    color: #818181;
-    padding-top:20px;
-
-}
-h6 span{
-  color: #e36955;
-  line-height:24px;
-}
 h6{
-  padding-top:20px;
+  padding-left:20px;
 }
-
-.btn {
-    -ms-transform: skewX(20deg);
-    -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);
-    color: #fff;
-  }
-  .BtnRead:hover {
-    background: #f1ae44;
-    cursor: pointer;
-  }
-  .BtnRead {
-    width:160px;
-    background-color: ${color._e36955};
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: 600;
-    letter-spacing: 1px;
-    padding: 0 10px 0 10px;
-    line-height: 49px;
-    border: none;
-    border-radius: 0;
-    -ms-transform: skewX(-20deg);
-    -webkit-transform: skewX(-20deg);
-    transform: skewX(-20deg);
-    cursor: pointer;
-  }
 `;
 export const Card3 = styled.div`
+.cardImg{
+   margin:0 0 20px 20px;
+}
 .card3{
   margin:0 0 20px 20px;
-  padding:20px;
+  width:370px;
 background-color: #f2f0ec;
 }
 h3{
@@ -1191,6 +1207,10 @@ p{
     line-height: 32px;
     color: #818181;
     padding-top:20px;
+    padding-left:20px;
+}
+h6{
+  padding-left:20px;
 }
 h6 span{
   color: #e36955;
@@ -1286,4 +1306,66 @@ export const DonationBtnCenterPadding=styled.div`
 display: flex;
 justify-content: center;
 margin-bottom: 77px;
-`
+`;
+
+export const BtnCenter =styled.div`
+margin-left:320px;
+margin-top:10px;
+margin-bottom:40px;
+`;
+
+export const BtnBg = styled.div`
+.icon{
+  text-align:center;
+  font-size:50px;
+  padding:6px;
+  margin-top:10px;
+}
+.name{
+  text-align:center;
+  font-size:20px;
+}
+   margin-left:30px;
+    width: 141px;
+    height: 140px;
+  text-transform: uppercase;
+  background:${({ backgroundColor }) => backgroundColor};
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0 30px 0 35px;
+  line-height: 49px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  text-decoration: none;
+  border: none;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 1px;
+    z-index: -1;
+    background: ${({ backgroundColor }) => backgroundColor};
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: skew(-12deg, 0deg);
+    -moz-transform: skew(-12deg, 0deg);
+    -ms-transform: skew(-12deg, 0deg);
+    -o-transform: skew(-12deg, 0deg);
+    transform: skew(-12deg, 0deg);
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+`;

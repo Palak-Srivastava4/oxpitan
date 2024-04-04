@@ -150,6 +150,6 @@ export const Btn = styled.a`
 `;
 export const ContinueBtn =styled.div`
 width: 100%;
-margin-left: 236px;
+margin-left: 306px;
 margin-top: 15px;
 `

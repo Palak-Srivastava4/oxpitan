@@ -14,11 +14,12 @@ const Navbar = () => {
     <>
     <Styled.SocialLinks>
     <div className="flex">
-              <div className="left">
-                <h3><GrMail />   needhelp@oxpitan.com</h3> 
-                <h3 className="number"><IoCallSharp />   666 888 0000</h3>
+<Styled.Btn>
+<div className="left">
+                <h3><span><GrMail /> </span>   needhelp@oxpitan.com</h3> 
+                <h3 className="number"><span><IoCallSharp /> </span>   666 888 0000</h3>
               </div>
-             
+</Styled.Btn>            
               <div className="right">
         <div className="sLinks">
 <ul>
