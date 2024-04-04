@@ -7,7 +7,6 @@ export const FooterBackground = styled.div`
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  margin-top: 40px;
   padding:30px 0px;
 `;
 export const Copy = styled.div`
@@ -57,6 +56,7 @@ export const MainContainer = styled.div`
     display: inline-block;
     color: #fff;
   }
+  
   .itemIcon {
     display: flex;
     gap: 10px;
@@ -68,6 +68,7 @@ export const MainContainer = styled.div`
     justify-content: center;
     margin-top: 31px;
   }
+
   .BtnDonate:hover {
     background: #f1ae44;
     cursor: pointer;
@@ -108,6 +109,56 @@ export const MainContainer = styled.div`
     padding: 0px 20px;
   }
 `;
+
+export const BtnBg = styled.a`
+  font-size: 18px;
+  text-transform: uppercase;
+  background:${({ backgroundColor }) => backgroundColor};
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0 10px 0 15px;
+  line-height: 49px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  text-decoration: none;
+  border: none;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 1px;
+    z-index: -1;
+    background: ${({ backgroundColor }) => backgroundColor};
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: skew(-12deg, 0deg);
+    -moz-transform: skew(-12deg, 0deg);
+    -ms-transform: skew(-12deg, 0deg);
+    -o-transform: skew(-12deg, 0deg);
+    transform: skew(-12deg, 0deg);
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+  &:hover,
+  &:hover:after {
+    background-color: #F1AE44;
+    color: #fff;
+  }
+`;
+
 export const NewsContainer = styled.div`
   padding-bottom: 45px;
   .news {
@@ -149,5 +200,54 @@ export const Blogs = styled.div`
     color: #f1ae44;
     cursor: pointer;
     text-decoration: underline;
+  }
+`;
+
+export const BtnDark = styled.a`
+  font-size: 14px;
+  text-transform: uppercase;
+  background: #E36955;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0 30px 0 35px;
+  line-height: 58px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  text-decoration: none;
+  border: none;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 1px;
+    z-index: -1;
+    background: #E36955;
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: skew(-12deg, 0deg);
+    -moz-transform: skew(-12deg, 0deg);
+    -ms-transform: skew(-12deg, 0deg);
+    -o-transform: skew(-12deg, 0deg);
+    transform: skew(-12deg, 0deg);
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+  &:hover,
+  &:hover:after {
+    background-color: #F1AE44;
+    color: #fff;
   }
 `;

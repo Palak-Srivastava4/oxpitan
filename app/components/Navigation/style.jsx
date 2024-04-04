@@ -16,29 +16,23 @@ export const SocialLinks = styled.div`
   display:flex;
   background-color:rgb(242, 240, 236);
 }
-  .left{
-    display:flex;
-    align-items:end;
-    justify-content:center;
-background-color:#424242;
-color:white;
-width: 100%;
-margin-left:-160px;
-transform: skewX(-20deg);
-font-family: "Playfair Display", serif;
+@media (max-width: 360px){
+  .flex{
+display: inline-block;
+background-color:rgb(242, 240, 236);
   }
-  .left h3{
+}
+.left{
+  display:flex;
+}
+    .left h3{
     font-size:16px;
     font-weight:400;
     padding:20px;
-    text-align:left;
-    margin-left:200px;
-    margin-top:10px;
-    transform: skewX(20deg);
+    text-align:center;
   }
-    
-  .number{
-    transform: translateX(-100px);
+  h3 span{
+    color:#f1ae44;
   }
   .right{
     display:flex;
@@ -64,6 +58,50 @@ font-family: "Playfair Display", serif;
     position: relative;
     font-family: "DM Sans", sans-serif;
 }
+`;
+
+export const Btn = styled.a`
+  font-size: 12px;
+  width:75%;
+  background: #424242;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0 30px 0 35px;
+  line-height: 19px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  text-decoration: none;
+  border: none;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 1px;
+    z-index: -1;
+    background: #424242;
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: skew(-12deg, 0deg);
+    -moz-transform: skew(-12deg, 0deg);
+    -ms-transform: skew(-12deg, 0deg);
+    -o-transform: skew(-12deg, 0deg);
+    transform: skew(-12deg, 0deg);
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
 `;
 
 export const NavItem = styled.li`

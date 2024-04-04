@@ -19,10 +19,8 @@ const Footer = () => {
                 placeholder="Email address"
                 className="input"
               />
+              <Styled.BtnDark href="">subscribe</Styled.BtnDark>
 
-              <div className="BtnDonate">
-                <span className="btn">Subscribe</span>
-              </div>
             </div>
 
             <Styled.Blogs>
@@ -41,12 +39,14 @@ const Footer = () => {
                 );
               })}
             </Styled.Blogs>
+
+          
             <div className="itemStyle">
-              {icons?.map((item, index) => {
+              {icons?.map((item) => {
                 return (
-                  <div style={{ background: item.color }} className="colorChng">
+                  <Styled.BtnBg backgroundColor={item.color}>
                     <div> {item.icon}</div>
-                  </div>
+                  </Styled.BtnBg>
                 );
               })}
             </div>

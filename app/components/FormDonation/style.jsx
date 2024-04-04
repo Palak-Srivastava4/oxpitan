@@ -77,9 +77,10 @@ justify-content: center;
 `
 export const Form = styled.div`
 position: absolute;
-height: 159%;
-background: #6610f2;
+height: 900px;
+background: #863bae;
 width: 100%;
+margin-bottom: 40px;
 .donation{
   margin-top: 50px;
 }
@@ -88,6 +89,7 @@ width: 100%;
     line-height: 60px;
     font-weight: 700;
     color: white;
+    font-family: "Playfair Display", serif;
   }
   .donateNow {
     font-size: 14px;
@@ -96,7 +98,7 @@ width: 100%;
     margin-top: 8px;
     color: white;
   }
-  background: #6f42c1;
+  background: #863bae;
 `;
 export const Btn = styled.a`
   font-size: 12px;
@@ -148,6 +150,6 @@ export const Btn = styled.a`
 `;
 export const ContinueBtn =styled.div`
 width: 100%;
-margin-left: 236px;
+margin-left: 306px;
 margin-top: 15px;
 `
