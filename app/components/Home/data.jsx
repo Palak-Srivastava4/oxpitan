@@ -7,6 +7,7 @@ import { FaBriefcaseMedical } from "react-icons/fa";
 import { FaBottleWater } from "react-icons/fa6";
 import { GiHamburger } from "react-icons/gi";
 import { GiPeaceDove } from "react-icons/gi";
+import { TbTargetArrow } from "react-icons/tb";
 
 export const para=[
   {
@@ -107,4 +108,41 @@ export const foodData=[
     icons:<FaBriefcaseMedical/>,
     color:"#f1ae44",
   },
+]
+
+export const causes = [
+  {
+    id:0,
+    head:"Save Poor Childrens",
+    para:"Aliq is notm hendr erit a augue insu image pellen tes.",
+    goal:"Goal: ",
+    span1:"$30,000",
+    raised:"Raised: ",
+    span2:"25,270",
+    color:"#50bac3",  
+      logo: <TbTargetArrow />
+  },
+  {
+    id:1,
+    head:"They Want to Study",
+    para:"Aliq is notm hendr erit a augue insu image pellen tes.",
+    goal:"Goal: ",
+    span1:"$30,000",
+    raised:"Raised: ",
+    span2:"25,270",
+    color:"#e36955",
+    logo: <TbTargetArrow />
+  },
+  {
+    id:2,
+    head:"Healthy Food for All",
+    para:"Aliq is notm hendr erit a augue insu image pellen tes.",
+    goal:"Goal: ",
+    span1:"$30,000",
+    raised:"Raised: ",
+    span2:"25,270",
+    color:"#f1ae44",
+    logo: <TbTargetArrow />
+  }
+
 ]

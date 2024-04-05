@@ -229,15 +229,58 @@ export const Team = styled.div`
 `;
 export const First = styled.div`
   flex: 0.4;
+  .mainDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
   .brownBlock {
-    height: 100px;
-    background-color: #50bac3;
-    text-align: center;
-    margin-top: 20px;
+    width: 82%;
+    padding-top: 17px;
+    font-size: 12px;
+    text-transform: uppercase;
+    background: ${({ backgroundColor }) => backgroundColor};
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 49px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+    text-decoration: none;
+    border: none;
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 1px;
+      z-index: -1;
+      background: ${({ backgroundColor }) => backgroundColor};
+      -webkit-transform-origin: bottom left;
+      transform-origin: bottom left;
+      -webkit-transform: skew(-12deg, 0deg);
+      -moz-transform: skew(-12deg, 0deg);
+      -ms-transform: skew(-12deg, 0deg);
+      -o-transform: skew(-12deg, 0deg);
+      transform: skew(-12deg, 0deg);
+      -webkit-transition: 0.3s ease-in;
+      -moz-transition: 0.3s ease-in;
+      -ms-transition: 0.3s ease-in;
+      -o-transition: 0.3s ease-in;
+      transition: 0.3s ease-in;
+    }
   }
   .title {
     font-size: 20px;
-    text-transform: capitalize;
+    // text-transform: capitalize;
     font-weight: 800;
     margin-bottom: 2px;
     color: white;
@@ -253,13 +296,18 @@ export const First = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .title {
+    text-decoration: none;
   }
 `;
 
 export const Cards = styled.div`
   display: flex;
-  gap: 20px;
-  margin: 50px 0px;
+  gap: 18px;
+  margin: 40px;
     .icon{
   text-align:center;
   font-size:40px;
@@ -377,7 +425,8 @@ export const CompanyName = styled.div`
 `;
 
 export const BtnDark = styled.div`
-margin-left:80px;
+margin-left:100px;
+margin-bottom:60x;
   font-size: 12px;
   text-transform: uppercase;
   background: #E36955;
@@ -423,10 +472,6 @@ margin-left:80px;
   &:hover:after {
     background-color: #F1AE44;
     color: #fff;
-  }
-  
-  .center{
-    margin-left:800px;
   }
 `;
 
@@ -506,6 +551,65 @@ export const Finger = styled.div`
     text-align: center;
   }
 `;
+export const FAQ = styled.div`
+`;
+export const Heading = styled.div`
+`;
+export const QA = styled.div`
+`;
+
+export const BtnDarkCenter = styled.div`
+margin-left:580px;
+margin-bottom:60x;
+  font-size: 12px;
+  text-transform: uppercase;
+  background: #E36955;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0 30px 0 35px;
+  line-height: 49px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  text-decoration: none;
+  border: none;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 1px;
+    z-index: -1;
+    background: #E36955;
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: skew(-12deg, 0deg);
+    -moz-transform: skew(-12deg, 0deg);
+    -ms-transform: skew(-12deg, 0deg);
+    -o-transform: skew(-12deg, 0deg);
+    transform: skew(-12deg, 0deg);
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+  &:hover,
+  &:hover:after {
+    background-color: #F1AE44;
+    color: #fff;
+  }
+`;
+
+
 export const DonationBtnCenter = styled.div`
   display: flex;
   justify-content: center;

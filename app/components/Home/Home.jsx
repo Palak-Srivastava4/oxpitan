@@ -197,6 +197,8 @@ const Home = () => {
           </Styled.Latest>
           <Styled.Card className="contents">
             <div className="cards">
+
+              
               <Styled.Card1>
                 <div className="cardImg">
                   <Image className="image" src={img1}></Image>
@@ -206,7 +208,7 @@ const Home = () => {
                   <p>Aliq is notm hendr erit a augue insu image pellen tes.</p>
                   <h6><TbTargetArrow />  Goal: <span>$30,000</span></h6>
                   <h6>  Raised: <span>25,270</span></h6>
-                  <Styled.BtnBlue className="blue" href="">donate now </Styled.BtnBlue>
+                  <Styled.BtnStatic hoverBg={"#424242"} backgroundColor="#50bac3" className="btnBlue" href="">donate now </Styled.BtnStatic>
                 </div>
               </Styled.Card1>
               <Styled.Card2>
@@ -218,7 +220,7 @@ const Home = () => {
                   <p>Aliq is notm hendr erit a augue insu image pellen tes.</p>
                   <h6><TbTargetArrow />  Goal: <span>$30,000</span></h6>
                   <h6>  Raised: <span>25,270</span></h6>
-                  <Styled.BtnRed className="red" href="">donate now</Styled.BtnRed>
+                  <Styled.BtnStatic hoverBg={"#424242"} backgroundColor="#e36955"  href="">donate now</Styled.BtnStatic>
                 </div>
               </Styled.Card2>
               <Styled.Card3>
@@ -230,7 +232,7 @@ const Home = () => {
                   <p>Aliq is notm hendr erit a augue insu image pellen tes.</p>
                   <h6><TbTargetArrow />  Goal: <span>$30,000</span></h6>
                   <h6>  Raised: <span>25,270</span></h6>
-                  <Styled.BtnYellow href="">donate now</Styled.BtnYellow>
+                  <Styled.BtnStatic hoverBg={"#424242"} backgroundColor="#f1ae44"  href="">donate now</Styled.BtnStatic>
                 </div>
               </Styled.Card3>
             </div>

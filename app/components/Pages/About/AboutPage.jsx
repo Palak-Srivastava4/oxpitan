@@ -57,7 +57,7 @@ const AboutPage = () => {
               <Styled.DonationBtnCenter>
                 <Styled.Btn href="">Start Donation</Styled.Btn>
               </Styled.DonationBtnCenter>
-              {/* <span className="btn">Start Donation</span> */}
+             
 
             </Styled.Finger>
           </Styled.FingerPrints>
@@ -96,6 +96,25 @@ const AboutPage = () => {
           </Styled.Cards>
 
 
+<Styled.FAQ>
+<Styled.Heading>
+            <div className="container latest">
+              <h2 className="cause">Have any Question?</h2>
+              <p className="help">FREQUENTLY ASKED QUESTIONS</p>
+              {/* <Image src={}></Image> */}
+            </div>
+          </Styled.Heading>
+          <Styled.QA>
+            <h4>questions</h4>
+          </Styled.QA>
+</Styled.FAQ>
+
+
+
+
+
+
+
 <Styled.Latest>
             <div className="container latest">
               <div className="bgClr"></div>
@@ -105,7 +124,8 @@ const AboutPage = () => {
               <p className="help">help us now</p>
             </div>
           </Styled.Latest>
-          <div className="beliveCards">
+         
+          <div>
             <Styled.Cards>
               
 
@@ -124,11 +144,12 @@ const AboutPage = () => {
               })}
               
             </Styled.Cards>
-            <Styled.BtnDark className="center" href="">donate now</Styled.BtnDark>
+            <Styled.BtnDarkCenter className="btnCenter" href="">donate now</Styled.BtnDarkCenter>
           </div>
-
       <Footer />
     </div>
+
+
   );
 };
 
