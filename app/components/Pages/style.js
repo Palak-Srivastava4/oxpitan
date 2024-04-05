@@ -18,6 +18,10 @@ display:inline-block;
   display: flex;
   justify-content: center;
   align-items: center;
+  .head{
+    margin-top:80px;
+    margin-bottom:110px;
+  }
 `;
 
 export const About = styled.div`
@@ -34,9 +38,10 @@ export const Agency = styled.div`
   flex: 0.6;
   padding-top: 34px;
   .discover {
-    font-size: 50px;
+    font-size: 48px;
     line-height: 60px;
     font-weight: 700;
+    font-family: "Playfair Display", serif;
   }
   .profit {
     color: #863bae;
@@ -179,16 +184,18 @@ export const Requirements = styled.div`
     margin-top: 10px;
   }
   .para {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 28px;
     color: #818181;
     font-weight: 400;
   }
   .require {
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 600;
     margin-bottom: 25px;
+    margin-top: 25px;
     color: #424242;
+    font-family: "Playfair Display", serif;
   }
 `;
 export const Team = styled.div`
@@ -253,6 +260,12 @@ export const Cards = styled.div`
   display: flex;
   gap: 20px;
   margin: 50px 0px;
+    .icon{
+  text-align:center;
+  font-size:40px;
+  font-weight:800;
+  margin-bottom:20px;
+}
   .head {
     font-size: 20px;
     line-height: 20px;
@@ -410,5 +423,140 @@ margin-left:80px;
   &:hover:after {
     background-color: #F1AE44;
     color: #fff;
+  }
+  
+  .center{
+    margin-left:800px;
+  }
+`;
+
+export const Btn = styled.a`
+  font-size: 12px;
+  text-transform: uppercase;
+  background: #f1ae44;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0 10px 0 15px;
+  line-height: 49px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  text-decoration: none;
+  border: none;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 1px;
+    z-index: -1;
+    background: #f1ae44;
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: skew(-12deg, 0deg);
+    -moz-transform: skew(-12deg, 0deg);
+    -ms-transform: skew(-12deg, 0deg);
+    -o-transform: skew(-12deg, 0deg);
+    transform: skew(-12deg, 0deg);
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+  &:hover,
+  &:hover:after {
+    background-color: #e36955;
+    color: #fff;
+  }
+`;
+
+export const FingerPrints = styled.div`
+margin-top:80px;
+margin-bottom:80px;
+  background-image: url(${(props) => props.src});
+  height: 525px;
+  position: relative;
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 120px;
+  padding-bottom: 120px;
+`;
+export const Finger = styled.div`
+  .btnStart {
+    display: flex;
+    justify-content: center;
+  }
+  .lives {
+    font-size: 70px;
+    line-height: 84px;
+    margin-bottom: 48px;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+  }
+`;
+export const DonationBtnCenter = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+export const Latest = styled.div`
+  margin: 60px 0px 60px 0px;
+  .latest {
+    text-align: center;
+    width: 57%;
+  }
+  .cause {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 700;
+    color: #424242;
+    font-family: "Playfair Display", serif;
+  }
+  .btn {
+    -ms-transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    display: inline-block;
+    color: #fff;
+  }
+  .BtnDonate:hover {
+    background: #f1ae44;
+    cursor: pointer;
+  }
+  .BtnDonate {
+    background-color: #e36955;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0 30px 0 35px;
+    line-height: 49px;
+    border: none;
+    border-radius: 0;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    cursor: pointer;
+  }
+  .help {
+    color: #863bae;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 8px;
+    display: block;
   }
 `;

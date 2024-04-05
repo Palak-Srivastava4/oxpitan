@@ -65,9 +65,9 @@ export const Welcome = styled.div`
   }
 `;
 
-export const Bg = styled.a`
+export const Bg = styled.div`
 height:848px;
-width:662px;
+width:596px;
   font-size: 12px;
   text-transform: uppercase;
   background: #863bae;
@@ -507,6 +507,12 @@ export const Cards = styled.div`
   justify-content:center;
   gap: 20px;
   margin:60px;
+  .icon{
+  text-align:center;
+  font-size:40px;
+  font-weight:800;
+  margin-bottom:20px;
+}
   .head {
     font-size: 20px;
     line-height: 20px;
@@ -1007,6 +1013,142 @@ export const Btn = styled.a`
 `;
 
 
+export const BtnBlue = styled.a`
+  font-size: 12px;
+  text-transform: uppercase;
+  background: #50bac3;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0 10px 0 15px;
+  line-height: 49px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  text-decoration: none;
+  border: none;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 1px;
+    z-index: -1;
+    background: #50bac3;
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: skew(-12deg, 0deg);
+    -moz-transform: skew(-12deg, 0deg);
+    -ms-transform: skew(-12deg, 0deg);
+    -o-transform: skew(-12deg, 0deg);
+    transform: skew(-12deg, 0deg);
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+  &:hover,
+  &:hover:after {
+    background-color: #e36955;
+    color: #fff;
+  }
+`;
+
+export const BtnRed = styled.a`
+  font-size: 12px;
+  text-transform: uppercase;
+  background:  #e36955;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0 10px 0 15px;
+  line-height: 49px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  text-decoration: none;
+  border: none;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 1px;
+    z-index: -1;
+    background:  #e36955;
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: skew(-12deg, 0deg);
+    -moz-transform: skew(-12deg, 0deg);
+    -ms-transform: skew(-12deg, 0deg);
+    -o-transform: skew(-12deg, 0deg);
+    transform: skew(-12deg, 0deg);
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+`;
+
+export const BtnYellow = styled.a`
+  font-size: 12px;
+  text-transform: uppercase;
+  background: #f1ae44;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0 10px 0 15px;
+  line-height: 49px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  text-decoration: none;
+  border: none;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 1px;
+    z-index: -1;
+    background: #f1ae44;
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: skew(-12deg, 0deg);
+    -moz-transform: skew(-12deg, 0deg);
+    -ms-transform: skew(-12deg, 0deg);
+    -o-transform: skew(-12deg, 0deg);
+    transform: skew(-12deg, 0deg);
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+`;
 
 export const Card = styled.div`
  display: flex;
@@ -1087,6 +1229,9 @@ h6{
 } 
 `;
 export const Card2 = styled.div`
+.red{
+  background-color:${color._e36955};
+}
 .cardImg{
    margin:0 0 20px 20px;
 }

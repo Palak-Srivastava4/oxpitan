@@ -116,14 +116,15 @@ const Home = () => {
           </Styled.Latest>
           <div>
             <Styled.Cards>
-              
-
               {para?.map((item, index) => {
                 return (
                   <>
+                  <div className="belive">
+                  <div className="icon">{item.icons}</div>
                     <div key={index} className="headText">
                       <h5 className="head">{item.head}</h5>
                       <p className="textPara">{item.text}</p>
+                    </div>
                     </div>
                   </>
                 );
@@ -205,7 +206,7 @@ const Home = () => {
                   <p>Aliq is notm hendr erit a augue insu image pellen tes.</p>
                   <h6><TbTargetArrow />  Goal: <span>$30,000</span></h6>
                   <h6>  Raised: <span>25,270</span></h6>
-                  <Styled.Btn href="">donate now </Styled.Btn>
+                  <Styled.BtnBlue className="blue" href="">donate now </Styled.BtnBlue>
                 </div>
               </Styled.Card1>
               <Styled.Card2>
@@ -217,7 +218,7 @@ const Home = () => {
                   <p>Aliq is notm hendr erit a augue insu image pellen tes.</p>
                   <h6><TbTargetArrow />  Goal: <span>$30,000</span></h6>
                   <h6>  Raised: <span>25,270</span></h6>
-                  <Styled.Btn href="">donate now</Styled.Btn>
+                  <Styled.BtnRed className="red" href="">donate now</Styled.BtnRed>
                 </div>
               </Styled.Card2>
               <Styled.Card3>
@@ -229,7 +230,7 @@ const Home = () => {
                   <p>Aliq is notm hendr erit a augue insu image pellen tes.</p>
                   <h6><TbTargetArrow />  Goal: <span>$30,000</span></h6>
                   <h6>  Raised: <span>25,270</span></h6>
-                  <Styled.Btn href="">donate now</Styled.Btn>
+                  <Styled.BtnYellow href="">donate now</Styled.BtnYellow>
                 </div>
               </Styled.Card3>
             </div>

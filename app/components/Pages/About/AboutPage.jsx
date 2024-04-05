@@ -5,6 +5,8 @@ import Navigation from "../../Navigation/Navigation";
 import React from "react";
 import about from "../../../assets/image/about.svg";
 import aboutPage2 from "../../../assets/image/aboutPage2.svg";
+import mixerBg2 from "../../../assets/image/mixerBg2.svg";
+import { Volun, para } from "./data";
 
 const AboutPage = () => {
   return (
@@ -14,6 +16,9 @@ const AboutPage = () => {
         <Styled.Contact className="container">
           <div className="head">About</div>
         </Styled.Contact>
+        <div>
+        <Styled.BtnDark href="">home .about</Styled.BtnDark>
+        </div>
       </Styled.BreadCrumb>
       <div className="container">
         <Styled.About>
@@ -42,6 +47,86 @@ const AboutPage = () => {
           </Styled.Agency>
         </Styled.Discover>
       </div>
+
+      
+      <Styled.FingerPrints src={mixerBg2.src}>
+            <Styled.Finger>
+              <div className="lives">
+                Our fingerprints on the lives we touch never fade
+              </div>
+              <Styled.DonationBtnCenter>
+                <Styled.Btn href="">Start Donation</Styled.Btn>
+              </Styled.DonationBtnCenter>
+              {/* <span className="btn">Start Donation</span> */}
+
+            </Styled.Finger>
+          </Styled.FingerPrints>
+
+          
+          <Styled.Latest>
+            <div className="container latest">
+              <h2 className="cause">Our Volunteers</h2>
+              <p className="help">meet profesionals</p>
+            </div>
+          </Styled.Latest>
+          <Styled.Cards >
+            {Volun.map((item) => {
+              return (
+                <Styled.First backgroundColor={item.color}>
+                  <div className="mainDiv">
+                    <div>
+                      <Image className="" src={item.img} />
+                    </div>
+                    <div style={{ width: "100%" }}>
+                      <div className="brownBlock">
+                        <div className="mid">
+                          <h3>
+                            <a href="" className="title">
+                              {item.name}
+                            </a>
+                          </h3>
+                          <span className="desig">{item.subName}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Styled.First>
+              );
+            })}
+          </Styled.Cards>
+
+
+<Styled.Latest>
+            <div className="container latest">
+              <div className="bgClr"></div>
+              <h2 className="cause">
+                We Believe that We can Save More Lifes with you
+              </h2>
+              <p className="help">help us now</p>
+            </div>
+          </Styled.Latest>
+          <div className="beliveCards">
+            <Styled.Cards>
+              
+
+              {para?.map((item, index) => {
+                return (
+                  <>
+                  <div className="belive">
+                  <div className="icon">{item.icons}</div>
+                    <div key={index} className="headText">
+                      <h5 className="head">{item.head}</h5>
+                      <p className="textPara">{item.text}</p>
+                    </div>
+                    </div>
+                  </>
+                );
+              })}
+              
+            </Styled.Cards>
+            <Styled.BtnDark className="center" href="">donate now</Styled.BtnDark>
+          </div>
+
       <Footer />
     </div>
   );

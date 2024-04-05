@@ -6,25 +6,30 @@ import team4 from "../../assets/image/team4.svg";
 import { FaBriefcaseMedical } from "react-icons/fa";
 import { FaBottleWater } from "react-icons/fa6";
 import { GiHamburger } from "react-icons/gi";
+import { GiPeaceDove } from "react-icons/gi";
 
 export const para=[
   {
     id:0,
+    icons:<GiPeaceDove />,
     head:"Hope",
     text:"Lorem ipsum is simply free text available in the market wesbites." 
   },
   {
     id:0,
+    icons:<GiPeaceDove />,
     head:"Prayers",
     text:"Lorem ipsum is simply free text available in the market wesbites." 
   },
   {
     id:0,
+    icons:<GiPeaceDove />,
     head:"Peace",
     text:"Lorem ipsum is simply free text available in the market wesbites." 
   },
   {
     id:0,
+    icons:<GiPeaceDove />,
     head:"Donation",
     text:"Lorem ipsum is simply free text available in the market wesbites." 
   },
