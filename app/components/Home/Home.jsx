@@ -32,7 +32,7 @@ const Home = () => {
       <Navigation />
 
       <Styled.MainContainer>
-        <div className="contents">
+        <div className="content">
           <Styled.Education>
             <Styled.Welcome>
               <div className="width">
@@ -73,8 +73,8 @@ const Home = () => {
                 </div>
               </div>
             </Styled.Hunger>
-
-            <Styled.CharityPoor>
+<div className="container">
+            <Styled.CharityPoor >
               <Styled.Lives>
                 <div className="hiw">
                   <div className="child-container">
@@ -103,6 +103,7 @@ const Home = () => {
                 </div>
               </Styled.Poor>
             </Styled.CharityPoor>
+            </div>
           </Styled.Education>
           <Styled.Latest>
             <div className="container latest">
@@ -113,9 +114,9 @@ const Home = () => {
               <p className="help">help us now</p>
             </div>
           </Styled.Latest>
-          <div className="container">
+          <div>
             <Styled.Cards>
-              <div></div>
+              
 
               {para?.map((item, index) => {
                 return (
@@ -193,7 +194,7 @@ const Home = () => {
               <p className="help">HELP US NOW</p>
             </div>
           </Styled.Latest>
-          <Styled.Card className="container">
+          <Styled.Card className="contents">
             <div className="cards">
               <Styled.Card1>
                 <div className="cardImg">
@@ -234,7 +235,7 @@ const Home = () => {
             </div>
           </Styled.Card>
 
-          <Styled.Evanto className="container">
+          <Styled.Evanto>
             {evanto.map((item) => {
               return <Image src={item.imgs} />;
             })}
@@ -246,7 +247,7 @@ const Home = () => {
                   Give a helping hand for homeless childrens
                 </div>
                 <Styled.Child>
-                  {foodData.map((item, index) => {
+                  {foodData.map((item) => {
                     return (
                       <Styled.BtnBg backgroundColor={item.color}>
                         <div className="icon">{item.icons}</div>
@@ -295,14 +296,13 @@ const Home = () => {
 
           <Styled.Latest>
             <div className="container latest">
-              <div></div>
               <h2 className="cause">Our Volunteers</h2>
               <p className="help">meet profesionals</p>
             </div>
           </Styled.Latest>
 
-          <Styled.Cards className="container">
-            {Volun.map((item, index) => {
+          <Styled.Cards >
+            {Volun.map((item) => {
               return (
                 <Styled.First backgroundColor={item.color}>
                   <div className="mainDiv">
@@ -345,7 +345,7 @@ const Home = () => {
               <p className="help">news and updates</p>
             </div>
           </Styled.Latest>
-          <Styled.Blogs className="container">
+          <Styled.Blogs>
             <Styled.News>
               <Image src={blogimg1} />
               <Styled.BlogData>
@@ -421,9 +421,13 @@ const Home = () => {
             </div>
           </Styled.SponsorCause>
         </div>
+        
+
       </Styled.MainContainer>
+      
       <Footer />
     </div>
+    
    
   );
 };

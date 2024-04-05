@@ -2,45 +2,7 @@ import { color } from "@/app/Theme/color";
 import styled from "styled-components";
 
 export const MainContainer = styled.div`
-.contents{
   overflow: hidden;
-}
-  // .btn {
-  //   -ms-transform: skewX(20deg);
-  //   -webkit-transform: skewX(20deg);
-  //   transform: skewX(20deg);
-  //   display: inline-block;
-  //   color: #fff;
-  // }
-  // .itemCenter {
-  //   display: flex;
-  //   justify-content: center;
-  //   margin-bottom: 40px;
-  // }
-  // .BtnDonate:hover {
-  //   background: #f1ae44;
-  //   cursor: pointer;
-  // }
-  // .BtnDonate {
-  //   background-color: #e36955;
-  //   font-size: 12px;
-  //   text-transform: uppercase;
-  //   text-align: center;
-  //   color: #fff;
-  //   font-weight: 600;
-  //   letter-spacing: 1px;
-  //   width: 15%;
-  //   height: 49px;
-  //   border: none;
-  //   border-radius: 0;
-  //   -ms-transform: skewX(-20deg);
-  //   -webkit-transform: skewX(-20deg);
-  //   transform: skewX(-20deg);
-  //   cursor: pointer;
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  // }
 `;
 export const Fund = styled.div`
   display: flex;
@@ -104,7 +66,7 @@ export const Welcome = styled.div`
 `;
 
 export const Bg = styled.a`
-height:122vh;
+height:848px;
 width:662px;
   font-size: 12px;
   text-transform: uppercase;
@@ -154,6 +116,7 @@ width:662px;
 export const Hunger = styled.div`
   .flex {
     display: flex;
+    justify-content:center;
     margin-bottom: 80px;
   }
   .left h3 {
@@ -200,7 +163,7 @@ export const Hunger = styled.div`
 `;
 
 export const LeftHunger = styled.a`
-  width:50%;
+  width:760px;
   background: #424242;
   color: #fff;
   position: relative;
@@ -540,8 +503,10 @@ export const Finger = styled.div`
 
 export const Cards = styled.div`
   display: flex;
+  align-items:center;
+  justify-content:center;
   gap: 20px;
-  margin-bottom: 50px;
+  margin:60px;
   .head {
     font-size: 20px;
     line-height: 20px;
@@ -677,7 +642,7 @@ export const Food = styled.div`
 export const Blogs = styled.div`
   display: flex;
   gap: 20px;
-  margin-bottom:60px;
+     margin: 66px;
 `;
 
 export const News = styled.div`
@@ -828,7 +793,7 @@ export const Darkness = styled.div`
   flex: 0.6;
   position: absolute;
   width: 50%;
-  left: 866px;
+  right:0;
   top: -53%;
   z-index: 2;
   .darkness {
@@ -1045,11 +1010,13 @@ export const Btn = styled.a`
 
 export const Card = styled.div`
  display: flex;
-  gap: 0px;
-  margin-bottom: 50px;
+ align-items:center;
+ justify-content:center;
+  gap: 18px;
+  margin: 60px;
   .cards{
     display: flex;
-    gap: 20px;
+    gap: 10px;
   }
   .image{
     padding:0;
@@ -1288,11 +1255,6 @@ export const BtnDark = styled.a`
     -ms-transition: 0.3s ease-in;
     -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
-  }
-  &:hover,
-  &:hover:after {
-    background-color: #F1AE44;
-    color: #fff;
   }
 `;
 export const DonationBtnCenter = styled.div`

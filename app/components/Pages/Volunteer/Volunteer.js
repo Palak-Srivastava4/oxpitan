@@ -12,8 +12,11 @@ const Volunteer = () => {
       <Navigation />
       <Styled.BreadCrumb>
         <Styled.Contact className="container">
-          <div className="head">Gallery</div>
+          <div className="head">Become A Volunteer</div>
         </Styled.Contact>
+        <div>
+        <Styled.BtnDark href="">home .become a Volunteer</Styled.BtnDark>
+        </div>
       </Styled.BreadCrumb>
       <div className="container" style={{ marginTop: "70px" }}>
         <Styled.Register>

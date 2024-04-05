@@ -6,11 +6,9 @@ export const BreadCrumb = styled.div`
   z-index: 1;
   color: #424242;
   height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `;
 export const Contact = styled.div`
+display:inline-block;
   font-size: 60px;
   line-height: 60px;
   letter-spacing: 0;
@@ -264,9 +262,6 @@ export const Cards = styled.div`
     color: #424242;
     text-align: center;
   }
-  Cards:hover{
-    
-  }
   .textPara {
     text-align: center;
     font-weight: 400;
@@ -365,5 +360,55 @@ export const CompanyName = styled.div`
     margin-top: 34px;
     color: #818181;
     font-weight: 400;
+  }
+`;
+
+export const BtnDark = styled.div`
+margin-left:80px;
+  font-size: 12px;
+  text-transform: uppercase;
+  background: #E36955;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0 30px 0 35px;
+  line-height: 49px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  text-decoration: none;
+  border: none;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 1px;
+    z-index: -1;
+    background: #E36955;
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: skew(-12deg, 0deg);
+    -moz-transform: skew(-12deg, 0deg);
+    -ms-transform: skew(-12deg, 0deg);
+    -o-transform: skew(-12deg, 0deg);
+    transform: skew(-12deg, 0deg);
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+  &:hover,
+  &:hover:after {
+    background-color: #F1AE44;
+    color: #fff;
   }
 `;

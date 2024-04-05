@@ -14,12 +14,20 @@ export const Nav = styled.ul`
 export const SocialLinks = styled.div`
 .flex{
   display:flex;
-  background-color:rgb(242, 240, 236);
+  justify-content:center;
+    background-color:rgb(242, 240, 236);
 }
-@media (max-width: 360px){
+@media (max-width: 990px){
   .flex{
 display: inline-block;
 background-color:rgb(242, 240, 236);
+align-items:center;
+  }
+
+}
+@media (max-width: 1136){
+  .left{
+    font-size:10px;
   }
 }
 .left{
@@ -60,7 +68,7 @@ background-color:rgb(242, 240, 236);
 }
 `;
 
-export const Btn = styled.a`
+export const Btn = styled.div`
   font-size: 12px;
   width:75%;
   background: #424242;
