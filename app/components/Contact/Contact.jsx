@@ -3,8 +3,8 @@ import Footer from "../Footer/Footer";
 import Navigation from "../Navigation/Navigation";
 import React from "react";
 import { icons } from "../Footer/data";
-import { contactData } from "./data";
-import { BreadCrumb } from "./style";
+
+
 
 const Contact = () => {
   return (
@@ -13,7 +13,12 @@ const Contact = () => {
       <Styled.BreadCrumb>
         <Styled.Contact className="container">
           <div className="head">Contact</div>
+       
         </Styled.Contact>
+       
+        <div className="home">
+        <Styled.BtnDark href="" backgroundColor={"#E36955"} hover={" #F1AE44"}>HOME . CONTACT</Styled.BtnDark>
+        </div>
       </Styled.BreadCrumb>
       <div className="container">
         <Styled.FormSection>
@@ -30,12 +35,12 @@ const Contact = () => {
               <div className="itemStyle">
                 {icons?.map((item, index) => {
                   return (
-                    <div
-                      style={{ background: item.color }}
-                      className="colorChng"
-                    >
-                      <div key={index}> {item.icon}</div>
-                    </div>
+                    <>
+                
+                    <Styled.BtnBG className="icon" padding={"0 10px 0 10px"} backgroundColor={item.color}>
+                    <div key={index}> {item.icon}</div>
+                  </Styled.BtnBG>
+                  </>
                   );
                 })}
               </div>
@@ -53,29 +58,35 @@ const Contact = () => {
                   type="number"
                 />
                 <Styled.TextArea placeholder="Write a message" type="text" />
-
-                <div className="BtnDonate">
-                  <span className="btn">Send Message</span>
-                </div>
+                <Styled.BtnDark href="" backgroundColor={"#F1AE44"} hover={"#E36955"}>Send Message</Styled.BtnDark>
+                {/*  #E36955 */}
               </Styled.MainForm>
             </div>
           </Styled.Form>
         </Styled.FormSection>
-        <div>
-          <Styled.About>
-            {contactData?.map((item, index) => {
-              return (
-                <Styled.Lorem>
-                  <div style={{ background: item.color }} className="detail">
-                    <div className="name">{item.name}</div>
-                    <div>{item.para}</div>
-                    <div>{item.no}</div>
-                  </div>
-                </Styled.Lorem>
-              );
-            })}
-          </Styled.About>
-        </div>
+        <Styled.AboutSectionBox>
+          <Styled.BtnBG className="about" padding={"0px 30px 0px 35px"} backgroundColor={"#50bac3"}>
+            <div>About</div><br/>
+            <div>
+              Lorem ipsum is simply free<br/> text dolor sit amet, duise<br/> consectetur
+              ullam blandit
+            </div>
+          </Styled.BtnBG>
+          <Styled.BtnBG className="address" padding={"0px 30px 0px 35px"} backgroundColor={"#e36955"}>
+            <div>Address</div><br/>
+            <div>
+              660 broklyn street , 88 new <br/>york, United states of <br/>america
+            </div>
+          </Styled.BtnBG>
+          <Styled.BtnBG className="contact" padding={"0px 30px 0px 35px"} backgroundColor={"#f1ae44"}>
+            <div>Contact</div><br/>
+            <div>
+              needhelp@oxpitan.com
+              <br />
+              666 888 000
+            </div>
+          </Styled.BtnBG>
+        </Styled.AboutSectionBox>
       </div>
       <Footer />
     </div>
