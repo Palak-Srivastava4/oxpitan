@@ -13,46 +13,64 @@ const Team = () => {
         <Styled.Contact className="container">
           <div className="head">Our Team</div>
         </Styled.Contact>
+        <div>
+        <Styled.BtnDark href="">home .our team</Styled.BtnDark>
+        </div>
       </Styled.BreadCrumb>
       <Styled.Team className="container">
-        <Styled.Cards >
-          {Volun.map((item, index) => {
-            return (
-              <Styled.First>
-                <Image src={item.img} />
-                <div className="brownBlock" style={{ background: item.color }}>
-                  <div className="mid">
-                    <h3>
-                      <a href="" className="title">
-                        {item.name}
-                      </a>
-                    </h3>
-                    <span className="desig">{item.subName}</span>
+
+      <Styled.Cards >
+            {Volun.map((item) => {
+              return (
+                <Styled.First backgroundColor={item.color}>
+                  <div className="mainDiv">
+                    <div>
+                      <Image className="" src={item.img} />
+                    </div>
+                    <div style={{ width: "100%" }}>
+                      <div className="brownBlock">
+                        <div className="mid">
+                          <h3>
+                            <a href="" className="title">
+                              {item.name}
+                            </a>
+                          </h3>
+                          <span className="desig">{item.subName}</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </Styled.First>
-            );
-          })}
-        </Styled.Cards>
-        <Styled.Cards >
-        {Volun2.map((item, index) => {
-          return (
-            <Styled.First>
-              <Image src={item.img} />
-              <div className="brownBlock" style={{ background: item.color }}>
-                <div className="mid">
-                  <h3>
-                    <a href="" className="title">
-                      {item.name}
-                    </a>
-                  </h3>
-                  <span className="desig">{item.subName}</span>
-                </div>
-              </div>
-            </Styled.First>
-          );
-        })}
-      </Styled.Cards>
+                </Styled.First>
+              );
+            })}
+          </Styled.Cards>         
+          
+           <Styled.Cards >
+            {Volun2.map((item) => {
+              return (
+                <Styled.First backgroundColor={item.color}>
+                  <div className="mainDiv">
+                    <div>
+                      <Image className="" src={item.img} />
+                    </div>
+                    <div style={{ width: "100%" }}>
+                      <div className="brownBlock">
+                        <div className="mid">
+                          <h3>
+                            <a href="" className="title">
+                              {item.name}
+                            </a>
+                          </h3>
+                          <span className="desig">{item.subName}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Styled.First>
+              );
+            })}
+          </Styled.Cards>
+
       </Styled.Team>
       <Footer />
     </div>
