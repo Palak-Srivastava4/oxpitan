@@ -235,7 +235,7 @@ export const First = styled.div`
     gap: 12px;
   }
   .brownBlock {
-    width: 82%;
+    width: 92%;
     padding-top: 17px;
     font-size: 12px;
     text-transform: uppercase;
