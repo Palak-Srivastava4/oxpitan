@@ -12,8 +12,11 @@ const Volunteer = () => {
       <Navigation />
       <Styled.BreadCrumb>
         <Styled.Contact className="container">
-          <div className="head">Gallery</div>
+          <div className="head">Become A Volunteer</div>
         </Styled.Contact>
+        <div>
+        <Styled.BtnDark href="">home .become a Volunteer</Styled.BtnDark>
+        </div>
       </Styled.BreadCrumb>
       <div className="container" style={{ marginTop: "70px" }}>
         <Styled.Register>
@@ -60,9 +63,8 @@ const Volunteer = () => {
             <Styled.Input type="text" placeholder="Date of Birth" />
             <Styled.Input type="text" placeholder="Occupation" />
             <Styled.TextArea type="text" placeholder="Write a Message" />
-            <div className="BtnDonate">
-              <span className="btn">Send Message</span>
-            </div>
+            <Styled.Btn href="">send message</Styled.Btn> 
+
           </Styled.FormData>
         </Styled.Form>
       </div>

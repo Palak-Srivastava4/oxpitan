@@ -6,25 +6,31 @@ import team4 from "../../assets/image/team4.svg";
 import { FaBriefcaseMedical } from "react-icons/fa";
 import { FaBottleWater } from "react-icons/fa6";
 import { GiHamburger } from "react-icons/gi";
+import { GiPeaceDove } from "react-icons/gi";
+import { TbTargetArrow } from "react-icons/tb";
 
 export const para=[
   {
     id:0,
+    icons:<GiPeaceDove />,
     head:"Hope",
     text:"Lorem ipsum is simply free text available in the market wesbites." 
   },
   {
     id:0,
+    icons:<GiPeaceDove />,
     head:"Prayers",
     text:"Lorem ipsum is simply free text available in the market wesbites." 
   },
   {
     id:0,
+    icons:<GiPeaceDove />,
     head:"Peace",
     text:"Lorem ipsum is simply free text available in the market wesbites." 
   },
   {
     id:0,
+    icons:<GiPeaceDove />,
     head:"Donation",
     text:"Lorem ipsum is simply free text available in the market wesbites." 
   },
@@ -71,13 +77,13 @@ export const Volun=[
     id:2,
     img:team3,
     name:" christine eve",
-    subName:"co founde",
+    subName:"co founder",
     color:" #f1ae44",
   },
   {
     id:3,
     img:team4,
-    name:"co founde",
+    name:"david hardson",
     subName:"Student",
     color:"#863bae",
   },
@@ -102,4 +108,41 @@ export const foodData=[
     icons:<FaBriefcaseMedical/>,
     color:"#f1ae44",
   },
+]
+
+export const causes = [
+  {
+    id:0,
+    head:"Save Poor Childrens",
+    para:"Aliq is notm hendr erit a augue insu image pellen tes.",
+    goal:"Goal: ",
+    span1:"$30,000",
+    raised:"Raised: ",
+    span2:"25,270",
+    color:"#50bac3",  
+      logo: <TbTargetArrow />
+  },
+  {
+    id:1,
+    head:"They Want to Study",
+    para:"Aliq is notm hendr erit a augue insu image pellen tes.",
+    goal:"Goal: ",
+    span1:"$30,000",
+    raised:"Raised: ",
+    span2:"25,270",
+    color:"#e36955",
+    logo: <TbTargetArrow />
+  },
+  {
+    id:2,
+    head:"Healthy Food for All",
+    para:"Aliq is notm hendr erit a augue insu image pellen tes.",
+    goal:"Goal: ",
+    span1:"$30,000",
+    raised:"Raised: ",
+    span2:"25,270",
+    color:"#f1ae44",
+    logo: <TbTargetArrow />
+  }
+
 ]

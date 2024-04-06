@@ -25,6 +25,10 @@ import { TbTargetArrow } from "react-icons/tb";
 import img1 from "../../assets/image/img1.svg";
 import img2 from "../../assets/image/img2.svg";
 import img3 from "../../assets/image/img3.svg";
+import FontAwesome from "react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
+import { faChartLine } from "@fortawesome/free-solid-svg-icons";
+
 
 const Home = () => {
   return (
@@ -32,7 +36,7 @@ const Home = () => {
       <Navigation />
 
       <Styled.MainContainer>
-        <div className="contents">
+        <div className="content">
           <Styled.Education>
             <Styled.Welcome>
               <div className="width">
@@ -73,8 +77,8 @@ const Home = () => {
                 </div>
               </div>
             </Styled.Hunger>
-
-            <Styled.CharityPoor>
+<div className="container">
+            <Styled.CharityPoor >
               <Styled.Lives>
                 <div className="hiw">
                   <div className="child-container">
@@ -103,6 +107,7 @@ const Home = () => {
                 </div>
               </Styled.Poor>
             </Styled.CharityPoor>
+            </div>
           </Styled.Education>
           <Styled.Latest>
             <div className="container latest">
@@ -113,16 +118,17 @@ const Home = () => {
               <p className="help">help us now</p>
             </div>
           </Styled.Latest>
-          <div className="container">
+          <div>
             <Styled.Cards>
-              <div></div>
-
               {para?.map((item, index) => {
                 return (
                   <>
+                  <div className="belive">
+                  <div className="icon">{item.icons}</div>
                     <div key={index} className="headText">
                       <h5 className="head">{item.head}</h5>
                       <p className="textPara">{item.text}</p>
+                    </div>
                     </div>
                   </>
                 );
@@ -193,8 +199,10 @@ const Home = () => {
               <p className="help">HELP US NOW</p>
             </div>
           </Styled.Latest>
-          <Styled.Card className="container">
+          <Styled.Card className="contents">
             <div className="cards">
+
+              
               <Styled.Card1>
                 <div className="cardImg">
                   <Image className="image" src={img1}></Image>
@@ -203,8 +211,8 @@ const Home = () => {
                   <h3>Save Poor Childrens</h3>
                   <p>Aliq is notm hendr erit a augue insu image pellen tes.</p>
                   <h6><TbTargetArrow />  Goal: <span>$30,000</span></h6>
-                  <h6>  Raised: <span>25,270</span></h6>
-                  <Styled.Btn href="">donate now </Styled.Btn>
+                  <h6> <FontAwesomeIcon icon={faChartLine} /> Raised: <span>25,270</span></h6>
+                  <Styled.BtnStatic hoverBg={"#424242"} backgroundColor="#50bac3" className="btnBlue" href="">donate now </Styled.BtnStatic>
                 </div>
               </Styled.Card1>
               <Styled.Card2>
@@ -215,8 +223,8 @@ const Home = () => {
                   <h3>They Want to Study</h3>
                   <p>Aliq is notm hendr erit a augue insu image pellen tes.</p>
                   <h6><TbTargetArrow />  Goal: <span>$30,000</span></h6>
-                  <h6>  Raised: <span>25,270</span></h6>
-                  <Styled.Btn href="">donate now</Styled.Btn>
+                  <h6><FontAwesomeIcon icon={faChartLine} />  Raised: <span>25,270</span></h6>
+                  <Styled.BtnStatic hoverBg={"#424242"} backgroundColor="#e36955"  href="">donate now</Styled.BtnStatic>
                 </div>
               </Styled.Card2>
               <Styled.Card3>
@@ -227,14 +235,14 @@ const Home = () => {
                   <h3>Healthy Food for All</h3>
                   <p>Aliq is notm hendr erit a augue insu image pellen tes.</p>
                   <h6><TbTargetArrow />  Goal: <span>$30,000</span></h6>
-                  <h6>  Raised: <span>25,270</span></h6>
-                  <Styled.Btn href="">donate now</Styled.Btn>
+                  <h6> <FontAwesomeIcon icon={faChartLine} /> Raised: <span>25,270</span></h6>
+                  <Styled.BtnStatic hoverBg={"#424242"} backgroundColor="#f1ae44"  href="">donate now</Styled.BtnStatic>
                 </div>
               </Styled.Card3>
             </div>
           </Styled.Card>
 
-          <Styled.Evanto className="container">
+          <Styled.Evanto>
             {evanto.map((item) => {
               return <Image src={item.imgs} />;
             })}
@@ -246,7 +254,7 @@ const Home = () => {
                   Give a helping hand for homeless childrens
                 </div>
                 <Styled.Child>
-                  {foodData.map((item, index) => {
+                  {foodData.map((item) => {
                     return (
                       <Styled.BtnBg backgroundColor={item.color}>
                         <div className="icon">{item.icons}</div>
@@ -295,14 +303,13 @@ const Home = () => {
 
           <Styled.Latest>
             <div className="container latest">
-              <div></div>
               <h2 className="cause">Our Volunteers</h2>
               <p className="help">meet profesionals</p>
             </div>
           </Styled.Latest>
 
-          <Styled.Cards className="container">
-            {Volun.map((item, index) => {
+          <Styled.Cards >
+            {Volun.map((item) => {
               return (
                 <Styled.First backgroundColor={item.color}>
                   <div className="mainDiv">
@@ -345,7 +352,7 @@ const Home = () => {
               <p className="help">news and updates</p>
             </div>
           </Styled.Latest>
-          <Styled.Blogs className="container">
+          <Styled.Blogs>
             <Styled.News>
               <Image src={blogimg1} />
               <Styled.BlogData>
@@ -421,9 +428,13 @@ const Home = () => {
             </div>
           </Styled.SponsorCause>
         </div>
+        
+
       </Styled.MainContainer>
+      
       <Footer />
     </div>
+    
    
   );
 };

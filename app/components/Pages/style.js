@@ -6,11 +6,9 @@ export const BreadCrumb = styled.div`
   z-index: 1;
   color: #424242;
   height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `;
 export const Contact = styled.div`
+display:inline-block;
   font-size: 60px;
   line-height: 60px;
   letter-spacing: 0;
@@ -20,6 +18,10 @@ export const Contact = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  .head{
+    margin-top:80px;
+    margin-bottom:110px;
+  }
 `;
 
 export const About = styled.div`
@@ -36,9 +38,10 @@ export const Agency = styled.div`
   flex: 0.6;
   padding-top: 34px;
   .discover {
-    font-size: 50px;
+    font-size: 48px;
     line-height: 60px;
     font-weight: 700;
+    font-family: "Playfair Display", serif;
   }
   .profit {
     color: #863bae;
@@ -181,16 +184,18 @@ export const Requirements = styled.div`
     margin-top: 10px;
   }
   .para {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 28px;
     color: #818181;
     font-weight: 400;
   }
   .require {
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 600;
     margin-bottom: 25px;
+    margin-top: 25px;
     color: #424242;
+    font-family: "Playfair Display", serif;
   }
 `;
 export const Team = styled.div`
@@ -224,15 +229,58 @@ export const Team = styled.div`
 `;
 export const First = styled.div`
   flex: 0.4;
+  .mainDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
   .brownBlock {
-    height: 100px;
-    background-color: #50bac3;
-    text-align: center;
-    margin-top: 20px;
+    width: 82%;
+    padding-top: 17px;
+    font-size: 12px;
+    text-transform: uppercase;
+    background: ${({ backgroundColor }) => backgroundColor};
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 49px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+    text-decoration: none;
+    border: none;
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 1px;
+      z-index: -1;
+      background: ${({ backgroundColor }) => backgroundColor};
+      -webkit-transform-origin: bottom left;
+      transform-origin: bottom left;
+      -webkit-transform: skew(-12deg, 0deg);
+      -moz-transform: skew(-12deg, 0deg);
+      -ms-transform: skew(-12deg, 0deg);
+      -o-transform: skew(-12deg, 0deg);
+      transform: skew(-12deg, 0deg);
+      -webkit-transition: 0.3s ease-in;
+      -moz-transition: 0.3s ease-in;
+      -ms-transition: 0.3s ease-in;
+      -o-transition: 0.3s ease-in;
+      transition: 0.3s ease-in;
+    }
   }
   .title {
     font-size: 20px;
-    text-transform: capitalize;
+    // text-transform: capitalize;
     font-weight: 800;
     margin-bottom: 2px;
     color: white;
@@ -248,13 +296,24 @@ export const First = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .title {
+    text-decoration: none;
   }
 `;
 
 export const Cards = styled.div`
   display: flex;
-  gap: 20px;
-  margin: 50px 0px;
+  gap: 18px;
+  margin: 40px;
+    .icon{
+  text-align:center;
+  font-size:40px;
+  font-weight:800;
+  margin-bottom:20px;
+}
   .head {
     font-size: 20px;
     line-height: 20px;
@@ -263,9 +322,6 @@ export const Cards = styled.div`
     margin-bottom: 23px;
     color: #424242;
     text-align: center;
-  }
-  Cards:hover{
-    
   }
   .textPara {
     text-align: center;
@@ -288,53 +344,18 @@ export const SponsorsData = styled.div`
   gap: 9%;
   margin-top: 50px;
 `;
+
+
 export const Evanto = styled.div`
-  flex: 0.3;
-  .btn {
-    -ms-transform: skewX(20deg);
-    -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);
-    color: #fff;
-    position: relative;
-    right: 57px;
-    height: 32px;
-  }
-  .BtnDonate:hover {
-    background: #f1ae44;
-    cursor: pointer;
-  }
-  .maindiv:hover {
-    background: #f1ae44;
-    cursor: pointer;
-  }
-  .BtnDonate {
-    background-color: #e36955;
-    height: 150px;
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: 600;
-    letter-spacing: 1px;
-    line-height: 49px;
-    border: none;
-    border-radius: 0;
-    -ms-transform: skewX(-15deg);
-    -webkit-transform: skewX(-15deg);
-    transform: skewX(-15deg);
-    cursor: pointer;
-    width: 72%;
-    margin-left: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .maindiv {
-    width: 77%;
-    position: relative;
-    background-color: #e36955;
-    height: 150px;
-  }
+height:400px;
+  display: flex;
+  justify-content:flex-end;
+  align-items:center;
+  margin-top:100px;
+  gap: 90px;
+  background-color:#f2f0ec;
 `;
+
 export const Line=styled.div`
 
 height:2px;
@@ -365,5 +386,269 @@ export const CompanyName = styled.div`
     margin-top: 34px;
     color: #818181;
     font-weight: 400;
+  }
+`;
+
+export const BtnDark = styled.div`
+margin-left:100px;
+margin-bottom:60x;
+  font-size: 12px;
+  text-transform: uppercase;
+  background: #E36955;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0 30px 0 35px;
+  line-height: 49px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  text-decoration: none;
+  border: none;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 1px;
+    z-index: -1;
+    background: #E36955;
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: skew(-12deg, 0deg);
+    -moz-transform: skew(-12deg, 0deg);
+    -ms-transform: skew(-12deg, 0deg);
+    -o-transform: skew(-12deg, 0deg);
+    transform: skew(-12deg, 0deg);
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+  &:hover,
+  &:hover:after {
+    background-color: #F1AE44;
+    color: #fff;
+  }
+`;
+
+export const Btn = styled.a`
+  font-size: 12px;
+  text-transform: uppercase;
+  background: #f1ae44;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0 10px 0 15px;
+  line-height: 49px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  text-decoration: none;
+  border: none;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 1px;
+    z-index: -1;
+    background: #f1ae44;
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: skew(-12deg, 0deg);
+    -moz-transform: skew(-12deg, 0deg);
+    -ms-transform: skew(-12deg, 0deg);
+    -o-transform: skew(-12deg, 0deg);
+    transform: skew(-12deg, 0deg);
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+  &:hover,
+  &:hover:after {
+    background-color: #e36955;
+    color: #fff;
+  }
+`;
+
+export const FingerPrints = styled.div`
+margin-top:80px;
+margin-bottom:80px;
+  background-image: url(${(props) => props.src});
+  height: 525px;
+  position: relative;
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 120px;
+  padding-bottom: 120px;
+`;
+export const Finger = styled.div`
+  .btnStart {
+    display: flex;
+    justify-content: center;
+  }
+  .lives {
+    font-size: 70px;
+    line-height: 84px;
+    margin-bottom: 48px;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+  }
+`;
+export const FAQ = styled.div`
+  background-color: #f2f0ec;
+display:flex;
+justify-content: center;
+align-items:center;
+`;
+export const Heading = styled.div`
+flex: 0.6;
+margin:80px 40px 80px 40px;
+.head {
+  font-size: 54px;
+  line-height: 66px;
+  font-weight: 700;
+  color: #424242;
+  font-family: "Playfair Display", serif;
+}
+.subhead {
+    color: #863bae;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 8px;
+    margin-bottom:60px;
+  }
+`;
+export const QA = styled.div`
+padding:40px;
+
+`;
+
+export const BtnDarkCenter = styled.div`
+margin-left:580px;
+margin-bottom:60x;
+  font-size: 12px;
+  text-transform: uppercase;
+  background: #E36955;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0 30px 0 35px;
+  line-height: 49px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  text-decoration: none;
+  border: none;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 1px;
+    z-index: -1;
+    background: #E36955;
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: skew(-12deg, 0deg);
+    -moz-transform: skew(-12deg, 0deg);
+    -ms-transform: skew(-12deg, 0deg);
+    -o-transform: skew(-12deg, 0deg);
+    transform: skew(-12deg, 0deg);
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+  &:hover,
+  &:hover:after {
+    background-color: #F1AE44;
+    color: #fff;
+  }
+`;
+
+
+export const DonationBtnCenter = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+export const Latest = styled.div`
+  margin: 60px 0px 60px 0px;
+  .latest {
+    text-align: center;
+    width: 57%;
+  }
+  .cause {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 700;
+    color: #424242;
+    font-family: "Playfair Display", serif;
+  }
+  .btn {
+    -ms-transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    display: inline-block;
+    color: #fff;
+  }
+  .BtnDonate:hover {
+    background: #f1ae44;
+    cursor: pointer;
+  }
+  .BtnDonate {
+    background-color: #e36955;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0 30px 0 35px;
+    line-height: 49px;
+    border: none;
+    border-radius: 0;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    cursor: pointer;
+  }
+  .help {
+    color: #863bae;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 8px;
+    display: block;
   }
 `;
