@@ -13,9 +13,7 @@ const Team = () => {
         <Styled.Contact className="container">
           <div className="head">Our Team</div>
         </Styled.Contact>
-        <div>
         <Styled.BtnDark href="">home .our team</Styled.BtnDark>
-        </div>
       </Styled.BreadCrumb>
       <Styled.Team className="container">
 
@@ -30,10 +28,8 @@ const Team = () => {
                     <div style={{ width: "100%" }}>
                       <div className="brownBlock">
                         <div className="mid">
-                          <h3>
-                            <a href="" className="title">
-                              {item.name}
-                            </a>
+                          <h3 className="title">
+                              {item.name}                           
                           </h3>
                           <span className="desig">{item.subName}</span>
                         </div>
@@ -50,16 +46,12 @@ const Team = () => {
               return (
                 <Styled.First backgroundColor={item.color}>
                   <div className="mainDiv">
-                    <div>
                       <Image className="" src={item.img} />
-                    </div>
                     <div style={{ width: "100%" }}>
                       <div className="brownBlock">
                         <div className="mid">
-                          <h3>
-                            <a href="" className="title">
+                          <h3 className="title">
                               {item.name}
-                            </a>
                           </h3>
                           <span className="desig">{item.subName}</span>
                         </div>
