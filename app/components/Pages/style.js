@@ -344,53 +344,18 @@ export const SponsorsData = styled.div`
   gap: 9%;
   margin-top: 50px;
 `;
+
+
 export const Evanto = styled.div`
-  flex: 0.3;
-  .btn {
-    -ms-transform: skewX(20deg);
-    -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);
-    color: #fff;
-    position: relative;
-    right: 57px;
-    height: 32px;
-  }
-  .BtnDonate:hover {
-    background: #f1ae44;
-    cursor: pointer;
-  }
-  .maindiv:hover {
-    background: #f1ae44;
-    cursor: pointer;
-  }
-  .BtnDonate {
-    background-color: #e36955;
-    height: 150px;
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: 600;
-    letter-spacing: 1px;
-    line-height: 49px;
-    border: none;
-    border-radius: 0;
-    -ms-transform: skewX(-15deg);
-    -webkit-transform: skewX(-15deg);
-    transform: skewX(-15deg);
-    cursor: pointer;
-    width: 72%;
-    margin-left: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .maindiv {
-    width: 77%;
-    position: relative;
-    background-color: #e36955;
-    height: 150px;
-  }
+height:400px;
+  display: flex;
+  justify-content:flex-end;
+  align-items:center;
+  margin-top:100px;
+  gap: 90px;
+  background-color:#f2f0ec;
 `;
+
 export const Line=styled.div`
 
 height:2px;
@@ -552,10 +517,33 @@ export const Finger = styled.div`
   }
 `;
 export const FAQ = styled.div`
+  background-color: #f2f0ec;
+display:flex;
+justify-content: center;
+align-items:center;
 `;
 export const Heading = styled.div`
+flex: 0.6;
+margin:80px 40px 80px 40px;
+.head {
+  font-size: 54px;
+  line-height: 66px;
+  font-weight: 700;
+  color: #424242;
+  font-family: "Playfair Display", serif;
+}
+.subhead {
+    color: #863bae;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 8px;
+    margin-bottom:60px;
+  }
 `;
 export const QA = styled.div`
+padding:40px;
+
 `;
 
 export const BtnDarkCenter = styled.div`

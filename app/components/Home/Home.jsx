@@ -25,6 +25,10 @@ import { TbTargetArrow } from "react-icons/tb";
 import img1 from "../../assets/image/img1.svg";
 import img2 from "../../assets/image/img2.svg";
 import img3 from "../../assets/image/img3.svg";
+import FontAwesome from "react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
+import { faChartLine } from "@fortawesome/free-solid-svg-icons";
+
 
 const Home = () => {
   return (
@@ -207,7 +211,7 @@ const Home = () => {
                   <h3>Save Poor Childrens</h3>
                   <p>Aliq is notm hendr erit a augue insu image pellen tes.</p>
                   <h6><TbTargetArrow />  Goal: <span>$30,000</span></h6>
-                  <h6>  Raised: <span>25,270</span></h6>
+                  <h6> <FontAwesomeIcon icon={faChartLine} /> Raised: <span>25,270</span></h6>
                   <Styled.BtnStatic hoverBg={"#424242"} backgroundColor="#50bac3" className="btnBlue" href="">donate now </Styled.BtnStatic>
                 </div>
               </Styled.Card1>
@@ -219,7 +223,7 @@ const Home = () => {
                   <h3>They Want to Study</h3>
                   <p>Aliq is notm hendr erit a augue insu image pellen tes.</p>
                   <h6><TbTargetArrow />  Goal: <span>$30,000</span></h6>
-                  <h6>  Raised: <span>25,270</span></h6>
+                  <h6><FontAwesomeIcon icon={faChartLine} />  Raised: <span>25,270</span></h6>
                   <Styled.BtnStatic hoverBg={"#424242"} backgroundColor="#e36955"  href="">donate now</Styled.BtnStatic>
                 </div>
               </Styled.Card2>
@@ -231,7 +235,7 @@ const Home = () => {
                   <h3>Healthy Food for All</h3>
                   <p>Aliq is notm hendr erit a augue insu image pellen tes.</p>
                   <h6><TbTargetArrow />  Goal: <span>$30,000</span></h6>
-                  <h6>  Raised: <span>25,270</span></h6>
+                  <h6> <FontAwesomeIcon icon={faChartLine} /> Raised: <span>25,270</span></h6>
                   <Styled.BtnStatic hoverBg={"#424242"} backgroundColor="#f1ae44"  href="">donate now</Styled.BtnStatic>
                 </div>
               </Styled.Card3>

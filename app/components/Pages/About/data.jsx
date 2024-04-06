@@ -3,6 +3,7 @@ import team2 from "../../../assets/image/team2.svg";
 import team3 from "../../../assets/image/team3.svg";
 import team4 from "../../../assets/image/team4.svg";
 import { GiPeaceDove } from "react-icons/gi";
+import clientLogo1 from "../../../assets/image/clientLogo1.svg";
 
 export const Volun=[
     {
@@ -61,4 +62,45 @@ export const Volun=[
       head:"Donation",
       text:"Lorem ipsum is simply free text available in the market wesbites." 
     },
+  ]
+
+  export const questions = [
+    {
+        id:0,
+        ques:"Make a difference in the life of a child",
+        ans:"Suspendisse finibus urna mauris, vitae consequat quam blandit vel. Vestibulum leo ligula, molestie ullamcorper vulputate vitae sodales commodo nisl. Nulla facilisi. Pellentesque est metus. There are many variations of eration in some form."
+    },
+    {
+        id:1,
+        ques:"Let’s do the right thing now",
+        ans:"Suspendisse finibus urna mauris, vitae consequat quam blandit vel. Vestibulum leo ligula, molestie ullamcorper vulputate vitae sodales commodo nisl. Nulla facilisi. Pellentesque est metus. There are many variations of eration in some form."
+    },
+    {
+        id:2,
+        ques:"Join your hand with us for a better life",
+        ans:"Suspendisse finibus urna mauris, vitae consequat quam blandit vel. Vestibulum leo ligula, molestie ullamcorper vulputate vitae sodales commodo nisl. Nulla facilisi. Pellentesque est metus. There are many variations of eration in some form."
+    }
+  ]
+
+  export const evanto=[
+    {
+      id:0,
+      imgs:clientLogo1,
+    },
+    {
+      id:1,
+      imgs:clientLogo1,
+    },
+    {
+      id:2,
+      imgs:clientLogo1,
+    },
+    {
+      id:3,
+      imgs:clientLogo1,
+    },
+    {
+      id:4,
+      imgs:clientLogo1,
+    }
   ]

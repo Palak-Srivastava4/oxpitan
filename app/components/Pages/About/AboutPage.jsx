@@ -6,7 +6,8 @@ import React from "react";
 import about from "../../../assets/image/about.svg";
 import aboutPage2 from "../../../assets/image/aboutPage2.svg";
 import mixerBg2 from "../../../assets/image/mixerBg2.svg";
-import { Volun, para } from "./data";
+import { Volun, para, questions, evanto } from "./data";
+import faq from "../../../assets/image/faq.jpg";
 
 const AboutPage = () => {
   return (
@@ -99,21 +100,15 @@ const AboutPage = () => {
 <Styled.FAQ>
 <Styled.Heading>
             <div className="container latest">
-              <h2 className="cause">Have any Question?</h2>
-              <p className="help">FREQUENTLY ASKED QUESTIONS</p>
-              {/* <Image src={}></Image> */}
+              <h2 className="head">Have any Question?</h2>
+              <p className="subhead">FREQUENTLY ASKED QUESTIONS</p>
+              <Image src={faq}></Image>
             </div>
           </Styled.Heading>
           <Styled.QA>
-            <h4>questions</h4>
+<h4>collapse section</h4>
           </Styled.QA>
 </Styled.FAQ>
-
-
-
-
-
-
 
 <Styled.Latest>
             <div className="container latest">
@@ -146,6 +141,14 @@ const AboutPage = () => {
             </Styled.Cards>
             <Styled.BtnDarkCenter className="btnCenter" href="">donate now</Styled.BtnDarkCenter>
           </div>
+
+          <Styled.Evanto>
+            {evanto.map((item) => {
+              return <Image src={item.imgs} />;
+            })}
+          </Styled.Evanto>
+
+
       <Footer />
     </div>
 

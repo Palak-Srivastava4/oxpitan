@@ -390,9 +390,11 @@ export const TextData = styled.div`
   }
 `;
 export const Evanto = styled.div`
+height:100px;
   display: flex;
+  justify-content:flex-end;
+  align-items:center;
   gap: 90px;
-  margin-top: 50px;
 `;
 export const Latest = styled.div`
   margin: 60px 0px 60px 0px;
@@ -1014,6 +1016,7 @@ export const Btn = styled.a`
 
 
 export const BtnStatic = styled.a`
+margin-top:20px;
 margin-left:20px;
 margin-bottom:40px;
  font-size: 12px;
