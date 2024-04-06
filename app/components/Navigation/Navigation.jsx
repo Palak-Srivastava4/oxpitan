@@ -133,24 +133,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-// const Navigation = () => {
-//   return (
-//     <>
-//       <Styled.NavLinks>
-//         <Styled.NavBar className="container">
-//
-//           <Styled.NavItems>
-//             <a href="">Home</a>
-//             <a href="donate">Causes</a>
-//             <a href="events">Events</a>
-//             <a href="news">News</a>
-//             <a href="aboutPage">Pages</a>
-//             <a href="contact">Contact</a>
-//           </Styled.NavItems>
-//         </Styled.NavBar>
-//
-//     </>
-//   );
-// };
-// export default Navigation;

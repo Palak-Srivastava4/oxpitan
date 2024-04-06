@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const BreadCrumb = styled.div`
+    flex-direction: column;
   background-color: #f2f0ec;
   position: relative;
   z-index: 1;
@@ -8,7 +9,12 @@ export const BreadCrumb = styled.div`
   height: 300px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  .home{
+        margin-left: 49px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 `;
 export const Contact = styled.div`
   font-size: 60px;
@@ -165,6 +171,7 @@ export const InputLocation = styled.input`
   }
 `;
 export const TextArea = styled.textarea`
+  margin-bottom: 10px;
   height: 130px;
   margin-top: 20px;
   width: 100%;
@@ -180,3 +187,100 @@ export const TextArea = styled.textarea`
     font-size: 16px;
   }
 `;
+export const BtnDark = styled.a`
+  font-size: 14px;
+  text-transform: uppercase;
+  background:${({ backgroundColor }) => backgroundColor};
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0 30px 0 35px;
+  line-height: 58px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  text-decoration: none;
+  border: none;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 1px;
+    z-index: -1;
+    background: ${({ backgroundColor }) => backgroundColor};
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: skew(-12deg, 0deg);
+    -moz-transform: skew(-12deg, 0deg);
+    -ms-transform: skew(-12deg, 0deg);
+    -o-transform: skew(-12deg, 0deg);
+    transform: skew(-12deg, 0deg);
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+  &:hover,
+  &:hover:after {
+    background-color: ${({ hover }) => hover};
+    color: #fff;
+  }
+`;
+export const AboutSectionBox=styled.div`
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+        margin: 100px 0px 100px 0px;
+`
+export const BtnBG =styled.div`
+
+  text-transform: uppercase;
+  background:${({ backgroundColor }) => backgroundColor};
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding:${({padding})=>padding};
+  line-height: 49px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  text-decoration: none;
+  border: none;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 1px;
+    z-index: -1;
+    background: ${({ backgroundColor }) => backgroundColor};
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: skew(-12deg, 0deg);
+    -moz-transform: skew(-12deg, 0deg);
+    -ms-transform: skew(-12deg, 0deg);
+    -o-transform: skew(-12deg, 0deg);
+    transform: skew(-12deg, 0deg);
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+`
