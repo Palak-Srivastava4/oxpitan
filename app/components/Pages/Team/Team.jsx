@@ -22,9 +22,7 @@ const Team = () => {
               return (
                 <Styled.First backgroundColor={item.color}>
                   <div className="mainDiv">
-                    <div>
-                      <Image className="" src={item.img} />
-                    </div>
+                      <Image className="" src={item.img} />           
                     <div style={{ width: "100%" }}>
                       <div className="brownBlock">
                         <div className="mid">
