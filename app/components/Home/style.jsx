@@ -8,6 +8,10 @@ export const Fund = styled.div`
   display: flex;
   background-color: #f2f0ec;
   margin-top: 70px;
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    padding-bottom: 98px;
+  }
 `;
 
 export const Children = styled.div`
@@ -29,12 +33,13 @@ export const Text = styled.div`
   position: relative;
 `;
 export const Education = styled.div``;
+export const BlogImageContainer = styled.div``;
 export const Welcome = styled.div`
-.width{
-  width:100%;
-}
+  .width {
+    width: 100%;
+  }
   .image {
-    width:100%;
+    width: 100%;
     padding: 0px;
     position: relative;
     z-index: 0;
@@ -45,33 +50,40 @@ export const Welcome = styled.div`
     z-index: 2;
   }
   .heading p {
-    color: white;
-    padding-top: 100px;
-    text-decoration: underline;
     font-size: 20px;
-    font-weight: 600;
-    margin-left: 260px;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+    margin-bottom: 12px;
+    margin-left: 35px;
   }
   .heading h3 {
-    font-size: 96px;
-    font-weight: 800;
-    color: white;
-    margin-left: 260px;
+    font-size: 100px;
+    line-height: 107px;
+    color: #fff;
+    font-weight: 900;
+    margin-left: 35px;
+    margin-bottom: 47px;
     font-family: "Playfair Display", serif;
+    @media (max-width: 650px) {
+      font-size: 55px;
+      line-height: 70px;
+    }
   }
-  .yellowBtn{
-    margin-left:260px;
+  .yellowBtn {
+    margin-left: 35px;
     margin-top: 20px;
   }
 `;
 
 export const Bg = styled.div`
-height:848px;
-width:596px;
+  height: 848px;
+  width: 29%;
   font-size: 12px;
   text-transform: uppercase;
   background: #863bae;
-  opacity:0.9;
+  opacity: 0.9;
   color: #fff;
   font-weight: 600;
   letter-spacing: 1px;
@@ -112,36 +124,52 @@ width:596px;
   }
 `;
 
-
 export const Hunger = styled.div`
+  @media (max-width: 1200px) {
+    .flex {
+      flex-direction: column;
+    }
+  }
   .flex {
     display: flex;
-    justify-content:center;
     margin-bottom: 80px;
+    gap: 7%;
   }
   .left h3 {
-    font-size: 40px;
-    font-weight: 900;
-    padding: 20px;
-    padding-left:200px;
-    text-align: left;
+    color: #fff;
+    font-size: 35px;
+    line-height: 36px;
+    font-weight: 800;
+    padding-right: 50px;
     margin-top: 60px;
-    margin-bottom: 60px;
+    font-family: "Playfair Display", serif;
+    margin-left: 40px;
+    width: 100%;
   }
   .right {
     display: flex;
     border-bottom: 1px solid lightgray;
+    @media (max-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
   .videoContainer {
     padding: 40px;
     margin-top: 30px;
     transform: translate(-90px, -40px);
-    position:relative;
-    z-index:2;
+    position: relative;
+    z-index: 2;
   }
-  .yellowBtn{
-    transform:translate(100px, 100px);
-    padding-left:20px;
+  .yellowBtn {
+    transform: translate(100px, 100px);
+    padding-left: 20px;
+    @media (max-width: 1200px) {
+      position: absolute;
+      top: 0;
+    }
   }
   .right h3 {
     text-align: left;
@@ -163,7 +191,11 @@ export const Hunger = styled.div`
 `;
 
 export const LeftHunger = styled.a`
-  width:760px;
+  @media (max-width: 1200px) {
+    width: 95%;
+    padding: 30px 0px 30px 50px;
+  }
+  width: 32%;
   background: #424242;
   color: #fff;
   position: relative;
@@ -191,11 +223,16 @@ export const LeftHunger = styled.a`
   }
 `;
 
-
 export const CharityPoor = styled.div`
   display: flex;
   justify-content: center;
   gap: 30px;
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const Lives = styled.div`
@@ -380,20 +417,32 @@ export const Child = styled.div`
   }
 `;
 export const TextData = styled.div`
+  @media (max-width: 1200px) {
+    width: 92%;
+    padding: 0px 20px;
+  }
   .aliq {
     font-size: 18px;
     line-height: 32px;
     color: #818181;
     font-weight: 400;
-    margin-right:60px;
-    padding: 100px 100px 44px 0px;
+    margin-right: 60px;
+    padding: 57px 0px;
+    text-align: justify;
+    @media (max-width: 1200px) {
+      font-family: "Poppins", sans-serif;
+      padding: 0px 10px;
+      font-size: 25px;
+      text-align: justify;
+      margin: 0px 20px;
+    }
   }
 `;
 export const Evanto = styled.div`
-height:100px;
+  height: 100px;
   display: flex;
-  justify-content:flex-end;
-  align-items:center;
+  justify-content: flex-end;
+  align-items: center;
   gap: 90px;
 `;
 export const Latest = styled.div`
@@ -448,7 +497,22 @@ export const Latest = styled.div`
 
 export const Creative = styled.div`
   display: flex;
-  padding: 100px;
+  margin-top: 106px;
+
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .create {
+    flex: 0.6;
+    position: relative;
+    padding-left: 45px;
+  }
+  .form {
+    flex: 1.5;
+    position: relative;
+  }
 `;
 export const Line = styled.div`
   width: 83%;
@@ -502,19 +566,71 @@ export const Finger = styled.div`
     text-align: center;
   }
 `;
-
 export const Cards = styled.div`
+  @media (max-width: 650px) {
+    display: flex;
+    flex-direction: column;
+  }
   display: flex;
-  align-items:center;
-  justify-content:center;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
-  margin:60px;
-  .icon{
-  text-align:center;
-  font-size:40px;
-  font-weight:800;
-  margin-bottom:20px;
-}
+  margin: 60px;
+  .icon {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  .head {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin-bottom: 23px;
+    color: #424242;
+    text-align: center;
+  }
+  .textPara {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #818181;
+    font-weight: 400;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    color: #424242;
+  }
+  .headText {
+    padding-right: 35px;
+    padding-left: 35px;
+    margin-bottom: 20px;
+  }
+`;
+export const VolunteersCards = styled.div`
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 60px;
+  .icon {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
   .head {
     font-size: 20px;
     line-height: 20px;
@@ -650,7 +766,12 @@ export const Food = styled.div`
 export const Blogs = styled.div`
   display: flex;
   gap: 20px;
-     margin: 66px;
+  margin: 66px;
+
+  @media only screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
+  display: block;
 `;
 
 export const News = styled.div`
@@ -695,14 +816,14 @@ export const BlogData = styled.div`
   a {
     color: #424242;
     text-decoration: none;
-    font-weight:700;
-    font-size:30px;
+    font-weight: 700;
+    font-size: 30px;
     font-family: "Playfair Display", serif;
   }
   h3 {
     margin-top: 30px;
   }
-  a:hover{
+  a:hover {
     color: #f1ae44;
   }
   .para {
@@ -710,7 +831,7 @@ export const BlogData = styled.div`
     line-height: 30px;
     color: #818181;
     font-weight: 400;
-    text-align:justify;
+    text-align: justify;
     margin-right: 60px;
   }
   .son {
@@ -737,7 +858,9 @@ export const Healthy = styled.div`
 
 export const Charity = styled.div`
   flex: 0.6;
-  width: 86%;
+  width: 100%;
+  padding-left: 45px;
+  position: relative;
   .create {
   }
   .charity {
@@ -745,19 +868,20 @@ export const Charity = styled.div`
     line-height: 48px;
     margin-bottom: 32px;
     padding-top: 30px;
-    margin-right:140px;
-        color: #424242;
+    margin-right: 140px;
+    color: #424242;
     text-decoration: none;
-    font-weight:700;
+    font-weight: 700;
     font-family: "Playfair Display", serif;
   }
+
   .aliq {
     font-size: 22px;
     line-height: 32px;
     color: #818181;
     font-weight: 400;
-    margin-right:140px;
-    text-align:justify;
+    margin-right: 140px;
+    text-align: justify;
   }
 `;
 
@@ -765,6 +889,12 @@ export const CharityData = styled.div`
   display: flex;
   margin-top: 20px;
   position: relative;
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 export const Raised = styled.div`
   flex: 0.6;
@@ -798,10 +928,14 @@ export const Raised = styled.div`
   }
 `;
 export const Darkness = styled.div`
+  @media (max-width: 1200px) {
+    position: unset;
+  }
+
   flex: 0.6;
   position: absolute;
   width: 50%;
-  right:0;
+  right: 0;
   top: -53%;
   z-index: 2;
   .darkness {
@@ -823,6 +957,10 @@ export const Content = styled.div`
     color: #fff;
     font-weight: 700;
     margin-bottom: 43px;
+    @media (max-width: 900px) {
+      font-size: 36px;
+      line-height: 45px;
+    }
   }
 `;
 export const Donate = styled.div`
@@ -831,7 +969,7 @@ export const Donate = styled.div`
 
 export const Fundraising = styled.div`
   background-image: url(${(props) => props.src});
-  height: 525px;
+  height: 80%;
   position: relative;
   z-index: 1;
   background-size: cover;
@@ -883,6 +1021,7 @@ export const About = styled.div`
     margin-left: 85px;
   }
   .lives {
+    width: 72%;
     font-size: 70px;
     line-height: 84px;
     margin-bottom: 48px;
@@ -898,8 +1037,8 @@ export const About = styled.div`
 export const SponsorCause = styled.div`
   .flex {
     display: flex;
-    align-items:center;
-    justify-content:center;
+    align-items: center;
+    justify-content: center;
     background-color: #863bae;
   }
   .left h3 {
@@ -909,12 +1048,12 @@ export const SponsorCause = styled.div`
     padding: 20px;
     text-align: left;
     margin-left: 20px;
-    padding-left:60px;
+    padding-left: 60px;
     margin-top: 10px;
     font-family: "Playfair Display", serif;
-    text-align:center;
+    text-align: center;
   }
-  .left{
+  .left {
     padding-top: 20px;
   }
   .right {
@@ -922,7 +1061,7 @@ export const SponsorCause = styled.div`
     padding-top: 20px;
   }
   .right h3 {
-    padding-left:60px;
+    padding-left: 60px;
     font-size: 34px;
     font-weight: 700;
     color: white;
@@ -931,12 +1070,12 @@ export const SponsorCause = styled.div`
     margin-left: 20px;
     margin-top: 10px;
     font-family: "Playfair Display", serif;
-    text-align:center;
+    text-align: center;
   }
 `;
 
 export const Sponsor = styled.div`
-width:100%;
+  width: 100%;
   background: #50bac3;
   color: black;
   position: relative;
@@ -963,7 +1102,6 @@ width:100%;
     transform: skew(-12deg, 0deg);
   }
 `;
-
 
 export const Btn = styled.a`
   font-size: 12px;
@@ -1014,274 +1152,13 @@ export const Btn = styled.a`
   }
 `;
 
-
 export const BtnStatic = styled.a`
-margin-top:20px;
-margin-left:20px;
-margin-bottom:40px;
- font-size: 12px;
-  text-transform: uppercase;
-  background: ${({ backgroundColor }) => backgroundColor};
-  color: #fff;
-  font-weight: 600;
-  letter-spacing: 1px;
-  padding: 0 30px 0 35px;
-  line-height: 49px;
-  position: relative;
-  z-index: 1;
-  display: inline-block;
-  -webkit-transition: 0.3s ease-in;
-  -moz-transition: 0.3s ease-in;
-  -ms-transition: 0.3s ease-in;
-  -o-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
-  text-decoration: none;
-  border: none;
-&:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 1px;
-  z-index: -1;
-  background:${({ backgroundColor }) => backgroundColor};
-  -webkit-transform-origin: bottom left;
-  transform-origin: bottom left;
-  -webkit-transform: skew(-12deg,0deg);
-  -moz-transform: skew(-12deg,0deg);
-  -ms-transform: skew(-12deg,0deg);
-  -o-transform: skew(-12deg,0deg);
-  transform: skew(-12deg,0deg);
-  -webkit-transition: 0.3s ease-in;
-  -moz-transition: 0.3s ease-in;
-  -ms-transition: 0.3s ease-in;
-  -o-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
-}
-&:hover,
-&:hover:after {
-  background-color: ${({ hoverBg }) => hoverBg};
-  color: #fff;
-}
-`;
-
-
-
-export const Card = styled.div`
- display: flex;
- align-items:center;
- justify-content:center;
-  gap: 18px;
-  margin: 60px;
-  .cards{
-    display: flex;
-    gap: 10px;
-  }
-  .image{
-    padding:0;
-  }
-  `;
-export const Card1 = styled.div`
-.cardImg{
-   margin:0 0 20px 20px;
-}
-.card1{
-  width:370px;
-  margin:0 0 20px 20px;
-background-color: #f2f0ec;
-}
-h3{
-  font-size:36px;
-  text-align: center;
-  font-weight:700;
-  font-family: "Playfair Display", serif;
-  padding-top:40px;
-}
-p{
-  font-weight:400;
-  font-size: 18px;
-  padding-left:20px;
-    line-height: 32px;
-    color: #818181;
-    padding-top:20px;
-}
-h6 span{
-  color: #e36955;
-  line-height:24px;
-}
-h6{
-  padding-top:20px;
-}
-
-.btn {
-    -ms-transform: skewX(20deg);
-    -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);
-    color: #fff;
-  }
-  .BtnRead:hover {
-    background: #f1ae44;
-    cursor: pointer;
-  }
-  .BtnRead {
-    width:160px;
-    background-color: ${color._e36955};
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: 600;
-    letter-spacing: 1px;
-    padding: 0 10px 0 10px;
-    line-height: 49px;
-    border: none;
-    border-radius: 0;
-    -ms-transform: skewX(-20deg);
-    -webkit-transform: skewX(-20deg);
-    transform: skewX(-20deg);
-    cursor: pointer;
-  }
- 
-h6{
-  padding-left:20px;
-} 
-`;
-export const Card2 = styled.div`
-.red{
-  background-color:${color._e36955};
-}
-.cardImg{
-   margin:0 0 20px 20px;
-}
-.card2{
-  margin:0 0 20px 20px;
-  width:370px;
-background-color: #f2f0ec;
-}
-h3{
-  font-size:36px;
-  text-align: center;
-  font-weight:700;
-  font-family: "Playfair Display", serif;
-  padding-top:40px;
-
-}
-p{
-  font-weight:400;
-  font-size: 18px;
-    line-height: 32px;
-    padding-left:20px;
-    color: #818181;
-    padding-top:20px;
-
-}
-h6 span{
-  color: #e36955;
-  line-height:24px;
-}
-h6{
-  padding-top:20px;
-}
-
-.btn {
-    -ms-transform: skewX(20deg);
-    -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);
-    color: #fff;
-  }
-  .BtnRead:hover {
-    background: #f1ae44;
-    cursor: pointer;
-  }
-  .BtnRead {
-    width:160px;
-    background-color: ${color._e36955};
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: 600;
-    letter-spacing: 1px;
-    padding: 0 10px 0 10px;
-    line-height: 49px;
-    border: none;
-    border-radius: 0;
-    -ms-transform: skewX(-20deg);
-    -webkit-transform: skewX(-20deg);
-    transform: skewX(-20deg);
-    cursor: pointer;
-  }
-  
-h6{
-  padding-left:20px;
-}
-`;
-export const Card3 = styled.div`
-.cardImg{
-   margin:0 0 20px 20px;
-}
-.card3{
-  margin:0 0 20px 20px;
-  width:370px;
-background-color: #f2f0ec;
-}
-h3{
-  font-size:36px;
-  text-align: center;
-  font-weight:700;
-  font-family: "Playfair Display", serif;
-  padding-top:40px;
-}
-p{
-  font-weight:400;
-  font-size: 18px;
-    line-height: 32px;
-    color: #818181;
-    padding-top:20px;
-    padding-left:20px;
-}
-h6{
-  padding-left:20px;
-}
-h6 span{
-  color: #e36955;
-  line-height:24px;
-}
-h6{
-  padding-top:20px;
-}
-.btn {
-    -ms-transform: skewX(20deg);
-    -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);
-    color: #fff;
-  }
-  .BtnRead:hover {
-    background: #f1ae44;
-    cursor: pointer;
-  }
-  .BtnRead {
-    width:160px;
-    background-color: ${color._e36955};
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: 600;
-    letter-spacing: 1px;
-    padding: 0 10px 0 10px;
-    line-height: 49px;
-    border: none;
-    border-radius: 0;
-    -ms-transform: skewX(-20deg);
-    -webkit-transform: skewX(-20deg);
-    transform: skewX(-20deg);
-    cursor: pointer;
-  }
-`;
-export const BtnDark = styled.a`
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 40px;
   font-size: 12px;
   text-transform: uppercase;
-  background: #E36955;
+  background: ${({ backgroundColor }) => backgroundColor};
   color: #fff;
   font-weight: 600;
   letter-spacing: 1px;
@@ -1306,7 +1183,306 @@ export const BtnDark = styled.a`
     top: 0;
     left: 1px;
     z-index: -1;
-    background: #E36955;
+    background: ${({ backgroundColor }) => backgroundColor};
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: skew(-12deg, 0deg);
+    -moz-transform: skew(-12deg, 0deg);
+    -ms-transform: skew(-12deg, 0deg);
+    -o-transform: skew(-12deg, 0deg);
+    transform: skew(-12deg, 0deg);
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+  &:hover,
+  &:hover:after {
+    background-color: ${({ hoverBg }) => hoverBg};
+    color: #fff;
+  }
+`;
+
+export const Card = styled.div`
+  @media (max-width: 1200px) {
+    .cards {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin: 60px;
+  .cards {
+    display: flex;
+    gap: 10px;
+  }
+  .image {
+    padding: 0;
+    @media (max-width: 1200px) {
+      width: 100%;
+    }
+  }
+`;
+export const Card1 = styled.div`
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
+  .cardImg {
+    margin: 0 0 20px 20px;
+  }
+  .card1 {
+    width: 370px;
+    margin: 0 0 20px 20px;
+    background-color: #f2f0ec;
+    @media (max-width: 1200px) {
+      width: 100%;
+    }
+  }
+  h3 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    padding-top: 40px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    padding-left: 20px;
+    line-height: 32px;
+    color: #818181;
+    padding-top: 20px;
+    @media (max-width: 1200px) {
+      font-size: 28px;
+    }
+  }
+  h6 span {
+    color: #e36955;
+    line-height: 24px;
+  }
+  h6 {
+    padding-top: 20px;
+    @media (max-width: 1200px) {
+      font-size: 28px;
+    }
+  }
+
+  .btn {
+    -ms-transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    color: #fff;
+  }
+  .BtnRead:hover {
+    background: #f1ae44;
+    cursor: pointer;
+  }
+  .BtnRead {
+    width: 160px;
+    background-color: ${color._e36955};
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0 10px 0 10px;
+    line-height: 49px;
+    border: none;
+    border-radius: 0;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    cursor: pointer;
+  }
+
+  h6 {
+    padding-left: 20px;
+  }
+`;
+export const Card2 = styled.div`
+  .red {
+    background-color: ${color._e36955};
+  }
+  .cardImg {
+    margin: 0 0 20px 20px;
+  }
+  .card2 {
+    margin: 0 0 20px 20px;
+    width: 370px;
+    background-color: #f2f0ec;
+    @media (max-width: 1200px) {
+      width: 100%;
+    }
+  }
+  h3 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    padding-top: 40px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    padding-left: 20px;
+    color: #818181;
+    padding-top: 20px;
+    @media (max-width: 1200px) {
+      font-size: 28px;
+    }
+  }
+  h6 span {
+    color: #e36955;
+    line-height: 24px;
+  }
+  h6 {
+    padding-top: 20px;
+    @media (max-width: 1200px) {
+      font-size: 28px;
+    }
+  }
+
+  .btn {
+    -ms-transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    color: #fff;
+  }
+  .BtnRead:hover {
+    background: #f1ae44;
+    cursor: pointer;
+  }
+  .BtnRead {
+    width: 160px;
+    background-color: ${color._e36955};
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0 10px 0 10px;
+    line-height: 49px;
+    border: none;
+    border-radius: 0;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    cursor: pointer;
+  }
+
+  h6 {
+    padding-left: 20px;
+  }
+`;
+export const Card3 = styled.div`
+  .cardImg {
+    margin: 0 0 20px 20px;
+  }
+  .card3 {
+    margin: 0 0 20px 20px;
+    width: 370px;
+    background-color: #f2f0ec;
+    @media (max-width: 1200px) {
+      width: 100%;
+    }
+  }
+  h3 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    padding-top: 40px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #818181;
+    padding-top: 20px;
+    padding-left: 20px;
+    @media (max-width: 1200px) {
+      font-size: 28px;
+    }
+  }
+  h6 {
+    padding-left: 20px;
+    @media (max-width: 1200px) {
+      font-size: 28px;
+    }
+  }
+  h6 span {
+    color: #e36955;
+    line-height: 24px;
+  }
+  h6 {
+    padding-top: 20px;
+  }
+  .btn {
+    -ms-transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    color: #fff;
+    @media (max-width: 1200px) {
+      font-size: 28px;
+    }
+  }
+  .BtnRead:hover {
+    background: #f1ae44;
+    cursor: pointer;
+  }
+  .BtnRead {
+    width: 160px;
+    background-color: ${color._e36955};
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0 10px 0 10px;
+    line-height: 49px;
+    border: none;
+    border-radius: 0;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    cursor: pointer;
+  }
+`;
+export const BtnDark = styled.a`
+  font-size: 12px;
+  text-transform: uppercase;
+  background: #e36955;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0 30px 0 35px;
+  line-height: 49px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  text-decoration: none;
+  border: none;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 1px;
+    z-index: -1;
+    background: #e36955;
     -webkit-transform-origin: bottom left;
     transform-origin: bottom left;
     -webkit-transform: skew(-12deg, 0deg);
@@ -1328,34 +1504,34 @@ export const DonationBtnCenter = styled.div`
 export const DonationBtnStart = styled.div`
   margin-left: 92px;
 `;
-export const DonationBtnCenterPadding=styled.div`
-display: flex;
-justify-content: center;
-margin-bottom: 77px;
+export const DonationBtnCenterPadding = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 77px;
 `;
 
-export const BtnCenter =styled.div`
-margin-left:320px;
-margin-top:10px;
-margin-bottom:40px;
+export const BtnCenter = styled.div`
+  margin-left: 320px;
+  margin-top: 10px;
+  margin-bottom: 40px;
 `;
 
 export const BtnBg = styled.div`
-.icon{
-  text-align:center;
-  font-size:50px;
-  padding:6px;
-  margin-top:10px;
-}
-.name{
-  text-align:center;
-  font-size:20px;
-}
-   margin-left:30px;
-    width: 141px;
-    height: 140px;
+  .icon {
+    text-align: center;
+    font-size: 50px;
+    padding: 6px;
+    margin-top: 10px;
+  }
+  .name {
+    text-align: center;
+    font-size: 20px;
+  }
+  margin-left: 30px;
+  width: 141px;
+  height: 140px;
   text-transform: uppercase;
-  background:${({ backgroundColor }) => backgroundColor};
+  background: ${({ backgroundColor }) => backgroundColor};
   color: #fff;
   font-weight: 600;
   letter-spacing: 1px;

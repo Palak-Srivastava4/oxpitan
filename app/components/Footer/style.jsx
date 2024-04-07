@@ -179,6 +179,9 @@ export const NewsContainer = styled.div`
 export const Blogs = styled.div`
   display: flex;
   margin-top: 80px;
+  @media(max-width:1200px){
+        flex-direction: column
+  }
 
   .indexData {
     flex: 0.3;

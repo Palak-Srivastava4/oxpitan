@@ -76,9 +76,14 @@ display: flex;
 justify-content: center;
 `
 export const Form = styled.div`
+@media(max-width:1200px){
+  position: unset;
+}
 position: absolute;
 height: 900px;
 background: #863bae;
+right: 0;
+top: -239px;
 width: 100%;
 margin-bottom: 40px;
 .donation{
@@ -98,7 +103,6 @@ margin-bottom: 40px;
     margin-top: 8px;
     color: white;
   }
-  background: #863bae;
 `;
 export const Btn = styled.a`
   font-size: 12px;

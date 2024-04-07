@@ -26,9 +26,8 @@ import img1 from "../../assets/image/img1.svg";
 import img2 from "../../assets/image/img2.svg";
 import img3 from "../../assets/image/img3.svg";
 import FontAwesome from "react-fontawesome";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChartLine } from "@fortawesome/free-solid-svg-icons";
-
 
 const Home = () => {
   return (
@@ -50,64 +49,87 @@ const Home = () => {
                 </div>
               </div>
             </Styled.Welcome>
+         
+
             <Styled.Hunger>
               <div className="flex">
                 <Styled.LeftHunger>
                   <div className="left">
-                    <h3>Hunger is <br />stalking the <br />globe</h3>
+                    <h3>
+                      Hunger is 
+                      stalking the 
+                      globe
+                    </h3>
                   </div>
                 </Styled.LeftHunger>
-
 
                 <div className="right">
                   <div className="videoContainer">
                     <a href="https://youtu.be/PbUxi2Lx8x8"> </a>
-                      <div class="video-item">
-                        <Styled.Btn className="yellowBtn" href=""> <span> <FaPlay /></span></Styled.Btn>
+                    <div class="video-item">
+                      <Styled.Btn className="yellowBtn" href="">
+                        {" "}
+                        <span>
+                          {" "}
+                          <FaPlay />
+                        </span>
+                      </Styled.Btn>
 
-                        <Image src={videoImg}>
-                        </Image>
-                      </div>
-                   
+                      <Image src={videoImg}></Image>
+                    </div>
                   </div>
-                  <div>
+                  <div style={{width: "75%"}}>
                     <h3>We are here to support you every step of the way.</h3>
                     <p>Watch us how we take care of everyone</p>
                   </div>
                 </div>
               </div>
             </Styled.Hunger>
-<div className="container">
-            <Styled.CharityPoor >
-              <Styled.Lives>
-                <div className="hiw">
-                  <div className="child-container">
-                    <div className="bg"> </div>
-                    <Image className="img" src={huImg} />
+            <Styled.BlogImageContainer className="container">
+              <Styled.CharityPoor>
+                <Styled.Lives>
+                  <div className="hiw">
+                    <div className="child-container">
+                      <div className="bg"> </div>
+                      <Image className="img" src={huImg} />
+                    </div>
+                    <div>
+                      {" "}
+                      <h3 className="hiwTitle">
+                        More <br />
+                        charity <br />
+                        better lives
+                      </h3>{" "}
+                    </div>
                   </div>
-                  <div> <h3 className="hiwTitle">More <br />charity <br />better lives</h3> </div>
-                </div>
-              </Styled.Lives>
-              <Styled.Volun>
-                <div className="hiw">
-                  <div className="child-container">
-                    <div className="bg"> </div>
-                    <Image src={hiwImg} />
+                </Styled.Lives>
+                <Styled.Volun>
+                  <div className="hiw">
+                    <div className="child-container">
+                      <div className="bg"> </div>
+                      <Image src={hiwImg} />
+                    </div>
+                    <h3 className="hiwTitle">
+                      How to <br />
+                      become <br /> volunteer
+                    </h3>
                   </div>
-                  <h3 className="hiwTitle">How to <br />become <br /> volunteer</h3>
-                </div>
-              </Styled.Volun>
-              <Styled.Poor>
-                <div className="hiw">
-                  <div className="child-container">
-                    <div className="bg"> </div>
-                    <Image src={hiw} />
+                </Styled.Volun>
+                <Styled.Poor>
+                  <div className="hiw">
+                    <div className="child-container">
+                      <div className="bg"> </div>
+                      <Image src={hiw} />
+                    </div>
+                    <h3 className="hiwTitle">
+                      Poor <br />
+                      children <br />
+                      education
+                    </h3>
                   </div>
-                  <h3 className="hiwTitle">Poor <br />children <br />education</h3>
-                </div>
-              </Styled.Poor>
-            </Styled.CharityPoor>
-            </div>
+                </Styled.Poor>
+              </Styled.CharityPoor>
+            </Styled.BlogImageContainer>
           </Styled.Education>
           <Styled.Latest>
             <div className="container latest">
@@ -123,12 +145,12 @@ const Home = () => {
               {para?.map((item, index) => {
                 return (
                   <>
-                  <div className="belive">
-                  <div className="icon">{item.icons}</div>
-                    <div key={index} className="headText">
-                      <h5 className="head">{item.head}</h5>
-                      <p className="textPara">{item.text}</p>
-                    </div>
+                    <div className="belive">
+                      <div className="icon">{item.icons}</div>
+                      <div key={index} className="headText">
+                        <h5 className="head">{item.head}</h5>
+                        <p className="textPara">{item.text}</p>
+                      </div>
                     </div>
                   </>
                 );
@@ -142,20 +164,20 @@ const Home = () => {
           <Styled.Fundraising src={mixerBg2.src}>
             <Styled.About>
               <div className="lives">
-                Fundraising for the<br /> people and causes you <br />care about
+                Fundraising for the
+                people and causes you 
+                care about
               </div>
               <Styled.DonationBtnStart>
                 <Styled.Btn href="">Start Donation</Styled.Btn>
               </Styled.DonationBtnStart>
-              {/* <Styled.Btn href="">Start Donation</Styled.Btn> */}
-              {/* <span className="btn">Start Donation</span> */}
-
+             
             </Styled.About>
           </Styled.Fundraising>
 
           <Styled.Charity>
-            <Styled.CharityData >
-              <Styled.Raised >
+            <Styled.CharityData>
+              <Styled.Raised>
                 <div className="container">
                   <div className="raised">
                     <span>
@@ -172,7 +194,9 @@ const Home = () => {
                     </span>
                     <div>
                       <span className="number">63000</span>
-                      <p className="avail">volunteer are available to help you</p>
+                      <p className="avail">
+                        volunteer are available to help you
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -201,42 +225,76 @@ const Home = () => {
           </Styled.Latest>
           <Styled.Card className="contents">
             <div className="cards">
-
-              
               <Styled.Card1>
                 <div className="cardImg">
                   <Image className="image" src={img1}></Image>
-                  </div>
-                  <div className="card1">
+                </div>
+                <div className="card1">
                   <h3>Save Poor Childrens</h3>
                   <p>Aliq is notm hendr erit a augue insu image pellen tes.</p>
-                  <h6><TbTargetArrow />  Goal: <span>$30,000</span></h6>
-                  <h6> <FontAwesomeIcon icon={faChartLine} /> Raised: <span>25,270</span></h6>
-                  <Styled.BtnStatic hoverBg={"#424242"} backgroundColor="#50bac3" className="btnBlue" href="">donate now </Styled.BtnStatic>
+                  <h6>
+                    <TbTargetArrow /> Goal: <span>$30,000</span>
+                  </h6>
+                  <h6>
+                    {" "}
+                    <FontAwesomeIcon icon={faChartLine} /> Raised:{" "}
+                    <span>25,270</span>
+                  </h6>
+                  <Styled.BtnStatic
+                    hoverBg={"#424242"}
+                    backgroundColor="#50bac3"
+                    className="btnBlue"
+                    href=""
+                  >
+                    donate now{" "}
+                  </Styled.BtnStatic>
                 </div>
               </Styled.Card1>
               <Styled.Card2>
                 <div className="cardImg">
                   <Image className="image" src={img2}></Image>
-                  </div>
-                  <div className="card2">
+                </div>
+                <div className="card2">
                   <h3>They Want to Study</h3>
                   <p>Aliq is notm hendr erit a augue insu image pellen tes.</p>
-                  <h6><TbTargetArrow />  Goal: <span>$30,000</span></h6>
-                  <h6><FontAwesomeIcon icon={faChartLine} />  Raised: <span>25,270</span></h6>
-                  <Styled.BtnStatic hoverBg={"#424242"} backgroundColor="#e36955"  href="">donate now</Styled.BtnStatic>
+                  <h6>
+                    <TbTargetArrow /> Goal: <span>$30,000</span>
+                  </h6>
+                  <h6>
+                    <FontAwesomeIcon icon={faChartLine} /> Raised:{" "}
+                    <span>25,270</span>
+                  </h6>
+                  <Styled.BtnStatic
+                    hoverBg={"#424242"}
+                    backgroundColor="#e36955"
+                    href=""
+                  >
+                    donate now
+                  </Styled.BtnStatic>
                 </div>
               </Styled.Card2>
               <Styled.Card3>
                 <div className="cardImg">
                   <Image className="image" src={img3}></Image>
-                  </div>
-                  <div className="card3">
+                </div>
+                <div className="card3">
                   <h3>Healthy Food for All</h3>
                   <p>Aliq is notm hendr erit a augue insu image pellen tes.</p>
-                  <h6><TbTargetArrow />  Goal: <span>$30,000</span></h6>
-                  <h6> <FontAwesomeIcon icon={faChartLine} /> Raised: <span>25,270</span></h6>
-                  <Styled.BtnStatic hoverBg={"#424242"} backgroundColor="#f1ae44"  href="">donate now</Styled.BtnStatic>
+                  <h6>
+                    <TbTargetArrow /> Goal: <span>$30,000</span>
+                  </h6>
+                  <h6>
+                    {" "}
+                    <FontAwesomeIcon icon={faChartLine} /> Raised:{" "}
+                    <span>25,270</span>
+                  </h6>
+                  <Styled.BtnStatic
+                    hoverBg={"#424242"}
+                    backgroundColor="#f1ae44"
+                    href=""
+                  >
+                    donate now
+                  </Styled.BtnStatic>
                 </div>
               </Styled.Card3>
             </div>
@@ -271,18 +329,18 @@ const Home = () => {
                   Aliq is notm hendr erit a augue insu image pellen tes que id
                   erat quis simply free text sollicitud. Lorem ipsum dolor sit
                   amet, consectetur adipiscing ullam blandit hendrerit faucibus
-                  suspendisse. Dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incidi labore et dolore magna aliqua enim ad
+                  suspendisse. Dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incidi labore et dolore magna aliqua enim ad
                   minim veniam.
                 </p>
               </Styled.TextData>
-              <FormDonate className="formdonate" />
+            
             </Styled.Text>
           </Styled.Fund>
-
+        
           <Styled.Creative>
             <Styled.Charity>
-              <div className="create">
+              <div className="create" > 
                 <Image src={helpingImg} />
                 <div className="charity">
                   Charity activities are taken place around the world
@@ -299,6 +357,10 @@ const Home = () => {
             <Styled.Donate>
               <div className="donate"></div>
             </Styled.Donate>
+            <div className="form">
+            <FormDonate className="formdonate" />
+           
+            </div>
           </Styled.Creative>
 
           <Styled.Latest>
@@ -308,7 +370,7 @@ const Home = () => {
             </div>
           </Styled.Latest>
 
-          <Styled.Cards >
+          <Styled.VolunteersCards>
             {Volun.map((item) => {
               return (
                 <Styled.First backgroundColor={item.color}>
@@ -332,7 +394,7 @@ const Home = () => {
                 </Styled.First>
               );
             })}
-          </Styled.Cards>
+          </Styled.VolunteersCards>
           <Styled.FingerPrints src={mixerBg2.src}>
             <Styled.Finger>
               <div className="lives">
@@ -341,8 +403,6 @@ const Home = () => {
               <Styled.DonationBtnCenter>
                 <Styled.Btn href="">Start Donation</Styled.Btn>
               </Styled.DonationBtnCenter>
-              {/* <span className="btn">Start Donation</span> */}
-
             </Styled.Finger>
           </Styled.FingerPrints>
           <Styled.Latest>
@@ -372,7 +432,6 @@ const Home = () => {
               </Styled.BlogData>
 
               <Styled.Btn href="">Read More</Styled.Btn>
-
             </Styled.News>
 
             <Styled.Blog>
@@ -391,7 +450,9 @@ const Home = () => {
                     <Image src={blogimg3} />
                     <div>
                       <span className="date">04 mar, 2019</span>
-                      <p className="food">Building clean water system for poor</p>
+                      <p className="food">
+                        Building clean water system for poor
+                      </p>
                     </div>
                   </Styled.Food>
 
@@ -428,14 +489,10 @@ const Home = () => {
             </div>
           </Styled.SponsorCause>
         </div>
-        
-
       </Styled.MainContainer>
-      
+
       <Footer />
     </div>
-    
-   
   );
 };
 
