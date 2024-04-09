@@ -154,6 +154,9 @@ export const Btn = styled.a`
 `;
 export const ContinueBtn =styled.div`
 width: 100%;
-margin-left: 306px;
+margin-left: 189px;
 margin-top: 15px;
+@media(max-width:414px){
+      margin-left: 144px;
+}
 `

@@ -39,27 +39,30 @@ const Home = () => {
           <Styled.Education>
             <Styled.Welcome>
               <div className="width">
-                <Styled.Bg><div className="bgColor"></div></Styled.Bg>
+                <Styled.Bg>
+                  <div className="bgColor"></div>
+                </Styled.Bg>
                 <div className="bgColor"></div>
-                <Image className="image" src={slider}/>
+                <Image className="image" src={slider} />
                 <div className="heading">
                   <p>WELCOME TO OXPITAN</p>
-                  <h3>Lend the <br />helping hand <br />get involved</h3>
-                  <Styled.Btn className="yellowBtn" href="">Discover More</Styled.Btn>
+                  <h3>
+                    Lend the <br />
+                    helping hand <br />
+                    get involved
+                  </h3>
+                  <Styled.Btn className="yellowBtn" href="">
+                    Discover More
+                  </Styled.Btn>
                 </div>
               </div>
             </Styled.Welcome>
-         
 
             <Styled.Hunger>
               <div className="flex">
                 <Styled.LeftHunger>
                   <div className="left">
-                    <h3>
-                      Hunger is 
-                      stalking the 
-                      globe
-                    </h3>
+                    <h3>Hunger is stalking the globe</h3>
                   </div>
                 </Styled.LeftHunger>
 
@@ -78,7 +81,7 @@ const Home = () => {
                       <Image src={videoImg}></Image>
                     </div>
                   </div>
-                  <div style={{width: "75%"}}>
+                  <div style={{ width: "75%" }}>
                     <h3>We are here to support you every step of the way.</h3>
                     <p>Watch us how we take care of everyone</p>
                   </div>
@@ -89,9 +92,9 @@ const Home = () => {
               <Styled.CharityPoor>
                 <Styled.Lives>
                   <div className="hiw">
-                    <div className="child-container">
+                    <div className="child-container" style={{backgroundColor: "#00baa3"}}>
                       <div className="bg"> </div>
-                      <Image className="img" src={huImg} />
+                    
                     </div>
                     <div>
                       {" "}
@@ -164,14 +167,11 @@ const Home = () => {
           <Styled.Fundraising src={mixerBg2.src}>
             <Styled.About>
               <div className="lives">
-                Fundraising for the
-                people and causes you 
-                care about
+                Fundraising for the people and causes you care about
               </div>
               <Styled.DonationBtnStart>
                 <Styled.Btn href="">Start Donation</Styled.Btn>
               </Styled.DonationBtnStart>
-             
             </Styled.About>
           </Styled.Fundraising>
 
@@ -314,7 +314,10 @@ const Home = () => {
                 <Styled.Child>
                   {foodData.map((item) => {
                     return (
-                      <Styled.BtnBg backgroundColor={item.color}>
+                      <Styled.BtnBg
+                        backgroundColor={item.color}
+                        style={{ width: "100% " }}
+                      >
                         <div className="icon">{item.icons}</div>
                         <div className="name">{item.name}</div>
                       </Styled.BtnBg>
@@ -334,14 +337,13 @@ const Home = () => {
                   minim veniam.
                 </p>
               </Styled.TextData>
-            
             </Styled.Text>
           </Styled.Fund>
-        
+
           <Styled.Creative>
             <Styled.Charity>
-              <div className="create" > 
-                <Image src={helpingImg} />
+              <div className="create">
+                <Image className="image "src={helpingImg} />
                 <div className="charity">
                   Charity activities are taken place around the world
                 </div>
@@ -358,8 +360,7 @@ const Home = () => {
               <div className="donate"></div>
             </Styled.Donate>
             <div className="form">
-            <FormDonate className="formdonate" />
-           
+              <FormDonate className="formdonate" />
             </div>
           </Styled.Creative>
 
@@ -414,7 +415,7 @@ const Home = () => {
           </Styled.Latest>
           <Styled.Blogs>
             <Styled.News>
-              <Image src={blogimg1} />
+              <Image className="image" src={blogimg1} />
               <Styled.BlogData>
                 <h3>
                   <a href="">A place where start new life with peace</a>
@@ -470,24 +471,30 @@ const Home = () => {
             </Styled.Blog>
           </Styled.Blogs>
 
-          <Styled.SponsorCause>
-            <div className="flex">
-              <Styled.Sponsor>
-                <div className="left">
-                  <h3>Sponsor an entire trending project</h3>
-                  <Styled.BtnCenter>
-                    <Styled.Btn href="">BECOME A SPONSOR</Styled.Btn>
-                  </Styled.BtnCenter>
+          <Styled.FoorterSection>
+            <section class="section-area text-center">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-6 col-sm-6">
+                    <div class="section-item section-item1">
+                      <h3 class="cta__title">
+                        Sponsor an entire trending project
+                      </h3>
+                      <Styled.Btn href="">become an sponsor</Styled.Btn>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-sm-6">
+                    <div class="section-item section-item2">
+                      <h3 class="cta__title">
+                        Take a look a the popular causes
+                      </h3>
+                      <Styled.Btn href="">view all causes</Styled.Btn>
+                    </div>
+                  </div>
                 </div>
-              </Styled.Sponsor>
-              <div className="right">
-                <h3>Take a look a the popular causes</h3>
-                <Styled.BtnCenter>
-                  <Styled.Btn href="">VIEW ALL CAUSES</Styled.Btn>
-                </Styled.BtnCenter>
               </div>
-            </div>
-          </Styled.SponsorCause>
+            </section>
+          </Styled.FoorterSection>
         </div>
       </Styled.MainContainer>
 

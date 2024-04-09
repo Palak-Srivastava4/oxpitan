@@ -39,10 +39,11 @@ export const Welcome = styled.div`
     width: 100%;
   }
   .image {
-    width: 100%;
     padding: 0px;
     position: relative;
     z-index: 0;
+    width: auto;
+    height: auto;
   }
   .heading {
     position: absolute;
@@ -78,6 +79,9 @@ export const Welcome = styled.div`
 `;
 
 export const Bg = styled.div`
+@media(max-width:625px){
+  width:50%;
+}
   height: 848px;
   width: 29%;
   font-size: 12px;
@@ -162,6 +166,11 @@ export const Hunger = styled.div`
     transform: translate(-90px, -40px);
     position: relative;
     z-index: 2;
+    @media(max-width:1200px){
+    transform: none;
+    padding:0px;
+
+    }
   }
   .yellowBtn {
     transform: translate(100px, 100px);
@@ -180,6 +189,11 @@ export const Hunger = styled.div`
     font-weight: 400;
     font-size: 38px;
     color: #4d4d4d;
+    font-family: 'Playfair Display', serif;
+    @media(max-width:500px){
+      margin-bottom: 15px;
+       margin-left:0px;
+    }
   }
   .right p {
     text-align: left;
@@ -187,6 +201,10 @@ export const Hunger = styled.div`
     color: #4d4d4d;
     font-size: 22px;
     font-weight: 400px;
+    margin-left: -45px;
+       @media(max-width:500px){
+       margin-left:0px;
+    }
   }
 `;
 
@@ -247,12 +265,24 @@ export const Lives = styled.div`
     margin-left: 40px;
   }
   .bg {
-    background-color: #00baa3;
-    opacity: 0.8;
-    position: absolute;
+       background-color: #00baa3;
+    background-image: url(http://localhost:3000/_next/static/media/huImg.1ca04ec5.svg);
+    opacity: 0.5;
+    position: unset; 
     z-index: 1;
     width: 380px;
     height: 492px;
+    background-size: cover;
+    @media(max-width:380px){
+    background-color: #00baa3;
+    background-image: url(http://localhost:3000/_next/static/media/huImg.1ca04ec5.svg);
+    opacity: 0.5;
+    position: unset; 
+    z-index: 1;
+    width: 380px;
+    height: 492px;
+    background-size: cover;
+    }
   }
   .hiw img {
     position: relative;
@@ -400,6 +430,12 @@ export const Poor = styled.div`
 export const Child = styled.div`
   display: flex;
   gap: 20px;
+  @media(max-width:1200px){
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
   .food {
     background: #50bac3;
     width: 141px;
@@ -450,6 +486,11 @@ export const Latest = styled.div`
   .latest {
     text-align: center;
     width: 57%;
+    @media(max-width:1200px){
+          font-size: 36px;
+    line-height: 38px;
+    width:auto;
+    }
   }
   .cause {
     font-size: 50px;
@@ -499,6 +540,16 @@ export const Creative = styled.div`
   display: flex;
   margin-top: 106px;
 
+
+.image{
+  @media(max-width:1200px){
+        width: 100%;
+    padding-right: 45px;
+  }
+  @media(max-width:414px){
+    padding: 0px;
+}
+}
   @media (max-width: 1200px) {
     display: flex;
     flex-direction: column;
@@ -508,6 +559,9 @@ export const Creative = styled.div`
     flex: 0.6;
     position: relative;
     padding-left: 45px;
+    @media(max-width:414px){
+      padding:12px;
+    }
   }
   .form {
     flex: 1.5;
@@ -519,6 +573,10 @@ export const Line = styled.div`
   height: 1px;
   background: #6c757d;
   margin-top: 40px;
+  @media(max-width:414px){
+    margin: 1px 11px;
+    width:94%;
+  }
 `;
 
 export const PeopleCause = styled.div`
@@ -551,6 +609,9 @@ export const FingerPrints = styled.div`
   background-attachment: fixed;
   padding-top: 120px;
   padding-bottom: 120px;
+  @media(max-width:1200px){
+    height: auto;
+  }
 `;
 export const Finger = styled.div`
   .btnStart {
@@ -564,6 +625,10 @@ export const Finger = styled.div`
     font-weight: 800;
     color: #fff;
     text-align: center;
+    @media(max-width:500px){
+          word-wrap: break-word;
+          font-size:59px;
+    }
   }
 `;
 export const Cards = styled.div`
@@ -672,11 +737,6 @@ export const First = styled.div`
     gap: 12px;
   }
   .brownBlock {
-    // height: 100px;
-    // width:270px;
-    // background-color: #50bac3;
-    // text-align: center;
-    // margin-top: 20px;
     width: 93%;
     padding-top: 17px;
     font-size: 12px;
@@ -722,7 +782,6 @@ export const First = styled.div`
   }
   .title {
     font-size: 20px;
-    // text-transform: capitalize;
     font-weight: 800;
     margin-bottom: 2px;
     color: white;
@@ -748,6 +807,10 @@ export const First = styled.div`
 export const Food = styled.div`
   display: flex;
   gap: 20px;
+  @media(max-width:600px){
+    flex-direction: column;
+        margin-bottom: 50px;
+  }
   margin-bottom: 80px;
   .date {
     font-size: 12px;
@@ -770,6 +833,12 @@ export const Blogs = styled.div`
 
   @media only screen and (max-width: 1200px) {
     flex-direction: column;
+    margin:12px;
+  }
+  .image{
+    @media(max-width:1200px){
+          width: 100%;
+    }
   }
   display: block;
 `;
@@ -861,6 +930,9 @@ export const Charity = styled.div`
   width: 100%;
   padding-left: 45px;
   position: relative;
+  @media(max-width:1200px){
+    padding-left: 0px;
+  }
   .create {
   }
   .charity {
@@ -868,7 +940,6 @@ export const Charity = styled.div`
     line-height: 48px;
     margin-bottom: 32px;
     padding-top: 30px;
-    margin-right: 140px;
     color: #424242;
     text-decoration: none;
     font-weight: 700;
@@ -882,6 +953,9 @@ export const Charity = styled.div`
     font-weight: 400;
     margin-right: 140px;
     text-align: justify;
+    @media(max-width:414px){
+      margin-right:0px;
+    }
   }
 `;
 
@@ -900,6 +974,9 @@ export const Raised = styled.div`
   flex: 0.6;
   padding-left: 12px;
   padding-right: 151px;
+  @media(max-width:1200px){
+    padding-right: 0px;
+  }
   .raised {
     border-bottom: 2px solid #f2f0ec;
     display: flex;
@@ -930,6 +1007,9 @@ export const Raised = styled.div`
 export const Darkness = styled.div`
   @media (max-width: 1200px) {
     position: unset;
+    height: auto;
+    width:100%;
+
   }
 
   flex: 0.6;
@@ -940,6 +1020,9 @@ export const Darkness = styled.div`
   z-index: 2;
   .darkness {
     padding: 75px 75px 25px 75px;
+    @media(max-width:600px){
+      padding: 20px;
+    }
   }
 `;
 export const Content = styled.div`
@@ -975,8 +1058,7 @@ export const Fundraising = styled.div`
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 12px;
 `;
 export const About = styled.div`
   .btn {
@@ -1031,6 +1113,13 @@ export const About = styled.div`
     align-items: center;
     justify-content: left;
     margin-left: 85px;
+    @media(max-width:600px){
+      margin-left: 7px;
+      font-size: 50px;
+      line-height: 60px;
+      margin-bottom: 44px;
+          width: 100%;
+    }
   }
 `;
 
@@ -1225,6 +1314,7 @@ export const Card = styled.div`
     padding: 0;
     @media (max-width: 1200px) {
       width: 100%;
+      height: auto;
     }
   }
 `;
@@ -1240,7 +1330,13 @@ export const Card1 = styled.div`
     margin: 0 0 20px 20px;
     background-color: #f2f0ec;
     @media (max-width: 1200px) {
-      width: 100%;
+      width: 98%;
+    }
+    @media only screen and (max-width: 900px) and (min-width: 700px){
+      width:97%;
+    }
+    @media(max-width:500px){
+      width: 94%;
     }
   }
   h3 {
@@ -1316,7 +1412,13 @@ export const Card2 = styled.div`
     width: 370px;
     background-color: #f2f0ec;
     @media (max-width: 1200px) {
-      width: 100%;
+      width: 98%;
+    }
+    @media only screen and (max-width: 900px) and (min-width: 700px){
+      width:97%;
+    }
+    @media(max-width:500px){
+      width: 94%;
     }
   }
   h3 {
@@ -1389,7 +1491,13 @@ export const Card3 = styled.div`
     width: 370px;
     background-color: #f2f0ec;
     @media (max-width: 1200px) {
-      width: 100%;
+      width: 98%;
+    }
+    @media only screen and (max-width: 900px) and (min-width: 700px){
+      width:97%;
+    }
+    @media(max-width:500px){
+      width: 94%;
     }
   }
   h3 {
@@ -1527,6 +1635,9 @@ export const BtnBg = styled.div`
     text-align: center;
     font-size: 20px;
   }
+  @media(max-width:1200px){
+    margin-left:0px;
+  }
   margin-left: 30px;
   width: 141px;
   height: 140px;
@@ -1571,3 +1682,96 @@ export const BtnBg = styled.div`
     transition: 0.3s ease-in;
   }
 `;
+export const FoorterSection=styled.div`
+.section-area {
+  padding-top: 55px;
+  padding-bottom: 60px;
+  background-color: #50BAC3;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.text-center {
+  text-align: center !important;
+}
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  .col-sm-6 .col-lg-6 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  @media (min-width: 992px) {
+    .col-lg-6 {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  @media (min-width: 576px) {
+    .col-sm-6 {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+}
+.section-area .section-item .cta__title {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 800;
+  margin-bottom: 30px;
+  line-height: 34px;
+}
+.theme-btn {
+  font-size: 12px;
+  text-transform: uppercase;
+  background: #F1AE44;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0 30px 0 35px;
+  line-height: 49px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  text-decoration: none;
+  border: none;
+}
+.section-area:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 51%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #863BAE;
+  -webkit-transform-origin: bottom left;
+  transform-origin: bottom left;
+  -webkit-transform: skew(-12deg, 0deg);
+  -moz-transform: skew(-12deg, 0deg);
+  -ms-transform: skew(-12deg, 0deg);
+  -o-transform: skew(-12deg, 0deg);
+  transform: skew(-12deg, 0deg);
+}
+`

@@ -99,6 +99,15 @@ export const Btn = styled.div`
      padding: 0px;
   line-height: 0px;
   }
+  @media(max-width:450px){
+    background: rgb(242, 240, 236);
+    display: flex;
+    flex-direction:coloum;
+    justify-content: center;
+    color:rgb(87, 86, 86);
+     padding: 0px;
+  line-height: 0px;
+  }
   font-size: 12px;
   width: 75%;
   background: #424242;
@@ -204,6 +213,9 @@ export const NavLinks = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 30px 0px;
+  @media(max-width:600px){
+  justify-content: space-around; 
+  }
 `;
 export const DataNav = styled.div`
   position: sticky;
@@ -340,14 +352,13 @@ export const BtnDarkWidth = styled.div`
   display: block;
 `;
 export const MainContainer = styled.div`
-  background: black;
-  color: white;
-  position: absolute;
-  width: 25%;
-  z-index: 3;
-  left: 75%;
-  border-radius: 5px;
-  opacity: 0.8;
+background: black;
+color: white;
+position: absolute;
+width: 32%;
+z-index: 3;
+left: 68%;
+border-radius: 5px;
   .list {
     text-decoration: none;
     color: #ffff;
@@ -426,15 +437,32 @@ export const SocialIcon=styled.div`
     justify-content: center;
     gap: 21px;
     margin-bottom: 23px;
+    @media only screen and (max-width:800px)and (min-width:458px){
+      gap:9px;
+    }
+    @media(max-width:457px){
+      gap:6px;
+    }
 
 `
 export const BtnBg = styled.a`
+@media only screen and (max-width:800px)and (min-width:458px){
+  padding:4px;
+  line-height: 0px;
+}
+.icon{
+  @media(max-width:457px){
+    font-size: 12px;
+  }
+}
+@media(max-width:457px){
+  padding:1px;
+  line-height: 0px;
+}
   font-size: 18px;
-  text-transform: uppercase;
   background:${({ backgroundColor }) => backgroundColor};
   color: #fff;
   font-weight: 600;
-  letter-spacing: 1px;
     padding: 0 5px 0 12px;
     line-height: 42px;
   position: relative;

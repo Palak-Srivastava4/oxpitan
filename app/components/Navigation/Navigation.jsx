@@ -214,7 +214,7 @@ const Navbar = () => {
               {icons?.map((item) => {
                 return (
                   <Styled.BtnBg backgroundColor={item.color}>
-                    <div> {item.icon}</div>
+                    <div className="icon"> {item.icon}</div>
                   </Styled.BtnBg>
                 );
               })}
