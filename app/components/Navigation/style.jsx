@@ -10,67 +10,106 @@ export const Nav = styled.ul`
   list-style: none;
   display: flex;
 `;
-
-export const SocialLinks = styled.div`
-.flex{
-  display:flex;
-  justify-content:center;
-    background-color:rgb(242, 240, 236);
-}
-@media (max-width: 990px){
-  .flex{
-display: inline-block;
-background-color:rgb(242, 240, 236);
-align-items:center;
-  }
-
-}
-@media (max-width: 1136){
-  .left{
-    font-size:10px;
-  }
-}
-.left{
-  display:flex;
-}
-    .left h3{
-    font-size:16px;
-    font-weight:400;
-    padding:20px;
-    text-align:center;
-  }
-  h3 span{
-    color:#f1ae44;
-  }
-  .right{
-    display:flex;
-    width:100%;
-    color:black;
+export const RightContainer=styled.div`
+display: flex;
+    width: 100%;
+    color: black;
     align-items: end;
     justify-content: right;
-    padding-top:20px;
-    padding-right:100px;
+    padding-top: 20px;
+    padding-right: 100px;
     flex-wrap: wrap;
     background-color: rgb(242, 240, 236);
+    @media (max-width: 1200px) {
+    
+      display: flex;
+        background-color: rgb(242, 240, 236);
+        align-items: center;
+        justify-content: center;
+        padding:0px;
+      } 
+`
+export const SocialLinks = styled.div`
+  .flex {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(242, 240, 236);
   }
-  .right  ul li{
+  @media (max-width: 1200px) {
+    .flex {
+    display: flex;
+    flex-direction: column;
+      background-color: rgb(242, 240, 236);
+      align-items: center;
+      display: flex;
+        justify-content: center;
+            padding:0px;
+    } 
+    .left h3{
+font-size:12px;
+    }
+    
+  }
+  @media (max-width: 1200) {
+    .left {
+      font-size: 10px;
+    }
+  }
+  .left {
+    display: flex;
+  }
+  .left h3 {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 20px;
+    text-align: center;
+     @media (max-width: 1200px){
+      font-size: 12px;
+      padding: 14px;
+     }
+  }
+  h3 span {
+    color: #f1ae44;
+  }
+ 
+  .right ul li {
     display: inline-block;
     list-style: none;
     margin: 8px 12px;
-}
-.right ul li a{
+  }
+  .right ul li a {
     color: rgb(87, 86, 86);
     text-decoration: none;
     font-size: 14px;
     font-weight: 700;
     position: relative;
     font-family: "DM Sans", sans-serif;
-}
+    @media (max-width: 1200px){
+        font-size: 12px;
+    }
+  }
 `;
 
 export const Btn = styled.div`
+  @media (max-width: 1200px) {
+    background: rgb(242, 240, 236);
+    display: flex;
+    justify-content: center;
+    color:rgb(87, 86, 86);
+     padding: 0px;
+  line-height: 0px;
+  }
+  @media(max-width:450px){
+    background: rgb(242, 240, 236);
+    display: flex;
+    flex-direction:coloum;
+    justify-content: center;
+    color:rgb(87, 86, 86);
+     padding: 0px;
+  line-height: 0px;
+  }
   font-size: 12px;
-  width:75%;
+  width: 75%;
   background: #424242;
   color: #fff;
   font-weight: 600;
@@ -109,6 +148,10 @@ export const Btn = styled.div`
     -ms-transition: 0.3s ease-in;
     -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
+     @media (max-width: 1200px) {
+    background: rgb(242, 240, 236);
+
+  }
   }
 `;
 
@@ -170,13 +213,15 @@ export const NavLinks = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 30px 0px;
+  @media(max-width:600px){
+  justify-content: space-around; 
+  }
 `;
 export const DataNav = styled.div`
   position: sticky;
   top: 0;
   z-index: 999;
   background: white;
-
 `;
 export const Image = styled.div`
   .btn {
@@ -240,7 +285,7 @@ export const NavBar = styled.div`
   align-items: center;
   padding: 35px 0px;
 `;
-export const BtnDark=styled.a`
+export const BtnDark = styled.a`
   font-size: 12px;
   text-transform: uppercase;
   background: #e36955;
@@ -259,32 +304,203 @@ export const BtnDark=styled.a`
   transition: 0.3s ease-in;
   text-decoration: none;
   border: none;
-&:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 1px;
-  z-index: -1;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 1px;
+    z-index: -1;
     background: #e36955;
-  -webkit-transform-origin: bottom left;
-  transform-origin: bottom left;
-  -webkit-transform: skew(-12deg,0deg);
-  -moz-transform: skew(-12deg,0deg);
-  -ms-transform: skew(-12deg,0deg);
-  -o-transform: skew(-12deg,0deg);
-  transform: skew(-12deg,0deg);
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: skew(-12deg, 0deg);
+    -moz-transform: skew(-12deg, 0deg);
+    -ms-transform: skew(-12deg, 0deg);
+    -o-transform: skew(-12deg, 0deg);
+    transform: skew(-12deg, 0deg);
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+  &:hover,
+  &:hover:after {
+    background-color: #f1ae44;
+    color: #fff;
+  }
+`;
+export const Icon = styled.div`
+  @media only screen and (max-width: 1200px) {
+    display: block;
+  }
+  display: none;
+`;
+export const NavWidth = styled.div`
+  @media only screen and (max-width: 1200px) {
+    display: none;
+  }
+  display: block;
+`;
+export const BtnDarkWidth = styled.div`
+  @media only screen and (max-width: 1200px) {
+    display: none;
+  }
+  display: block;
+`;
+export const MainContainer = styled.div`
+background: black;
+color: white;
+position: absolute;
+width: 32%;
+z-index: 3;
+left: 68%;
+border-radius: 5px;
+  .list {
+    text-decoration: none;
+    color: #ffff;
+    list-style-type: none;
+  }
+  .heading {
+    font-size: 25px;
+    text-decoration: none;
+    color: #ffff;
+    padding-left: 13px;
+  }
+`;
+export const CrossIcon = styled.div`
+  display: flex;
+  justify-content: end;
+  padding: 20px;
+  .cross {
+    color: #ffffff;
+    font-size: 21px;
+  }
+`;
+export const BtnCenter = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+`;
+export const BtnDarkMedia = styled.a`
+  font-size: 12px;
+  text-transform: uppercase;
+  background: #e36955;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 6px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
   -webkit-transition: 0.3s ease-in;
   -moz-transition: 0.3s ease-in;
   -ms-transition: 0.3s ease-in;
   -o-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
-}
-&:hover,
-&:hover:after {
-  background-color: #f1ae44;
-  color: #fff;
-}
+  text-decoration: none;
+  border: none;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 1px;
+    z-index: -1;
+    background: #e36955;
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: skew(-12deg, 0deg);
+    -moz-transform: skew(-12deg, 0deg);
+    -ms-transform: skew(-12deg, 0deg);
+    -o-transform: skew(-12deg, 0deg);
+    transform: skew(-12deg, 0deg);
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+  &:hover,
+  &:hover:after {
+    background-color: #f1ae44;
+    color: #fff;
+  }
+`;
+export const SocialIcon=styled.div`
+    display: flex;
+    justify-content: center;
+    gap: 21px;
+    margin-bottom: 23px;
+    @media only screen and (max-width:800px)and (min-width:458px){
+      gap:9px;
+    }
+    @media(max-width:457px){
+      gap:6px;
+    }
+
 `
+export const BtnBg = styled.a`
+@media only screen and (max-width:800px)and (min-width:458px){
+  padding:4px;
+  line-height: 0px;
+}
+.icon{
+  @media(max-width:457px){
+    font-size: 12px;
+  }
+}
+@media(max-width:457px){
+  padding:1px;
+  line-height: 0px;
+}
+  font-size: 18px;
+  background:${({ backgroundColor }) => backgroundColor};
+  color: #fff;
+  font-weight: 600;
+    padding: 0 5px 0 12px;
+    line-height: 42px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  text-decoration: none;
+  border: none;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 1px;
+    z-index: -1;
+    background: ${({ backgroundColor }) => backgroundColor};
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: skew(-12deg, 0deg);
+    -moz-transform: skew(-12deg, 0deg);
+    -ms-transform: skew(-12deg, 0deg);
+    -o-transform: skew(-12deg, 0deg);
+    transform: skew(-12deg, 0deg);
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+  &:hover,
+  &:hover:after {
+    background-color: #F1AE44;
+    color: #fff;
+  }
+`;
