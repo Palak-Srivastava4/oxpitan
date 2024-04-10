@@ -52,16 +52,6 @@ export const Welcome = styled.div`
   }
   .heading p {
     font-size: 20px;
-<<<<<<< HEAD
-    font-weight: 600;
-    margin-left: 100px;
-  }
-  .heading h3 {
-    font-size: 96px;
-    font-weight: 800;
-    color: white;
-    margin-left: 100px;
-=======
     color: #fff;
     text-transform: uppercase;
     border-bottom: 1px solid #fff;
@@ -76,35 +66,24 @@ export const Welcome = styled.div`
     font-weight: 900;
     margin-left: 35px;
     margin-bottom: 47px;
->>>>>>> 97737ea7ed8135baf9f45d617a2353cb6d58664a
     font-family: "Playfair Display", serif;
     @media (max-width: 650px) {
       font-size: 55px;
       line-height: 70px;
     }
   }
-<<<<<<< HEAD
-  .yellowBtn{
-    margin-left:100px;
-=======
   .yellowBtn {
     margin-left: 35px;
->>>>>>> 97737ea7ed8135baf9f45d617a2353cb6d58664a
     margin-top: 20px;
   }
 `;
 
 export const Bg = styled.div`
-<<<<<<< HEAD
-height:848px;
-width:370px;
-=======
 @media(max-width:625px){
   width:50%;
 }
   height: 848px;
   width: 29%;
->>>>>>> 97737ea7ed8135baf9f45d617a2353cb6d58664a
   font-size: 12px;
   text-transform: uppercase;
   background: #863bae;
@@ -161,19 +140,11 @@ export const Hunger = styled.div`
     gap: 7%;
   }
   .left h3 {
-<<<<<<< HEAD
-    font-size: 34px;
-    font-weight: 900;
-    padding: 20px;
-    padding-left:100px;
-    text-align: left;
-=======
     color: #fff;
     font-size: 35px;
     line-height: 36px;
     font-weight: 800;
     padding-right: 50px;
->>>>>>> 97737ea7ed8135baf9f45d617a2353cb6d58664a
     margin-top: 60px;
     font-family: "Playfair Display", serif;
     margin-left: 40px;
@@ -182,14 +153,6 @@ export const Hunger = styled.div`
   .right {
     display: flex;
     border-bottom: 1px solid lightgray;
-<<<<<<< HEAD
-    margin-left:80px;
-  }
-  .videoContainer {
-    padding: 40px;
-    position: relative;
-    z-index:2;
-=======
     @media (max-width: 1200px) {
       display: flex;
       flex-direction: column;
@@ -208,7 +171,6 @@ export const Hunger = styled.div`
     padding:0px;
 
     }
->>>>>>> 97737ea7ed8135baf9f45d617a2353cb6d58664a
   }
   .yellowBtn {
     transform: translate(100px, 100px);
@@ -246,15 +208,11 @@ export const Hunger = styled.div`
 `;
 
 export const LeftHunger = styled.a`
-<<<<<<< HEAD
-  width:380px;
-=======
   @media (max-width: 1200px) {
     width: 95%;
     padding: 30px 0px 30px 50px;
   }
   width: 32%;
->>>>>>> 97737ea7ed8135baf9f45d617a2353cb6d58664a
   background: #424242;
   color: #fff;
   position: relative;
