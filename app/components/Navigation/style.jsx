@@ -17,19 +17,6 @@ export const SocialLinks = styled.div`
   justify-content:center;
     background-color:rgb(242, 240, 236);
 }
-@media (max-width: 990px){
-  .flex{
-display: inline-block;
-background-color:rgb(242, 240, 236);
-align-items:center;
-  }
-
-}
-@media (max-width: 1136){
-  .left{
-    font-size:10px;
-  }
-}
 .left{
   display:flex;
 }

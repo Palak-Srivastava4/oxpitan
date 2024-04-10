@@ -50,24 +50,24 @@ export const Welcome = styled.div`
     text-decoration: underline;
     font-size: 20px;
     font-weight: 600;
-    margin-left: 260px;
+    margin-left: 100px;
   }
   .heading h3 {
     font-size: 96px;
     font-weight: 800;
     color: white;
-    margin-left: 260px;
+    margin-left: 100px;
     font-family: "Playfair Display", serif;
   }
   .yellowBtn{
-    margin-left:260px;
+    margin-left:100px;
     margin-top: 20px;
   }
 `;
 
 export const Bg = styled.div`
 height:848px;
-width:596px;
+width:370px;
   font-size: 12px;
   text-transform: uppercase;
   background: #863bae;
@@ -112,7 +112,6 @@ width:596px;
   }
 `;
 
-
 export const Hunger = styled.div`
   .flex {
     display: flex;
@@ -120,10 +119,10 @@ export const Hunger = styled.div`
     margin-bottom: 80px;
   }
   .left h3 {
-    font-size: 40px;
+    font-size: 34px;
     font-weight: 900;
     padding: 20px;
-    padding-left:200px;
+    padding-left:100px;
     text-align: left;
     margin-top: 60px;
     margin-bottom: 60px;
@@ -131,12 +130,11 @@ export const Hunger = styled.div`
   .right {
     display: flex;
     border-bottom: 1px solid lightgray;
+    margin-left:80px;
   }
   .videoContainer {
     padding: 40px;
-    margin-top: 30px;
-    transform: translate(-90px, -40px);
-    position:relative;
+    position: relative;
     z-index:2;
   }
   .yellowBtn{
@@ -148,7 +146,6 @@ export const Hunger = styled.div`
     padding-left: 0px;
     padding-bottom: 10px;
     margin-top: 66px;
-    margin-left: -50px;
     font-weight: 400;
     font-size: 38px;
     color: #4d4d4d;
@@ -163,7 +160,7 @@ export const Hunger = styled.div`
 `;
 
 export const LeftHunger = styled.a`
-  width:760px;
+  width:380px;
   background: #424242;
   color: #fff;
   position: relative;
@@ -1066,8 +1063,6 @@ margin-bottom:40px;
   color: #fff;
 }
 `;
-
-
 
 export const Card = styled.div`
  display: flex;

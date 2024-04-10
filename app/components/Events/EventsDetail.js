@@ -13,6 +13,7 @@ const EventsDetail = () => {
         <Styled.Contact className="container">
           <div className="head">Events Detail</div>
         </Styled.Contact>
+        <Styled.BtnDark href="">home .event detail</Styled.BtnDark>
       </Styled.BreadCrumb>
       <div className="container">
         <Styled.Img>

@@ -39,24 +39,13 @@ const Navbar = () => {
           <Styled.Image>
             <div className="imgLogo">
               <Image src={logo1} alt="logo" className="img" />
-
-              {/* <div className="BtnDonate">
-                <span className="btn">Donate Now</span>
-              </div> */}
               <Styled.BtnDark href="">Donate Now</Styled.BtnDark>
             </div>
           </Styled.Image>
           <Styled.Nav>
             <Styled.NavItem>
-              <Styled.NavLink href="#">Home</Styled.NavLink>
-              <Styled.DropdownMenu>
-                <Styled.DropdownItem>
-                  <Styled.NavLink href="/">Home 1</Styled.NavLink>
-                </Styled.DropdownItem>
-                <Styled.DropdownItem>
-                  <Styled.NavLink href="/system">Home 2</Styled.NavLink>
-                </Styled.DropdownItem>
-              </Styled.DropdownMenu>
+              <Styled.NavLink href="/">Home</Styled.NavLink>
+            
             </Styled.NavItem>
 
             <Styled.NavItem className="dropdown">

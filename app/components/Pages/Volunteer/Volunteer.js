@@ -25,7 +25,7 @@ const Volunteer = () => {
         </Styled.Register>
         <Styled.Form>
           <Styled.Requirements>
-            <Image src={formImg} />
+            <Image className="image" src={formImg} />
             <div>
               <h3 className="require">Requirements</h3>
               <div className="para">

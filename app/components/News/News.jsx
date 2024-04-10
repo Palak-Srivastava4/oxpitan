@@ -14,10 +14,11 @@ const News = () => {
         <Styled.Contact className="container">
           <div className="head">News</div>
         </Styled.Contact>
+        <Styled.BtnDark href="">home .news</Styled.BtnDark>
       </Styled.BreadCrumb>
       <Styled.NewsSections className="container">
         <Styled.Sections>
-          {newsData?.map((item, index) => {
+          {newsData?.map((item) => {
             return (
               <Styled.News>
               <div className="imgDate">
@@ -47,7 +48,7 @@ const News = () => {
           })}
         </Styled.Sections>
         <Styled.Sections>
-          {newsData1?.map((item, index) => {
+          {newsData1?.map((item) => {
             return (
               <Styled.News>
               <div className="imgDate">
@@ -67,17 +68,15 @@ const News = () => {
 
                   <p className="para">{item.para}</p>
                 </Styled.BlogData>
-                <div>
                   <div className="BtnBlog">
                     <span className="btn">{item.btn}</span>
                   </div>
-                </div>
               </Styled.News>
             );
           })}
         </Styled.Sections>
         <Styled.Sections>
-          {newsData2?.map((item, index) => {
+          {newsData2?.map((item) => {
             return (
               <Styled.News>
                 <div className="imgDate">

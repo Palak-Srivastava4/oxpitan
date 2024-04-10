@@ -8,6 +8,7 @@ export const FooterBackground = styled.div`
   background-position: center;
   background-attachment: fixed;
   padding:30px 0px;
+
 `;
 export const Copy = styled.div`
   height: 100px;
@@ -35,28 +36,6 @@ export const MainContainer = styled.div`
     justify-content: end;
     gap: 20px;
   }
-  .colorChng {
-    width: 43px;
-    height: 43px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    font-size: 22px;
-    color: white;
-    -ms-transform: skewX(-20deg);
-    -webkit-transform: skewX(20deg);
-    transform: skewX(-20deg);
-    cursor: pointer;
-  }
-
-  .btn {
-    -ms-transform: skewX(20deg);
-    -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);
-    display: inline-block;
-    color: #fff;
-  }
-  
   .itemIcon {
     display: flex;
     gap: 10px;
@@ -68,6 +47,7 @@ export const MainContainer = styled.div`
     justify-content: center;
     margin-top: 31px;
   }
+
 
   .BtnDonate:hover {
     background: #f1ae44;
@@ -157,6 +137,7 @@ export const BtnBg = styled.a`
     background-color: #F1AE44;
     color: #fff;
   }
+
 `;
 
 export const NewsContainer = styled.div`
