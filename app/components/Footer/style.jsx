@@ -35,6 +35,10 @@ export const MainContainer = styled.div`
     display: flex;
     justify-content: end;
     gap: 20px;
+    @media(max-width:1200px){
+      margin-top: 17px;
+      justify-content: left;
+    }
   }
   .itemIcon {
     display: flex;
@@ -91,6 +95,7 @@ export const MainContainer = styled.div`
 `;
 
 export const BtnBg = styled.a`
+
   font-size: 18px;
   text-transform: uppercase;
   background:${({ backgroundColor }) => backgroundColor};
@@ -160,6 +165,9 @@ export const NewsContainer = styled.div`
 export const Blogs = styled.div`
   display: flex;
   margin-top: 80px;
+  @media(max-width:1200px){
+        flex-direction: column;
+  }
 
   .indexData {
     flex: 0.3;
