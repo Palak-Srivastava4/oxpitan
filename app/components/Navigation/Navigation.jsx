@@ -11,6 +11,7 @@ import { BiLogoInstagram } from "react-icons/bi";
 import { HiOutlineViewList } from "react-icons/hi";
 import { RxCross2 } from "react-icons/rx";
 import { icons } from "./data";
+import { MdCall } from "react-icons/md";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -44,7 +45,7 @@ const Navbar = () => {
               </Styled.RightContainer>
             </div>
     </Styled.SocialLinks>
-
+   
       <Styled.DataNav>
         <Styled.NavLinks className="container">
           <Styled.Image>
@@ -69,9 +70,11 @@ const Navbar = () => {
                 </Styled.DropdownItem>
               </Styled.DropdownMenu>
             </Styled.NavItem> */}
+            <Styled.IconBox> <div className="iconBox" onClick={()=>window.open('tel:6668880000')}><MdCall className="callIcon" /></div>
             <Styled.Icon onClick={handleClick}>
             <HiOutlineViewList className="icon" />
           </Styled.Icon>
+          </Styled.IconBox>
           <Styled.NavWidth>
             <Styled.Nav>
               <Styled.NavItem>

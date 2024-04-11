@@ -28,10 +28,12 @@ import img3 from "../../assets/image/img3.svg";
 import FontAwesome from "react-fontawesome";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChartLine } from "@fortawesome/free-solid-svg-icons";
+import { BsFillHeartPulseFill } from "react-icons/bs";
+import { FaHandsHoldingChild } from "react-icons/fa6";
 
 const Home = () => {
   return (
-    <div>
+    <Styled.HomePageContainer className="dddddd">
       <Navigation />
 
       <Styled.MainContainer>
@@ -78,10 +80,10 @@ const Home = () => {
                         </span>
                       </Styled.Btn>
 
-                      <Image src={videoImg}></Image>
+                      <Image className="videoImage" src={videoImg}></Image>
                     </div>
                   </div>
-                  <div style={{ width: "75%" }}>
+                  <div style={{ width: "100%" }}>
                     <h3>We are here to support you every step of the way.</h3>
                     <p>Watch us how we take care of everyone</p>
                   </div>
@@ -93,10 +95,10 @@ const Home = () => {
                 <Styled.Lives>
                   <div className="hiw">
                     <div className="child-container" style={{backgroundColor: "#00baa3"}}>
-                      <div className="bg"> </div>
+                      <div className="bg">  </div>
                     
                     </div>
-                    <div>
+                    <div className="heading-container">
                       {" "}
                       <h3 className="hiwTitle">
                         More <br />
@@ -110,25 +112,29 @@ const Home = () => {
                   <div className="hiw">
                     <div className="child-container">
                       <div className="bg"> </div>
-                      <Image src={hiwImg} />
+                      <Image className="image"src={hiwImg} />
                     </div>
+                    <div className="heading-container">
                     <h3 className="hiwTitle">
                       How to <br />
                       become <br /> volunteer
                     </h3>
+                    </div>
                   </div>
                 </Styled.Volun>
                 <Styled.Poor>
                   <div className="hiw">
-                    <div className="child-container">
-                      <div className="bg"> </div>
-                      <Image src={hiw} />
+                    <div className="child-container" id="child-container">
+                      <div className="bg"  id="bg"> </div>
+                      <Image className="image" id='image'  src={hiw} />
                     </div>
+                    <div className="heading-container">
                     <h3 className="hiwTitle">
                       Poor <br />
                       children <br />
                       education
                     </h3>
+                    </div>
                   </div>
                 </Styled.Poor>
               </Styled.CharityPoor>
@@ -163,17 +169,20 @@ const Home = () => {
           <Styled.DonationBtnCenterPadding>
             <Styled.BtnDark href="">Start Donation</Styled.BtnDark>
           </Styled.DonationBtnCenterPadding>
-
-          <Styled.Fundraising src={mixerBg2.src}>
-            <Styled.About>
-              <div className="lives">
-                Fundraising for the people and causes you care about
-              </div>
-              <Styled.DonationBtnStart>
-                <Styled.Btn href="">Start Donation</Styled.Btn>
-              </Styled.DonationBtnStart>
-            </Styled.About>
-          </Styled.Fundraising>
+          
+            <Styled.Fundraising src={mixerBg2.src}>
+            <Styled.Container>
+              <Styled.About>
+                <div className="lives">
+                  Fundraising for the people and causes you care about
+                </div>
+                <Styled.DonationBtnStart>
+                  <Styled.Btn href="">Start Donation</Styled.Btn>
+                </Styled.DonationBtnStart>
+              </Styled.About>
+              </Styled.Container>
+            </Styled.Fundraising>
+          
 
           <Styled.Charity>
             <Styled.CharityData>
@@ -181,7 +190,8 @@ const Home = () => {
                 <div className="container">
                   <div className="raised">
                     <span>
-                      <Image src={charity} className="charity" />
+                      {/* <Image src={charity} className="charity" /> */}
+                      <BsFillHeartPulseFill  className="icon"/>
                     </span>
                     <div>
                       <span className="number">785000</span>
@@ -190,7 +200,8 @@ const Home = () => {
                   </div>
                   <div className="raised">
                     <span>
-                      <Image src={icoChar} className="charity" />
+                      {/* <Image src={icoChar} className="charity" /> */}
+                      <FaHandsHoldingChild className="icon"/>
                     </span>
                     <div>
                       <span className="number">63000</span>
@@ -299,12 +310,14 @@ const Home = () => {
               </Styled.Card3>
             </div>
           </Styled.Card>
-
+          <Styled.Container>
           <Styled.Evanto>
             {evanto.map((item) => {
               return <Image src={item.imgs} />;
             })}
           </Styled.Evanto>
+          </Styled.Container>
+          
           <Styled.Fund>
             <Styled.Children>
               <div className="main">
@@ -339,7 +352,7 @@ const Home = () => {
               </Styled.TextData>
             </Styled.Text>
           </Styled.Fund>
-
+         
           <Styled.Creative>
             <Styled.Charity>
               <div className="create">
@@ -377,9 +390,9 @@ const Home = () => {
                 <Styled.First backgroundColor={item.color}>
                   <div className="mainDiv">
                     <div>
-                      <Image className="" src={item.img} />
+                      <Image className="image" src={item.img} />
                     </div>
-                    <div style={{ width: "100%" }}>
+                    <div className="textContainer" >
                       <div className="brownBlock">
                         <div className="mid">
                           <h3>
@@ -439,7 +452,7 @@ const Home = () => {
               <Styled.Healthy>
                 <div>
                   <Styled.Food>
-                    <Image src={blogimg2} />
+                    <Image className="image" src={blogimg2} />
                     <div>
                       <span className="date">07 mar, 2019</span>
                       <p className="food">
@@ -448,7 +461,7 @@ const Home = () => {
                     </div>
                   </Styled.Food>
                   <Styled.Food>
-                    <Image src={blogimg3} />
+                    <Image className="image" src={blogimg3} />
                     <div>
                       <span className="date">04 mar, 2019</span>
                       <p className="food">
@@ -458,7 +471,7 @@ const Home = () => {
                   </Styled.Food>
 
                   <Styled.Food>
-                    <Image src={blogimg4} />
+                    <Image className="image" src={blogimg4} />
                     <div>
                       <span className="date">30 feb, 2019</span>
                       <p className="food">
@@ -480,7 +493,9 @@ const Home = () => {
                       <h3 class="cta__title">
                         Sponsor an entire trending project
                       </h3>
+                      <Styled.BtnBottom>
                       <Styled.Btn href="">become an sponsor</Styled.Btn>
+                      </Styled.BtnBottom>
                     </div>
                   </div>
                   <div class="col-lg-6 col-sm-6">
@@ -499,7 +514,7 @@ const Home = () => {
       </Styled.MainContainer>
 
       <Footer />
-    </div>
+    </Styled.HomePageContainer>
   );
 };
 

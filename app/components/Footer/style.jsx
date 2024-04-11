@@ -71,6 +71,12 @@ export const MainContainer = styled.div`
     gap: 20px;
     justify-content: center;
     margin-top: 31px;
+    @media(max-width:600px){
+          flex-direction: column;
+              flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
   }
 
   .BtnDonate:hover {
@@ -111,6 +117,10 @@ export const MainContainer = styled.div`
     outline: none;
     border: none;
     padding: 0px 20px;
+    @media(max-width:600px){
+    width: 100%;
+    height: 48px;
+    }
   }
 `;
 

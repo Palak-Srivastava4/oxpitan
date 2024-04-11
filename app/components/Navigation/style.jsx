@@ -30,6 +30,9 @@ display: flex;
       } 
 `
 export const SocialLinks = styled.div`
+ @media only screen and (max-width: 600px) {
+    display: none;
+  }
   .flex {
     display: flex;
     justify-content: center;
@@ -214,7 +217,8 @@ export const NavLinks = styled.div`
   justify-content: space-between;
   padding: 30px 0px;
   @media(max-width:600px){
-  justify-content: space-around; 
+    justify-content: space-between;
+    padding: 30px 10px;
   }
 `;
 export const DataNav = styled.div`
@@ -333,11 +337,52 @@ export const BtnDark = styled.a`
     color: #fff;
   }
 `;
-export const Icon = styled.div`
-  @media only screen and (max-width: 1200px) {
+export const IconBox=styled.div`
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    .callIcon{
+      font-size:21px;
+       @media only screen and (max-width: 600px) {
     display: block;
   }
+  display:none
+    }
+    .iconBox{
+    display: flex;
+    background-color: rgba(35, 35, 35, 0.1);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+      font-size:21px;
+       @media only screen and (max-width: 600px) {
+    display: flex;
+  }
+    display: none;
+
+    }
+}
+`
+export const Icon = styled.div`
+  @media only screen and (max-width: 1200px) {
+    display: flex;
+    background-color: rgba(35, 35, 35, 0.1);
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    .icon{
+      font-size:21px;
+    }
+  }
   display: none;
+
+
 `;
 export const NavWidth = styled.div`
   @media only screen and (max-width: 1200px) {
@@ -355,20 +400,26 @@ export const MainContainer = styled.div`
 background: black;
 color: white;
 position: absolute;
-width: 32%;
+width: 80%;
 z-index: 3;
-left: 68%;
+left: 20%;
 border-radius: 5px;
   .list {
     text-decoration: none;
     color: #ffff;
     list-style-type: none;
+      @media (max-width:1200px) and (min-width:500px){
+       font-size:25px;
+  }
   }
   .heading {
     font-size: 25px;
     text-decoration: none;
     color: #ffff;
     padding-left: 13px;
+     @media (max-width:1200px) and (min-width:500px){
+       font-size:30px;
+  }
   }
 `;
 export const CrossIcon = styled.div`
@@ -441,24 +492,24 @@ export const SocialIcon=styled.div`
       gap:9px;
     }
     @media(max-width:457px){
-      gap:6px;
+      gap:18px;
     }
 
 `
 export const BtnBg = styled.a`
-@media only screen and (max-width:800px)and (min-width:458px){
-  padding:4px;
-  line-height: 0px;
-}
-.icon{
-  @media(max-width:457px){
-    font-size: 12px;
-  }
-}
-@media(max-width:457px){
-  padding:1px;
-  line-height: 0px;
-}
+// @media only screen and (max-width:800px)and (min-width:458px){
+//   padding:4px;
+//   line-height: 0px;
+// }
+// .icon{
+//   @media(max-width:457px){
+//     font-size: 12px;
+//   }
+// }
+// @media(max-width:457px){
+//   padding:1px;
+//   line-height: 0px;
+// }
   font-size: 18px;
   background:${({ backgroundColor }) => backgroundColor};
   color: #fff;

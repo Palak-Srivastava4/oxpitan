@@ -1,6 +1,15 @@
 import { color } from "@/app/Theme/color";
 import styled from "styled-components";
-
+export const HomePageContainer = styled.div`
+@media (min-width: 1200px){
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+      max-width: 1200px;
+  }
+}
+`;
+export const Container=styled.div.attrs({
+  className: 'container',
+  })``;
 export const MainContainer = styled.div`
   overflow: hidden;
 `;
@@ -17,7 +26,10 @@ export const Fund = styled.div`
 export const Children = styled.div`
   flex: 0.6;
   .main {
-    padding: 100px;
+    padding: 100px 41px;
+    @media (max-width: 600px) {
+      padding: 14px;
+    }
   }
   .child {
     font-size: 54px;
@@ -44,11 +56,18 @@ export const Welcome = styled.div`
     z-index: 0;
     width: auto;
     height: auto;
+    @media (max-width: 625px) {
+      height: 651px;
+    }
   }
   .heading {
     position: absolute;
     top: 280px;
     z-index: 2;
+    @media(max-width:500px){
+          top: 208px;
+          left: -21px;
+    }
   }
   .heading p {
     font-size: 20px;
@@ -79,9 +98,13 @@ export const Welcome = styled.div`
 `;
 
 export const Bg = styled.div`
-@media(max-width:625px){
-  width:50%;
-}
+  @media (max-width: 625px) {
+    width: 50%;
+    height: 651px;
+  }
+  @media (max-width:1300px) and (min-width:1100px){
+        width: 25%;
+  }
   height: 848px;
   width: 29%;
   font-size: 12px;
@@ -129,15 +152,32 @@ export const Bg = styled.div`
 `;
 
 export const Hunger = styled.div`
+.video-item{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
   @media (max-width: 1200px) {
     .flex {
       flex-direction: column;
     }
   }
+  .videoImage {
+    width: 100%;
+   @media (max-width:1300px) and (min-width:1100px){
+      width: auto;
+  }
+  }
   .flex {
     display: flex;
     margin-bottom: 80px;
     gap: 7%;
+     
+  @media (max-width:1300px) and (min-width:1100px){
+       gap:13%;
+  }
+
   }
   .left h3 {
     color: #fff;
@@ -149,6 +189,11 @@ export const Hunger = styled.div`
     font-family: "Playfair Display", serif;
     margin-left: 40px;
     width: 100%;
+    @media (max-width: 600px) {
+      margin: 0px;
+      padding-right: 0px;
+          margin-left: -39px;
+    }
   }
   .right {
     display: flex;
@@ -158,6 +203,7 @@ export const Hunger = styled.div`
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin: 10px;
     }
   }
   .videoContainer {
@@ -166,18 +212,18 @@ export const Hunger = styled.div`
     transform: translate(-90px, -40px);
     position: relative;
     z-index: 2;
-    @media(max-width:1200px){
-    transform: none;
-    padding:0px;
-
+    @media (max-width: 1200px) {
+      position: relative;
+      transform: none;
+      padding: 0px;
+      width: 100%;
+      height: 100%;
     }
   }
   .yellowBtn {
-    transform: translate(100px, 100px);
-    padding-left: 20px;
-    @media (max-width: 1200px) {
+    position: absolute;
+    @media(max-width:1200px){
       position: absolute;
-      top: 0;
     }
   }
   .right h3 {
@@ -189,10 +235,17 @@ export const Hunger = styled.div`
     font-weight: 400;
     font-size: 38px;
     color: #4d4d4d;
-    font-family: 'Playfair Display', serif;
-    @media(max-width:500px){
+    font-family: "Playfair Display", serif;
+     @media(max-width:1200px){
+      margin-left: 0px;
+    }
+    @media (max-width: 500px) {
+      margin-left: 0px;
+      color: #424242;
+      padding-right: 0;
+      font-weight: 400;
       margin-bottom: 15px;
-       margin-left:0px;
+      font-size: 30px;
     }
   }
   .right p {
@@ -202,8 +255,16 @@ export const Hunger = styled.div`
     font-size: 22px;
     font-weight: 400px;
     margin-left: -45px;
-       @media(max-width:500px){
-       margin-left:0px;
+    @media(max-width:1200px){
+      margin-left: 0px;
+    }
+    @media (max-width: 500px) {
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      line-height: 26px;
+      color: #818181;
+      font-weight: 400;
+      margin-left: 0px;
     }
   }
 `;
@@ -212,6 +273,14 @@ export const LeftHunger = styled.a`
   @media (max-width: 1200px) {
     width: 95%;
     padding: 30px 0px 30px 50px;
+  }
+  @media (max-width: 600px) {
+    width: 84%;
+    padding: 30px 0px 30px 50px;
+  }
+  
+  @media (max-width:1300px) and (min-width:1100px){
+           width: 326px;
   }
   width: 32%;
   background: #424242;
@@ -254,34 +323,44 @@ export const CharityPoor = styled.div`
 `;
 
 export const Lives = styled.div`
+width:100%;
+  .hiw{
+    position:relative;
+    .heading-container{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+  }
   .hiwTitle {
     color: white;
     font-size: 50px;
     font-weight: 800;
     text-align: center;
-    transform: translate(0px, -340px);
-    position: absolute;
-    z-index: 2;
-    margin-left: 40px;
   }
   .bg {
-       background-color: #00baa3;
-    background-image: url(http://localhost:3000/_next/static/media/huImg.1ca04ec5.svg);
-    opacity: 0.5;
-    position: unset; 
-    z-index: 1;
-    width: 380px;
-    height: 492px;
-    background-size: cover;
-    @media(max-width:380px){
     background-color: #00baa3;
     background-image: url(http://localhost:3000/_next/static/media/huImg.1ca04ec5.svg);
     opacity: 0.5;
-    position: unset; 
+    position: unset;
     z-index: 1;
-    width: 380px;
-    height: 492px;
+    width: 100%;
+    height: 482px;
     background-size: cover;
+    @media (max-width: 380px) {
+      background-color: #00baa3;
+      background-image: url(http://localhost:3000/_next/static/media/huImg.1ca04ec5.svg);
+      opacity: 0.5;
+      position: unset;
+      z-index: 1;
+      width: 100%;
+      height: 492px;
+      background-size: cover;
     }
   }
   .hiw img {
@@ -319,25 +398,40 @@ export const Lives = styled.div`
 `;
 
 export const Volun = styled.div`
-  position: relative;
-  z-index: 1;
+.image{
+      width: 100%;
+      height: 100%;
+}
+  .hiw{
+    position:relative;
+    .heading-container{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
   .hiwTitle {
     color: white;
     font-size: 50px;
     font-weight: 800;
     text-align: center;
-    transform: translate(0px, -340px);
-    position: absolute;
-    z-index: 2;
-    margin-left: 55px;
   }
+  position: relative;
+  width:100%;
+  z-index: 1;
   .bg {
     background-color: #e95252;
     opacity: 0.7;
     position: absolute;
     z-index: 1;
-    width: 380px;
-    height: 492px;
+    width: 100%;
+    height: 100%;
   }
   .hiw img {
     position: relative;
@@ -372,28 +466,41 @@ export const Volun = styled.div`
   }
 `;
 export const Poor = styled.div`
-  position: relative;
-  z-index: 1;
-  .hiwTitle {
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-size: 50px;
-    font-weight: 800;
-    text-align: center;
-    padding-left: 10px;
-    transform: translate(0px, -340px);
+.hiw{
+  position:relative;
+  .heading-container{
     position: absolute;
-    z-index: 2;
-    margin-left: 40px;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
   }
+}
+.hiwTitle {
+  color: white;
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+}
+  position: relative;
+  width:100%;
+  .image{
+    width:100%;
+    height: 100%;
+
+  }
+  z-index: 1;
   .bg {
     background-color: #f1ae44;
     opacity: 0.8;
     position: absolute;
     z-index: 1;
-    width: 380px;
-    height: 492px;
+    width: 100%;
+    height: 100%;
   }
   .hiw img {
     position: relative;
@@ -430,11 +537,17 @@ export const Poor = styled.div`
 export const Child = styled.div`
   display: flex;
   gap: 20px;
-  @media(max-width:1200px){
+  @media(max-width:1300px){
+        gap: 56px;
+  }
+  @media (max-width: 1200px) {
     width: 100%;
     display: flex;
     flex-direction: column;
     padding: 0px;
+  }
+  @media (max-width: 600px) {
+    width: 90%;
   }
   .food {
     background: #50bac3;
@@ -457,6 +570,10 @@ export const TextData = styled.div`
     width: 92%;
     padding: 0px 20px;
   }
+  @media (max-width: 600px) {
+    width: 100%;
+    padding: 0px;
+  }
   .aliq {
     font-size: 18px;
     line-height: 32px;
@@ -472,6 +589,12 @@ export const TextData = styled.div`
       text-align: justify;
       margin: 0px 20px;
     }
+    @media (max-width: 600px) {
+      margin: 0px 10px;
+      padding: 0px;
+      font-size: 17px;
+      line-height: 27px;
+    }
   }
 `;
 export const Evanto = styled.div`
@@ -483,13 +606,16 @@ export const Evanto = styled.div`
 `;
 export const Latest = styled.div`
   margin: 60px 0px 60px 0px;
+  @media (max-width: 600px) {
+    margin: 60px 0px 0px 0px;
+  }
   .latest {
     text-align: center;
     width: 57%;
-    @media(max-width:1200px){
-          font-size: 36px;
-    line-height: 38px;
-    width:auto;
+    @media (max-width: 1200px) {
+      font-size: 36px;
+      line-height: 38px;
+      width: auto;
     }
   }
   .cause {
@@ -540,16 +666,15 @@ export const Creative = styled.div`
   display: flex;
   margin-top: 106px;
 
-
-.image{
-  @media(max-width:1200px){
-        width: 100%;
-    padding-right: 45px;
+  .image {
+    @media (max-width: 1200px) {
+      width: 100%;
+      padding-right: 45px;
+    }
+    @media (max-width: 414px) {
+      padding: 0px;
+    }
   }
-  @media(max-width:414px){
-    padding: 0px;
-}
-}
   @media (max-width: 1200px) {
     display: flex;
     flex-direction: column;
@@ -559,23 +684,32 @@ export const Creative = styled.div`
     flex: 0.6;
     position: relative;
     padding-left: 45px;
-    @media(max-width:414px){
-      padding:12px;
+    @media(max-width:1300px){
+          padding-left: 28px;
+    }
+    @media (max-width: 414px) {
+      padding: 12px;
     }
   }
   .form {
     flex: 1.5;
     position: relative;
+    @media (max-width: 600px) {
+      margin: 10px;
+    }
   }
 `;
 export const Line = styled.div`
   width: 83%;
   height: 1px;
-  background: #6c757d;
+  background: #f2f0ec;
   margin-top: 40px;
-  @media(max-width:414px){
+  @media(max-width:1300px){
+        margin-left: 28px;
+  }
+  @media (max-width: 414px) {
     margin: 1px 11px;
-    width:94%;
+    width: 94%;
   }
 `;
 
@@ -609,7 +743,7 @@ export const FingerPrints = styled.div`
   background-attachment: fixed;
   padding-top: 120px;
   padding-bottom: 120px;
-  @media(max-width:1200px){
+  @media (max-width: 1200px) {
     height: auto;
   }
 `;
@@ -625,9 +759,11 @@ export const Finger = styled.div`
     font-weight: 800;
     color: #fff;
     text-align: center;
-    @media(max-width:500px){
-          word-wrap: break-word;
-          font-size:59px;
+    @media (max-width: 500px) {
+      word-wrap: break-word;
+      font-size: 50px;
+      line-height: 60px;
+      padding: 0px 10px;
     }
   }
 `;
@@ -684,12 +820,16 @@ export const VolunteersCards = styled.div`
   @media (max-width: 1200px) {
     display: flex;
     flex-direction: column;
+    margin: 10px !important
   }
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
   margin: 60px;
+  @media(max-width:1300px){
+        margin: 60px 35px;
+  }
   .icon {
     text-align: center;
     font-size: 40px;
@@ -730,6 +870,25 @@ export const VolunteersCards = styled.div`
   }
 `;
 export const First = styled.div`
+  @media (max-width: 600px) {
+    width: 100%;
+    height: auto;
+  }
+  .textContainer{
+    // width:100%;
+    @media (max-width:1300px) and (min-width:1100px){
+      width:94%;
+    }
+    @media(max-width:1100px){
+      width:100%!important;
+    }
+  }
+  .image {
+    @media (max-width: 600px) {
+      width: 100%;
+      height: auto;
+    }
+  }
   flex: 0.4;
   .mainDiv {
     display: flex;
@@ -807,9 +966,9 @@ export const First = styled.div`
 export const Food = styled.div`
   display: flex;
   gap: 20px;
-  @media(max-width:600px){
+  @media (max-width: 600px) {
     flex-direction: column;
-        margin-bottom: 50px;
+    margin-bottom: 50px;
   }
   margin-bottom: 80px;
   .date {
@@ -830,17 +989,20 @@ export const Blogs = styled.div`
   display: flex;
   gap: 20px;
   margin: 66px;
+@media(max-width:1300px){
+      margin: 66px 32px;
 
+}
   @media only screen and (max-width: 1200px) {
     flex-direction: column;
-    margin:12px;
+    margin: 12px!important;
   }
-  .image{
-    @media(max-width:1200px){
-          width: 100%;
+  .image {
+    @media (max-width: 1200px) {
+      width: 100%;
+      height: auto;
     }
   }
-  display: block;
 `;
 
 export const News = styled.div`
@@ -902,6 +1064,9 @@ export const BlogData = styled.div`
     font-weight: 400;
     text-align: justify;
     margin-right: 60px;
+    @media (max-width: 600px) {
+      margin-right: 0px;
+    }
   }
   .son {
     display: flex;
@@ -923,6 +1088,13 @@ export const Blog = styled.div`
 `;
 export const Healthy = styled.div`
   padding: 60px 60px 0px 60px;
+  @media (max-width: 600px) {
+    padding: 10px;
+  }
+  .image {
+    width: 100%;
+    height: auto;
+  }
 `;
 
 export const Charity = styled.div`
@@ -930,7 +1102,10 @@ export const Charity = styled.div`
   width: 100%;
   padding-left: 45px;
   position: relative;
-  @media(max-width:1200px){
+  @media(max-width:1300px){
+        padding-left: 0px;
+  }
+  @media (max-width: 1200px) {
     padding-left: 0px;
   }
   .create {
@@ -944,6 +1119,10 @@ export const Charity = styled.div`
     text-decoration: none;
     font-weight: 700;
     font-family: "Playfair Display", serif;
+    @media (max-width: 600px) {
+      font-size: 36px;
+      line-height: 42px;
+    }
   }
 
   .aliq {
@@ -953,8 +1132,12 @@ export const Charity = styled.div`
     font-weight: 400;
     margin-right: 140px;
     text-align: justify;
-    @media(max-width:414px){
-      margin-right:0px;
+    @media (max-width: 414px) {
+      margin-right: 0px;
+    }
+    @media (max-width: 600px) {
+      font-size: 17px;
+      line-height: 27px;
     }
   }
 `;
@@ -971,19 +1154,24 @@ export const CharityData = styled.div`
   }
 `;
 export const Raised = styled.div`
+.icon{
+      font-size: 77px;
+}
   flex: 0.6;
   padding-left: 12px;
   padding-right: 151px;
-  @media(max-width:1200px){
+     
+
+  @media (max-width: 1200px) {
     padding-right: 0px;
   }
   .raised {
     border-bottom: 2px solid #f2f0ec;
+   margin: 30px 0px 30px 18px;
     display: flex;
     gap: 27px;
     align-items: center;
     width: 90%;
-    margin: 30px 0px;
     height: 156px;
     padding: 0px 0px 11px 0px;
     font-family: "Playfair Display", serif;
@@ -1008,8 +1196,7 @@ export const Darkness = styled.div`
   @media (max-width: 1200px) {
     position: unset;
     height: auto;
-    width:100%;
-
+    width: 100%;
   }
 
   flex: 0.6;
@@ -1020,12 +1207,15 @@ export const Darkness = styled.div`
   z-index: 2;
   .darkness {
     padding: 75px 75px 25px 75px;
-    @media(max-width:600px){
+    @media (max-width: 600px) {
       padding: 20px;
     }
   }
 `;
 export const Content = styled.div`
+  @media (max-width: 600px) {
+    margin: 10px;
+  }
   .icon {
     font-size: 43px;
     height: 50px;
@@ -1112,13 +1302,12 @@ export const About = styled.div`
     display: flex;
     align-items: center;
     justify-content: left;
-    margin-left: 85px;
-    @media(max-width:600px){
-      margin-left: 7px;
+    @media (max-width: 600px) {
+      margin-left: 0px;
       font-size: 50px;
       line-height: 60px;
       margin-bottom: 44px;
-          width: 100%;
+      width: 100%;
     }
   }
 `;
@@ -1306,6 +1495,9 @@ export const Card = styled.div`
   justify-content: center;
   gap: 18px;
   margin: 60px;
+  @media (max-width: 600px) {
+    margin: 10px;
+  }
   .cards {
     display: flex;
     gap: 10px;
@@ -1323,25 +1515,31 @@ export const Card1 = styled.div`
     width: 100%;
   }
   .cardImg {
-    margin: 0 0 20px 20px;
+       margin: 0px 0 20px 0px;
+    @media (max-width: 600px) {
+      margin: 0px;
+    }
   }
   .card1 {
     width: 370px;
-    margin: 0 0 20px 20px;
+    // margin: 0 0 20px 20px;
     background-color: #f2f0ec;
     @media (max-width: 1200px) {
       width: 98%;
     }
-    @media only screen and (max-width: 900px) and (min-width: 700px){
-      width:97%;
+    @media only screen and (max-width: 900px) and (min-width: 700px) {
+      width: 97%;
     }
-    @media(max-width:500px){
-      width: 94%;
+    @media (max-width: 500px) {
+      width: 100%;
+    }
+    @media (max-width: 600px) {
+      margin: 0px;
     }
   }
   h3 {
     font-size: 36px;
-    text-align: center;
+    padding-left: 20px;
     font-weight: 700;
     font-family: "Playfair Display", serif;
     padding-top: 40px;
@@ -1406,6 +1604,9 @@ export const Card2 = styled.div`
   }
   .cardImg {
     margin: 0 0 20px 20px;
+    @media (max-width: 600px) {
+      margin: 0px;
+    }
   }
   .card2 {
     margin: 0 0 20px 20px;
@@ -1414,16 +1615,19 @@ export const Card2 = styled.div`
     @media (max-width: 1200px) {
       width: 98%;
     }
-    @media only screen and (max-width: 900px) and (min-width: 700px){
-      width:97%;
+    @media only screen and (max-width: 900px) and (min-width: 700px) {
+      width: 97%;
     }
-    @media(max-width:500px){
-      width: 94%;
+    @media (max-width: 500px) {
+      width: 100%;
+    }
+    @media (max-width: 600px) {
+      margin: 0px;
     }
   }
   h3 {
     font-size: 36px;
-    text-align: center;
+    padding-left: 20px;
     font-weight: 700;
     font-family: "Playfair Display", serif;
     padding-top: 40px;
@@ -1485,6 +1689,9 @@ export const Card2 = styled.div`
 export const Card3 = styled.div`
   .cardImg {
     margin: 0 0 20px 20px;
+    @media (max-width: 600px) {
+      margin: 0px;
+    }
   }
   .card3 {
     margin: 0 0 20px 20px;
@@ -1493,16 +1700,19 @@ export const Card3 = styled.div`
     @media (max-width: 1200px) {
       width: 98%;
     }
-    @media only screen and (max-width: 900px) and (min-width: 700px){
-      width:97%;
+    @media only screen and (max-width: 900px) and (min-width: 700px) {
+      width: 97%;
     }
-    @media(max-width:500px){
-      width: 94%;
+    @media (max-width: 500px) {
+      width: 100%;
+    }
+    @media (max-width: 600px) {
+      margin: 0px;
     }
   }
   h3 {
     font-size: 36px;
-    text-align: center;
+    padding-left: 20px;
     font-weight: 700;
     font-family: "Playfair Display", serif;
     padding-top: 40px;
@@ -1635,8 +1845,13 @@ export const BtnBg = styled.div`
     text-align: center;
     font-size: 20px;
   }
-  @media(max-width:1200px){
-    margin-left:0px;
+  @media (max-width: 1200px) {
+    margin-left: 0px;
+  }
+  @media(max-width:1300px){
+      margin-left: 0px;
+      width: 37%;
+      padding:0px;
   }
   margin-left: 30px;
   width: 141px;
@@ -1682,96 +1897,101 @@ export const BtnBg = styled.div`
     transition: 0.3s ease-in;
   }
 `;
-export const FoorterSection=styled.div`
-.section-area {
-  padding-top: 55px;
-  padding-bottom: 60px;
-  background-color: #50BAC3;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-}
-.text-center {
-  text-align: center !important;
-}
-.container-fluid {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-.row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-  .col-sm-6 .col-lg-6 {
+export const BtnBottom = styled.div`
+  @media (max-width: 600px) {
+    margin-bottom: 50px;
+  }
+`;
+export const FoorterSection = styled.div`
+  .section-area {
+    padding-top: 55px;
+    padding-bottom: 60px;
+    background-color: #50bac3;
     position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .text-center {
+    text-align: center !important;
+  }
+  .container-fluid {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
   }
-  @media (min-width: 992px) {
-    .col-lg-6 {
-      -ms-flex: 0 0 50%;
-      flex: 0 0 50%;
-      max-width: 50%;
+  .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    .col-sm-6 .col-lg-6 {
+      position: relative;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    @media (min-width: 992px) {
+      .col-lg-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+    @media (min-width: 576px) {
+      .col-sm-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
     }
   }
-  @media (min-width: 576px) {
-    .col-sm-6 {
-      -ms-flex: 0 0 50%;
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
+  .section-area .section-item .cta__title {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: 30px;
+    line-height: 34px;
   }
-}
-.section-area .section-item .cta__title {
-  font-size: 30px;
-  color: #fff;
-  font-weight: 800;
-  margin-bottom: 30px;
-  line-height: 34px;
-}
-.theme-btn {
-  font-size: 12px;
-  text-transform: uppercase;
-  background: #F1AE44;
-  color: #fff;
-  font-weight: 600;
-  letter-spacing: 1px;
-  padding: 0 30px 0 35px;
-  line-height: 49px;
-  position: relative;
-  z-index: 1;
-  display: inline-block;
-  -webkit-transition: 0.3s ease-in;
-  -moz-transition: 0.3s ease-in;
-  -ms-transition: 0.3s ease-in;
-  -o-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
-  text-decoration: none;
-  border: none;
-}
-.section-area:after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 51%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  background-color: #863BAE;
-  -webkit-transform-origin: bottom left;
-  transform-origin: bottom left;
-  -webkit-transform: skew(-12deg, 0deg);
-  -moz-transform: skew(-12deg, 0deg);
-  -ms-transform: skew(-12deg, 0deg);
-  -o-transform: skew(-12deg, 0deg);
-  transform: skew(-12deg, 0deg);
-}
-`
+  .theme-btn {
+    font-size: 12px;
+    text-transform: uppercase;
+    background: #f1ae44;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0 30px 0 35px;
+    line-height: 49px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+    text-decoration: none;
+    border: none;
+  }
+  .section-area:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 51%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #863bae;
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: skew(-12deg, 0deg);
+    -moz-transform: skew(-12deg, 0deg);
+    -ms-transform: skew(-12deg, 0deg);
+    -o-transform: skew(-12deg, 0deg);
+    transform: skew(-12deg, 0deg);
+  }
+`;

@@ -41,9 +41,13 @@ align-items: center;
 }
 `;
 export const Input = styled.input`
+@media(max-width:600px){
+      width: 90%;
+      height: 50px;
+}
 height: 72px;
 margin-top:20px;
-width:59%;
+width:74%;
 background-color: #f2f0ec;
 outline:none;
 border:none;
@@ -55,9 +59,13 @@ padding: 19px 30px;
 }
 `;
 export const TextArea=styled.textarea`
+@media(max-width:600px){
+      width: 90%;
+      height: 90px;
+}
 height: 110px;
 margin-top:20px;
-width:59%;
+width:74%;
 background-color: #f2f0ec;
 outline:none;
 border:none;
@@ -74,10 +82,16 @@ export const FormHead=styled.div`
 margin-top: 97px;
 display: flex;
 justify-content: center;
+
 `
 export const Form = styled.div`
 @media(max-width:1200px){
   position: unset;
+  padding-bottom: 44px;
+  height:auto;
+}
+@media(max-width:1300px){
+  top: -351px;
 }
 position: absolute;
 height: 900px;
@@ -88,6 +102,9 @@ width: 100%;
 margin-bottom: 40px;
 .donation{
   margin-top: 50px;
+  @media(max-width:600px){
+    padding-left: 17px;
+  }
 }
   .donate {
     font-size: 50px;
@@ -156,7 +173,14 @@ export const ContinueBtn =styled.div`
 width: 100%;
 margin-left: 189px;
 margin-top: 15px;
-@media(max-width:414px){
-      margin-left: 144px;
+@media(max-width:1300px){
+   margin-left: 132px;
+
+}
+@media only screen and (max-width: 1200px) and (min-width: 600px) {
+        margin-left: 282px;
+}
+@media(max-width:600px){
+      margin-left: 37px;
 }
 `
