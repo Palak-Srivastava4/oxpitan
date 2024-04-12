@@ -66,20 +66,20 @@ const Contact = () => {
         </Styled.FormSection>
         <Styled.AboutSectionBox>
           <Styled.BtnBG className="about" padding={"0px 30px 0px 35px"} backgroundColor={"#50bac3"}>
-            <div>About</div><br/>
+            <div className="head">About</div><br/>
             <div>
               Lorem ipsum is simply free<br/> text dolor sit amet, duise<br/> consectetur
               ullam blandit
             </div>
           </Styled.BtnBG>
           <Styled.BtnBG className="address" padding={"0px 30px 0px 35px"} backgroundColor={"#e36955"}>
-            <div>Address</div><br/>
+            <div className="head">Address</div><br/>
             <div>
               660 broklyn street , 88 new <br/>york, United states of <br/>america
             </div>
           </Styled.BtnBG>
           <Styled.BtnBG className="contact" padding={"0px 30px 0px 35px"} backgroundColor={"#f1ae44"}>
-            <div>Contact</div><br/>
+            <div className="head">Contact</div><br/>
             <div>
               needhelp@oxpitan.com
               <br />

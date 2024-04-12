@@ -17,25 +17,39 @@ export const BreadCrumb = styled.div`
 
 export const Contact = styled.div`
 display:inline-block;
-  font-size: 60px;
+  font-size: 50px;
   line-height: 60px;
   letter-spacing: 0;
   color: #424242;
-  font-weight: 800;
+  font-weight: 900;
   text-transform: capitalize;
   display: flex;
   justify-content: center;
   align-items: center;
+   font-family: "Playfair Display", serif;
   .head{
     margin-top:80px;
     margin-bottom:110px;
   }
-  @media (max-width: 991px){
-    width:100%;
+.volHead{
+    margin-top:80px;
+    margin-bottom:110px;
+}
+@media (max-width: 455px){
+  font-size:50px;
+  .volHead{
+     margin-top:80px;
+    margin-bottom:50px;
   }
-    @media (min-width: 991px){
+}
+  /* @media (max-width: 991px){
     width:100%;
-  }
+     font-size: 50px;
+  } */
+    /* @media (min-width: 991px){
+    width:100%;
+     font-size: 60px;
+  } */
 `;
 
 export const About = styled.div`
@@ -151,9 +165,10 @@ export const Register = styled.div`
   .register {
     font-size: 50px;
     line-height: 60px;
-    font-weight: 700;
+    font-weight: 600;
     text-align:center;
     color: #424242;
+     font-family: "Playfair Display", serif;
   }
   .join {
     color: #863bae;
@@ -166,6 +181,10 @@ export const Register = styled.div`
 export const FormData = styled.div`
   flex: 0.6;
   padding-left: 46px;
+  @media (max-width: 991px){
+    padding:0px;
+    padding-bottom:30%;
+  }
   .btn {
     -ms-transform: skewX(20deg);
     -webkit-transform: skewX(20deg);
@@ -229,8 +248,36 @@ export const Input = styled.input`
 `;
 export const Form = styled.div`
   display: flex;
+  padding-bottom: 12%;
+@media (max-width: 600px){
+  display: inline-block;
+  .numEmail{
+      flex-direction:column;
+      /* align-items:center;
+      justify-content: center; */
+    }
+    .num{
+      flex-direction:column;
+      justify-content:center;
+      align-items: center;
+    }
+    .email{
+      margin-top:8%;
+      flex-direction:column;
+      justify-content:center;
+      align-items: center;
+    }
+}
 @media (max-width: 991px){
   display: inline-block;
+}
+.num{
+  display:flex;
+  flex-direction:column;
+}
+.email{
+  display:flex;
+  flex-direction:column;
 }
   .numEmail {
     display: flex;
@@ -238,11 +285,11 @@ export const Form = styled.div`
     border-bottom: 2px solid #f2f0ec;
     margin-top: 52px;
     padding-top: 40px;
-    padding-bottom: 38px;
+    margin-bottom: 38px;
     justify-content: space-between;
   }
   .call {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 16px;
     margin-bottom: 8px;
     color: #424242;
@@ -250,6 +297,9 @@ export const Form = styled.div`
   .no {
     color: #e36955;
     font-size: 18px;
+  }
+  #break{
+    margin-bottom:12%;
   }
 `;
 export const Requirements = styled.div`
@@ -276,7 +326,11 @@ export const Requirements = styled.div`
     font-family: "Playfair Display", serif;
   }
   @media (max-width: 991px){
-    
+    .image{
+      height:auto;
+      width:100%;
+      padding-top:40px;
+    }
   }
 `;
 export const Team = styled.div`
@@ -383,9 +437,82 @@ export const First = styled.div`
   .title {
     text-decoration: none;
   }
+  @media (max-width:991px){
+    .volImg{
+      width:100%;
+      height: auto;
+    }
+  }
+    @media (max-width: 1214px){
+      width: 100%;
+    }
+`;
+
+export const VolunteersCards = styled.div`
+  @media (max-width: 991px) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media (min-width: 991px){
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 60px;
+  .icon {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  .head {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin-bottom: 23px;
+    color: #424242;
+    text-align: center;
+  }
+  .textPara {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #818181;
+    font-weight: 400;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    color: #424242;
+  }
+  .headText {
+    padding-right: 35px;
+    padding-left: 35px;
+    margin-bottom: 20px;
+  }
 `;
 
 export const Cards = styled.div`
+  @media (max-width: 991px) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media (min-width: 991px){
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+  }
   display: flex;
   gap: 18px;
   margin: 40px;
@@ -412,7 +539,6 @@ export const Cards = styled.div`
     color: #818181;
     font-weight: 400;
   }
-
   .headText {
     padding-right: 35px;
     padding-left: 35px;
@@ -510,13 +636,10 @@ margin-bottom:60x;
     -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
   }
-  &:hover,
-  &:hover:after {
-    background-color: #F1AE44;
-    color: #fff;
-  }
   @media (max-width: 995px){
-    margin-left: 6%;
+    margin-left: 5%;
+   margin-bottom:0px;
+
   }
 `;
 
@@ -570,6 +693,9 @@ export const Btn = styled.a`
 `;
 
 export const FingerPrints = styled.div`
+  @media(max-width:1200px){
+    height: auto;
+  }
 margin-top:80px;
 margin-bottom:80px;
   background-image: url(${(props) => props.src});
@@ -594,6 +720,10 @@ export const Finger = styled.div`
     font-weight: 800;
     color: #fff;
     text-align: center;
+      @media(max-width:500px){
+          word-wrap: break-word;
+          font-size:59px;
+    }
   }
 `;
 export const FAQ = styled.div`
@@ -718,8 +848,8 @@ p{
 }`;
 
 export const BtnDarkCenter = styled.div`
-margin-left:580px;
-margin-bottom:60x;
+margin-left:43%;
+margin-bottom:60px;
   font-size: 12px;
   text-transform: uppercase;
   background: #E36955;
@@ -766,8 +896,17 @@ margin-bottom:60x;
     background-color: #F1AE44;
     color: #fff;
   }
+  @media (max-width: 480px){
+    margin-left:32%;
+    margin-bottom: 20%;
+  }
+   @media (max-width: 600px){
+    margin-left:38%;
+    margin-bottom: 20%;
+  }
   @media (max-width: 991px){
-    margin-left:0;
+      margin-left:38%;
+      margin-bottom: 20%;
   }
 `;
 
@@ -778,10 +917,15 @@ export const DonationBtnCenter = styled.div`
 `;
 
 export const Latest = styled.div`
+   @media(max-width:1200px){
+          font-size: 36px;
+    line-height: 38px;
+    width:auto;
+    }
   margin: 60px 0px 60px 0px;
   .latest {
     text-align: center;
-    width: 57%;
+    width: 100%;
   }
   .cause {
     font-size: 50px;
@@ -826,6 +970,28 @@ export const Latest = styled.div`
     display: block;
   }
 `;
+
+// export const LatestCause = styled.div`
+// .latest {
+//     text-align: center;
+//     width: 100%;
+//   }
+//   .cause {
+//     font-size: 50px;
+//     line-height: 60px;
+//     font-weight: 700;
+//     color: #424242;
+//     font-family: "Playfair Display", serif;
+//   }
+//   .help {
+//     color: #863bae;
+//     font-size: 14px;
+//     text-transform: uppercase;
+//     font-weight: 500;
+//     margin-top: 8px;
+//     display: block;
+//   }
+// `;
 
 export const BtnBg = styled.div`
 .img{

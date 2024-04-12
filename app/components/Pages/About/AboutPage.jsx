@@ -71,13 +71,13 @@ const AboutPage = () => {
               <p className="help">meet profesionals</p>
             </div>
           </Styled.Latest>
-          <Styled.Cards >
+          <Styled.VolunteersCards >
             {Volun.map((item) => {
               return (
                 <Styled.First backgroundColor={item.color}>
                   <div className="mainDiv">
                     <div>
-                      <Image className="" src={item.img} />
+                      <Image className="volImg" src={item.img} />
                     </div>
                     <div style={{ width: "100%" }}>
                       <div className="brownBlock">
@@ -95,7 +95,7 @@ const AboutPage = () => {
                 </Styled.First>
               );
             })}
-          </Styled.Cards>
+          </Styled.VolunteersCards>
 
 <Styled.FAQ >
 <Styled.Heading>
@@ -140,9 +140,8 @@ const AboutPage = () => {
          
           <div>
             <Styled.Cards>
-              
-
-              {para?.map((item, index) => {
+  
+   {para?.map((item, index) => {
                 return (
                   <>
                   <div className="belive">
@@ -156,7 +155,7 @@ const AboutPage = () => {
                 );
               })}
               
-            </Styled.Cards>
+            </Styled.Cards> 
             <Styled.BtnDarkCenter className="btnCenter" href="">donate now</Styled.BtnDarkCenter>
           </div>
 
