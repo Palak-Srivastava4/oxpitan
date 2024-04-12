@@ -33,6 +33,15 @@ const Contact = () => {
                 suspendisse.
               </p>
               <div className="itemStyle">
+              {icons?.map((item) => {
+                return (
+                  <Styled.BtnBg backgroundColor={item.color}>
+                    <div> {item.icon}</div>
+                  </Styled.BtnBg>
+                );
+              })}
+            </div>
+              {/* <div className="itemStyle">
                 {icons?.map((item, index) => {
                   return (
                     <>
@@ -43,7 +52,7 @@ const Contact = () => {
                   </>
                   );
                 })}
-              </div>
+              </div> */}
             </div>
           </Styled.Touch>
           <Styled.Form>
@@ -66,23 +75,23 @@ const Contact = () => {
         </Styled.FormSection>
         <Styled.AboutSectionBox >
           <Styled.BtnBG className="about btnWidth" padding={"0px 30px 0px 35px"} backgroundColor={"#50bac3"}>
-            <div className="heading">About</div><br/>
+            <div className="heading">About</div>
             <div className="para">
-              Lorem ipsum is simply free<br/> text dolor sit amet, duise<br/> consectetur
+              Lorem ipsum is simply free  text dolor sit amet, duise  consectetur
               ullam blandit
             </div>
           </Styled.BtnBG>
           <Styled.BtnBG className="address btnWidth" padding={"0px 30px 0px 35px"} backgroundColor={"#e36955"}>
-            <div className="heading">Address</div><br/>
+            <div className="heading">Address</div>
             <div className="para">
-              660 broklyn street , 88 new <br/>york, United states of <br/>america
+              660 broklyn street , 88 new  york, United states of america
             </div>
           </Styled.BtnBG>
           <Styled.BtnBG className="contact btnWidth" padding={"0px 30px 0px 35px"} backgroundColor={"#f1ae44"}>
-            <div className="heading">Contact</div><br/>
+            <div className="heading">Contact</div>
             <div className="para">
               needhelp@oxpitan.com
-              <br />
+            <br/>
               666 888 000
             </div>
           </Styled.BtnBG>

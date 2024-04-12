@@ -17,18 +17,16 @@ export const BreadCrumb = styled.div`
     @media (max-width: 1200px) {
       margin-left: 11px;
     }
-    @media (max-width:1300px) and (min-width:1100px){
-          left: 15px;
-
+    @media (max-width: 1300px) and (min-width: 1100px) {
+      left: 15px;
     }
   }
 `;
-export const MainContainer=styled.div`
-@media (max-width:1300px) and (min-width:1100px){
-  padding:0px;;
-}
-
-`
+export const MainContainer = styled.div`
+  @media (max-width: 1300px) and (min-width: 1100px) {
+    padding: 0px;
+  }
+`;
 export const Contact = styled.div`
   font-size: 60px;
   line-height: 60px;
@@ -97,6 +95,9 @@ export const Touch = styled.div`
     gap: 20px;
     margin-top: 39px;
   }
+  .itemStyle svg{
+    margin-bottom: 3px;
+  }
   .colorChng {
     width: 43px;
     height: 43px;
@@ -132,6 +133,8 @@ export const MainForm = styled.div`
     gap: 27px;
     @media (max-width: 1200px) {
       flex-direction: column;
+      gap: 0px;
+      margin-top: 41px;
     }
   }
   .btn {
@@ -273,20 +276,22 @@ export const AboutSectionBox = styled.div`
     font-weight: 800;
     font-size: 26px;
     font-family: "Playfair Display", serif;
+    margin-top: 65px;
   }
   .para {
     color: #fff;
     line-height: 30px;
     font-weight: 500;
     font-family: "Playfair Display", serif;
-    margin-bottom: 10px;
+    min-height: 180px;
   }
 `;
 export const BtnBG = styled.div`
   @media (max-width: 1200px) {
-    padding: 0px 0px 0px 10px;
+    padding: 0px 10px 0px 10px;
     &.btnWidth {
-      width: 86%;
+      width: 83%;
+      max-width:83%;
     }
   }
   text-transform: uppercase;
@@ -295,6 +300,50 @@ export const BtnBG = styled.div`
   font-weight: 600;
   letter-spacing: 1px;
   padding: ${({ padding }) => padding};
+  line-height: 45px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  text-decoration: none;
+  border: none;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 1px;
+    z-index: -1;
+    background: ${({ backgroundColor }) => backgroundColor};
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: skew(-12deg, 0deg);
+    -moz-transform: skew(-12deg, 0deg);
+    -ms-transform: skew(-12deg, 0deg);
+    -o-transform: skew(-12deg, 0deg);
+    transform: skew(-12deg, 0deg);
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+`;
+
+export const BtnBg = styled.a`
+  font-size: 18px;
+  text-transform: uppercase;
+  background: ${({ backgroundColor }) => backgroundColor};
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0 10px 0 15px;
   line-height: 49px;
   position: relative;
   z-index: 1;
@@ -328,5 +377,10 @@ export const BtnBG = styled.div`
     -ms-transition: 0.3s ease-in;
     -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
+  }
+  &:hover,
+  &:hover:after {
+    background-color: #f1ae44;
+    color: #fff;
   }
 `;
