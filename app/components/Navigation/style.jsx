@@ -223,7 +223,7 @@ export const NavLinks = styled.div`
 `;
 export const DataNav = styled.div`
   position: sticky;
-  top: 0;
+  top: -1px;
   z-index: 999;
   background: white;
 `;
