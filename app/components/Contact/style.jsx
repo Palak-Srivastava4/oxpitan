@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const BreadCrumb = styled.div`
-    flex-direction: column;
+  flex-direction: column;
   background-color: #f2f0ec;
   position: relative;
   z-index: 1;
@@ -9,13 +9,26 @@ export const BreadCrumb = styled.div`
   height: 300px;
   display: flex;
   justify-content: center;
-  .home{
-        margin-left: 49px;
+  .home {
+    margin-left: 49px;
     position: absolute;
     bottom: 0;
     left: 0;
+    @media (max-width: 1200px) {
+      margin-left: 11px;
+    }
+    @media (max-width:1300px) and (min-width:1100px){
+          left: 15px;
+
+    }
   }
 `;
+export const MainContainer=styled.div`
+@media (max-width:1300px) and (min-width:1100px){
+  padding:0px;;
+}
+
+`
 export const Contact = styled.div`
   font-size: 60px;
   line-height: 60px;
@@ -26,31 +39,31 @@ export const Contact = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Playfair Display", serif;
 `;
-export const About=styled.div`
-display:flex;
-margin-top:50px;
-gap:59px;
-`
-export const Lorem=styled.div`
-flex:0.4;
+export const About = styled.div`
+  display: flex;
+  margin-top: 50px;
+  gap: 59px;
+`;
+export const Lorem = styled.div`
+  flex: 0.4;
 
-.name{
+  .name {
     color: #fff;
     font-weight: 800;
     font-size: 26px;
     margin-bottom: 40px;
-  
-}
-.detail{
+  }
+  .detail {
     color: #fff;
     line-height: 30px;
     font-weight: 500;
     height: 270px;
     font-size: 16px;
- padding:70px;
-}
-`
+    padding: 70px;
+  }
+`;
 export const Touch = styled.div`
   flex: 0.6;
   .touch {
@@ -100,17 +113,26 @@ export const Form = styled.div`
   flex: 0.6;
   .mainForm {
     padding: 59px 20px 0px 47px;
+    @media (max-width: 1200px) {
+      padding: 0px;
+    }
   }
 `;
 
 export const FormSection = styled.div`
   display: flex;
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
 `;
 
 export const MainForm = styled.div`
   .nameAddress {
     display: flex;
     gap: 27px;
+    @media (max-width: 1200px) {
+      flex-direction: column;
+    }
   }
   .btn {
     -ms-transform: skewX(20deg);
@@ -133,8 +155,8 @@ export const MainForm = styled.div`
     padding: 0 30px 0 35px;
     line-height: 49px;
     border: none;
-    width:43%;
-    margin-top:10px;
+    width: 43%;
+    margin-top: 10px;
     border-radius: 0;
     -ms-transform: skewX(-20deg);
     -webkit-transform: skewX(-20deg);
@@ -150,6 +172,9 @@ export const Input = styled.input`
   width: 48%;
   border: none;
   padding: 19px 30px;
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
   &::placeholder {
     color: #818181;
     font-weight: 500;
@@ -190,7 +215,7 @@ export const TextArea = styled.textarea`
 export const BtnDark = styled.a`
   font-size: 14px;
   text-transform: uppercase;
-  background:${({ backgroundColor }) => backgroundColor};
+  background: ${({ backgroundColor }) => backgroundColor};
   color: #fff;
   font-weight: 600;
   letter-spacing: 1px;
@@ -235,20 +260,41 @@ export const BtnDark = styled.a`
     color: #fff;
   }
 `;
-export const AboutSectionBox=styled.div`
-    display: flex;
-    justify-content: space-between;
-    gap: 25px;
-        margin: 100px 0px 100px 0px;
-`
-export const BtnBG =styled.div`
-
+export const AboutSectionBox = styled.div`
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  margin: 100px 0px 100px 0px;
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
+  .heading {
+    color: #fff;
+    font-weight: 800;
+    font-size: 26px;
+    font-family: "Playfair Display", serif;
+  }
+  .para {
+    color: #fff;
+    line-height: 30px;
+    font-weight: 500;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 10px;
+  }
+`;
+export const BtnBG = styled.div`
+  @media (max-width: 1200px) {
+    padding: 0px 0px 0px 10px;
+    &.btnWidth {
+      width: 86%;
+    }
+  }
   text-transform: uppercase;
-  background:${({ backgroundColor }) => backgroundColor};
+  background: ${({ backgroundColor }) => backgroundColor};
   color: #ffffff;
   font-weight: 600;
   letter-spacing: 1px;
-  padding:${({padding})=>padding};
+  padding: ${({ padding }) => padding};
   line-height: 49px;
   position: relative;
   z-index: 1;
@@ -283,4 +329,4 @@ export const BtnBG =styled.div`
     -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
   }
-`
+`;
