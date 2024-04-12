@@ -77,7 +77,7 @@ const AboutPage = () => {
                 <Styled.First backgroundColor={item.color}>
                   <div className="mainDiv">
                     <div>
-                      <Image className="volImg" src={item.img} />
+                      <Image className="image" src={item.img} />
                     </div>
                     <div style={{ width: "100%" }}>
                       <div className="brownBlock">

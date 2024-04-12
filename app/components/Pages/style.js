@@ -17,7 +17,7 @@ export const BreadCrumb = styled.div`
 
 export const Contact = styled.div`
 display:inline-block;
-  font-size: 50px;
+  font-size: 74px;
   line-height: 60px;
   letter-spacing: 0;
   color: #424242;
@@ -28,18 +28,18 @@ display:inline-block;
   align-items: center;
    font-family: "Playfair Display", serif;
   .head{
-    margin-top:80px;
-    margin-bottom:110px;
+    margin-top:110px;
+    margin-bottom:80px;
   }
 .volHead{
-    margin-top:80px;
-    margin-bottom:110px;
+    margin-top:110px;
+    margin-bottom:80px;
+    text-align: center;
 }
-@media (max-width: 455px){
-  font-size:50px;
+@media (max-width: 767px){
   .volHead{
-     margin-top:80px;
-    margin-bottom:50px;
+     margin-top:50px;
+    margin-bottom:80px;
   }
 }
   /* @media (max-width: 991px){
@@ -249,6 +249,7 @@ export const Input = styled.input`
 export const Form = styled.div`
   display: flex;
   padding-bottom: 12%;
+
 @media (max-width: 600px){
   display: inline-block;
   .numEmail{
@@ -267,6 +268,10 @@ export const Form = styled.div`
       justify-content:center;
       align-items: center;
     }
+     .container{
+  padding:0;
+  margin:0;
+ }
 }
 @media (max-width: 991px){
   display: inline-block;
@@ -334,6 +339,12 @@ export const Requirements = styled.div`
   }
 `;
 export const Team = styled.div`
+@media (max-width: 991px){
+.container{
+  padding:0;
+  margin:0;
+}
+}
   .abc {
     background: blue;
     position: relative;
@@ -363,6 +374,36 @@ export const Team = styled.div`
   }
 `;
 export const First = styled.div`
+  @media (max-width: 600px) {
+    width: 100%;
+    height: auto;
+     .container{
+      margin:0;
+      padding:0;
+    }
+  }
+  .textContainer{
+    @media (max-width:1300px) and (min-width:1100px){
+      width:94%;
+      .container{
+      margin:0;
+      padding:0;
+    }
+    }
+    @media(max-width:1100px){
+      width:100%!important;
+        .container{
+      margin:0;
+      padding:0;
+    }
+    }
+  }
+  .image {
+    @media (max-width: 600px) {
+      width: 100%;
+      height: auto;
+    }
+  }
   flex: 0.4;
   .mainDiv {
     display: flex;
@@ -370,7 +411,7 @@ export const First = styled.div`
     gap: 12px;
   }
   .brownBlock {
-    width: 92%;
+    width: 93%;
     padding-top: 17px;
     font-size: 12px;
     text-transform: uppercase;
@@ -415,7 +456,6 @@ export const First = styled.div`
   }
   .title {
     font-size: 20px;
-    // text-transform: capitalize;
     font-weight: 800;
     margin-bottom: 2px;
     color: white;
@@ -437,32 +477,22 @@ export const First = styled.div`
   .title {
     text-decoration: none;
   }
-  @media (max-width:991px){
-    .volImg{
-      width:100%;
-      height: auto;
-    }
-  }
-    @media (max-width: 1214px){
-      width: 100%;
-    }
 `;
 
 export const VolunteersCards = styled.div`
-  @media (max-width: 991px) {
+  @media (max-width: 1200px) {
     display: flex;
     flex-direction: column;
-  }
-  @media (min-width: 991px){
-    display:flex;
-    flex-wrap: wrap;
-    justify-content:center;
+    margin: 10px !important
   }
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
   margin: 60px;
+  @media(max-width:1300px){
+        margin: 60px 35px;
+  }
   .icon {
     text-align: center;
     font-size: 40px;
@@ -504,24 +534,21 @@ export const VolunteersCards = styled.div`
 `;
 
 export const Cards = styled.div`
-  @media (max-width: 991px) {
+  @media (max-width: 650px) {
     display: flex;
     flex-direction: column;
   }
-  @media (min-width: 991px){
-    display:flex;
-    flex-wrap: wrap;
-    justify-content:center;
-  }
   display: flex;
-  gap: 18px;
-  margin: 40px;
-    .icon{
-  text-align:center;
-  font-size:40px;
-  font-weight:800;
-  margin-bottom:20px;
-}
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 60px;
+  .icon {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
   .head {
     font-size: 20px;
     line-height: 20px;
@@ -538,6 +565,16 @@ export const Cards = styled.div`
     line-height: 26px;
     color: #818181;
     font-weight: 400;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    color: #424242;
   }
   .headText {
     padding-right: 35px;
@@ -637,7 +674,7 @@ margin-bottom:60x;
     transition: 0.3s ease-in;
   }
   @media (max-width: 995px){
-    margin-left: 5%;
+    margin-left: 2%;
    margin-bottom:0px;
 
   }
@@ -743,6 +780,9 @@ padding-bottom:160px;
 export const Heading = styled.div`
 flex: 0.6;
 margin:80px 40px 80px 40px;
+.container{
+  padding:60px 110px;
+}
 .head {
   font-size: 54px;
   line-height: 66px;
@@ -769,6 +809,9 @@ margin:80px 40px 80px 40px;
   padding:0;
   margin:0;
     }
+    .container{
+  padding:2%;
+}
   }
   @media (min-width: 991px){
     flex:0.5;
@@ -796,7 +839,7 @@ margin-right: 100px;
 export const Head = styled.div`
 /* margin-top:20px; */
 @media (max-width:991px){
-  padding:0 4% 0 4%;
+  padding:0 2% 0 2%;
 }
 .icon-right{
     text-align: end;
