@@ -875,7 +875,6 @@ export const First = styled.div`
     height: auto;
   }
   .textContainer{
-    // width:100%;
     @media (max-width:1300px) and (min-width:1100px){
       width:94%;
     }
@@ -1522,7 +1521,6 @@ export const Card1 = styled.div`
   }
   .card1 {
     width: 370px;
-    // margin: 0 0 20px 20px;
     background-color: #f2f0ec;
     @media (max-width: 1200px) {
       width: 98%;

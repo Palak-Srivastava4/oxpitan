@@ -497,19 +497,6 @@ export const SocialIcon=styled.div`
 
 `
 export const BtnBg = styled.a`
-// @media only screen and (max-width:800px)and (min-width:458px){
-//   padding:4px;
-//   line-height: 0px;
-// }
-// .icon{
-//   @media(max-width:457px){
-//     font-size: 12px;
-//   }
-// }
-// @media(max-width:457px){
-//   padding:1px;
-//   line-height: 0px;
-// }
   font-size: 18px;
   background:${({ backgroundColor }) => backgroundColor};
   color: #fff;

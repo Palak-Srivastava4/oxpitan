@@ -33,7 +33,7 @@ import { FaHandsHoldingChild } from "react-icons/fa6";
 
 const Home = () => {
   return (
-    <Styled.HomePageContainer className="dddddd">
+    <Styled.HomePageContainer>
       <Navigation />
 
       <Styled.MainContainer>
