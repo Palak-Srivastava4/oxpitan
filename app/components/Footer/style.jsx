@@ -7,7 +7,7 @@ export const FooterBackground = styled.div`
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  padding:30px 0px;
+  padding: 30px 0px;
 `;
 export const Copy = styled.div`
   height: 100px;
@@ -34,7 +34,7 @@ export const MainContainer = styled.div`
     display: flex;
     justify-content: end;
     gap: 20px;
-    @media(max-width:1200px){
+    @media (max-width: 1200px) {
       margin-top: 17px;
       justify-content: left;
     }
@@ -60,7 +60,7 @@ export const MainContainer = styled.div`
     display: inline-block;
     color: #fff;
   }
-  
+
   .itemIcon {
     display: flex;
     gap: 10px;
@@ -71,6 +71,11 @@ export const MainContainer = styled.div`
     gap: 20px;
     justify-content: center;
     margin-top: 31px;
+    @media (max-width: 600px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   .BtnDonate:hover {
@@ -111,14 +116,17 @@ export const MainContainer = styled.div`
     outline: none;
     border: none;
     padding: 0px 20px;
+    @media (max-width: 600px) {
+      width: 100%;
+      height: 48px;
+    }
   }
 `;
 
 export const BtnBg = styled.a`
-
   font-size: 18px;
   text-transform: uppercase;
-  background:${({ backgroundColor }) => backgroundColor};
+  background: ${({ backgroundColor }) => backgroundColor};
   color: #fff;
   font-weight: 600;
   letter-spacing: 1px;
@@ -159,7 +167,7 @@ export const BtnBg = styled.a`
   }
   &:hover,
   &:hover:after {
-    background-color: #F1AE44;
+    background-color: #f1ae44;
     color: #fff;
   }
 `;
@@ -184,8 +192,8 @@ export const NewsContainer = styled.div`
 export const Blogs = styled.div`
   display: flex;
   margin-top: 80px;
-  @media(max-width:1200px){
-        flex-direction: column;
+  @media (max-width: 1200px) {
+    flex-direction: column;
   }
 
   .indexData {
@@ -214,7 +222,7 @@ export const Blogs = styled.div`
 export const BtnDark = styled.a`
   font-size: 14px;
   text-transform: uppercase;
-  background: #E36955;
+  background: #e36955;
   color: #fff;
   font-weight: 600;
   letter-spacing: 1px;
@@ -239,7 +247,7 @@ export const BtnDark = styled.a`
     top: 0;
     left: 1px;
     z-index: -1;
-    background: #E36955;
+    background: #e36955;
     -webkit-transform-origin: bottom left;
     transform-origin: bottom left;
     -webkit-transform: skew(-12deg, 0deg);
@@ -255,7 +263,7 @@ export const BtnDark = styled.a`
   }
   &:hover,
   &:hover:after {
-    background-color: #F1AE44;
+    background-color: #f1ae44;
     color: #fff;
   }
 `;
