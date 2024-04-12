@@ -179,6 +179,9 @@ export const Register = styled.div`
   }
 `;
 export const FormData = styled.div`
+.submit{
+  margin-top:3%;
+}
   flex: 0.6;
   padding-left: 46px;
   @media (max-width: 991px){
@@ -339,11 +342,9 @@ export const Requirements = styled.div`
   }
 `;
 export const Team = styled.div`
+margin: 120px ;
 @media (max-width: 991px){
-.container{
-  padding:0;
-  margin:0;
-}
+  margin:120px 0;
 }
   .abc {
     background: blue;
@@ -489,7 +490,8 @@ export const VolunteersCards = styled.div`
   align-items: center;
   justify-content: center;
   gap: 20px;
-  margin: 60px;
+  
+  margin: 120px ;
   @media(max-width:1300px){
         margin: 60px 35px;
   }
@@ -722,11 +724,7 @@ export const Btn = styled.a`
     -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
   }
-  &:hover,
-  &:hover:after {
-    background-color: #e36955;
-    color: #fff;
-  }
+
 `;
 
 export const FingerPrints = styled.div`
@@ -781,7 +779,7 @@ export const Heading = styled.div`
 flex: 0.6;
 margin:80px 40px 80px 40px;
 .container{
-  padding:60px 110px;
+  padding:0 0px 100px 110px;
 }
 .head {
   font-size: 54px;
@@ -889,9 +887,11 @@ p{
   line-height: 28px;
   color: gray;
 }`;
-
+export const BtnDon = styled.div`
+display:flex;
+justify-content:center;
+`;
 export const BtnDarkCenter = styled.div`
-margin-left:43%;
 margin-bottom:60px;
   font-size: 12px;
   text-transform: uppercase;
@@ -938,18 +938,6 @@ margin-bottom:60px;
   &:hover:after {
     background-color: #F1AE44;
     color: #fff;
-  }
-  @media (max-width: 480px){
-    margin-left:32%;
-    margin-bottom: 20%;
-  }
-   @media (max-width: 600px){
-    margin-left:38%;
-    margin-bottom: 20%;
-  }
-  @media (max-width: 991px){
-      margin-left:38%;
-      margin-bottom: 20%;
   }
 `;
 

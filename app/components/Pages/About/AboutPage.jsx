@@ -156,8 +156,11 @@ const AboutPage = () => {
               })}
               
             </Styled.Cards> 
+            <Styled.BtnDon>
             <Styled.BtnDarkCenter className="btnCenter" href="">donate now</Styled.BtnDarkCenter>
+            </Styled.BtnDon>
           </div>
+        
 
           <Styled.Evanto>
             {evanto.map((item) => {

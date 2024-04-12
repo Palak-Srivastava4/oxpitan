@@ -15,7 +15,7 @@ const Team = () => {
         </Styled.Contact>
         <Styled.BtnDark href="">home .our team</Styled.BtnDark>
       </Styled.BreadCrumb>
-      <Styled.Team className="container">
+      <Styled.Team >
 
       <Styled.VolunteersCards >
             {Volun.map((item) => {

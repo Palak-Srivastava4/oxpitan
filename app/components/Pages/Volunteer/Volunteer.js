@@ -60,8 +60,8 @@ const Volunteer = () => {
             <Styled.Input type="text" placeholder="Address" />
             <Styled.Input type="text" placeholder="Date of Birth" />
             <Styled.Input type="text" placeholder="Occupation" />
-            <Styled.TextArea type="text" placeholder="Write a Message" />
-            <Styled.Btn href="">send message</Styled.Btn> 
+            <Styled.TextArea type="text" className="mess" placeholder="Write a Message" />
+            <Styled.Btn className="submit" href="">send message</Styled.Btn> 
 
           </Styled.FormData>
         </Styled.Form>
