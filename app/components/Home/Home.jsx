@@ -167,7 +167,7 @@ const Home = () => {
             </Styled.Cards>
           </div>
           <Styled.DonationBtnCenterPadding>
-            <Styled.BtnDark href="">Start Donation</Styled.BtnDark>
+            <Styled.BtnDark href="">Donate Now</Styled.BtnDark>
           </Styled.DonationBtnCenterPadding>
           
             <Styled.Fundraising src={mixerBg2.src}>
