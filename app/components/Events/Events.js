@@ -15,13 +15,13 @@ const Events = () => {
         </Styled.Contact>
         <Styled.BtnDark href="">home .events</Styled.BtnDark>
       </Styled.BreadCrumb>
-      <div className="container">
+        <Styled.EventList>
       <Styled.Events >
-      {eventData?.map((item, index)=>{
+      {eventData?.map((item)=>{
         return <Styled.Card>
         <div className="imgDate">
-        <Image src={item.img}/>
-        <div className="date" style={{ background: item.color }}>
+        <Styled.BtnStatic backgroundColor={item.color}>
+        <div className="date" >
         <span className="today">
         {item.today}
         </span>
@@ -29,6 +29,8 @@ const Events = () => {
         {item.month}
         </span>
       </div>
+      </Styled.BtnStatic>
+        <Image className="image" src={item.img}/>
         </div>
         <div className="heading">
         <a href="" className="anchor" >{item.head}</a>
@@ -43,8 +45,8 @@ const Events = () => {
       {eventData2?.map((item, index)=>{
         return <Styled.Card>
         <div className="imgDate">
-        <Image src={item.img}/>
-        <div className="date" style={{ background: item.color }}>
+        <Styled.BtnStatic backgroundColor={item.color}>
+        <div className="date" >
         <span className="today">
         {item.today}
         </span>
@@ -52,6 +54,9 @@ const Events = () => {
         {item.month}
         </span>
       </div>
+      </Styled.BtnStatic>
+        <Image className="image" src={item.img}/>
+       
         </div>
         <div className="heading">
         <a href="" className="anchor" >{item.head}</a>
@@ -62,7 +67,8 @@ const Events = () => {
       })}
       
       </Styled.Events>
-      </div>
+      </Styled.EventList>
+     
       <Footer />
     </div>
   );

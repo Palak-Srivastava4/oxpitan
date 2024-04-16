@@ -1075,3 +1075,62 @@ export const BtnBg = styled.div`
     transition: 0.3s ease-in;
   }
 `;
+
+export const Unsolved = styled.div`
+display:flex;
+justify-content:center;
+align-items:center;
+margin: 80px;
+.image{
+  height:70%;
+  width:50%;
+}
+
+@media (max-width: 576px){
+  display:inline-block;
+  margin:0;
+  .image{
+   margin-top:20%;
+    height:100%;
+    width:100%;
+    padding:0 3%; 
+  }
+}
+@media (max-width: 991px){
+  display:inline-block;
+  margin:0;
+  .image{
+    margin-top:20%;
+    height:100%;
+    width:100%;
+    padding:0 8%;
+  }
+}
+
+`;
+
+export const Details = styled.div`
+li{
+font-size:18px;
+line-height:24px;
+color:gray;
+padding:8px;
+margin-left:40px;
+list-style:none ;
+text-align: justify;
+}
+span{
+  font-size:18px;
+color:gray;
+padding:8px;
+margin-left:40px;
+}
+
+@media (max-width: 991px){
+  margin-bottom:10%;
+  li{
+    margin:0;
+    margin-right:4%;
+  }
+}
+`;

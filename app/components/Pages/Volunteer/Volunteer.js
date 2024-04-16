@@ -56,7 +56,7 @@ const Volunteer = () => {
             <Styled.Input type="text" placeholder="Email Address" />
 
             <Styled.Input type="number" placeholder="Phone Number" />
-
+ 
             <Styled.Input type="text" placeholder="Address" />
             <Styled.Input type="text" placeholder="Date of Birth" />
             <Styled.Input type="text" placeholder="Occupation" />

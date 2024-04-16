@@ -151,6 +151,11 @@ const Navbar = () => {
                   <Styled.DropdownItem className="dropdown">
                     <Styled.NavLink href="sponsors">Sponsors</Styled.NavLink>
                   </Styled.DropdownItem>
+
+                  <Styled.DropdownItem className="dropdown">
+                    <Styled.NavLink href="programme">Programme</Styled.NavLink>
+                  </Styled.DropdownItem>
+
                 </Styled.DropdownMenu>
               </Styled.NavItem>
               <Styled.NavItem>
@@ -211,6 +216,9 @@ const Navbar = () => {
               <hr />
               <a className="list" href="team">Our Team</a> <hr />
               <a className="list" href="sponsors">Sponsors</a> <hr />
+
+              <a className="list" href="programme">Programme</a> <hr />
+
             </ul>
             <a className="heading" href="contact">Contact</a> <hr />
             <Styled.SocialIcon className="itemStyle">

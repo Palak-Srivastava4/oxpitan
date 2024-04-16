@@ -14,7 +14,6 @@ const News = () => {
         <Styled.Contact className="container">
           <div className="head">News</div>
         </Styled.Contact>
-        <Styled.BtnDark href="">home .news</Styled.BtnDark>
       </Styled.BreadCrumb>
       <Styled.NewsSections className="container">
         <Styled.Sections>
