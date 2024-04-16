@@ -590,8 +590,17 @@ export const SponsorsData = styled.div`
   align-items:center;
   justify-content:center;
   gap: 9%;
+  @media (max-width: 991px){
+    display:inline-block;
+  }
 `;
 
+export const EvantoImg = styled.div`
+@media (max-width: 991px){
+  width:100%;
+  height:auto;
+}
+`;
 
 export const Evanto = styled.div`
 height:400px;
@@ -607,6 +616,9 @@ height:2px;
 background:#818181;
 `
 export const CompanyName = styled.div`
+@media (max-width:991px){
+  margin-top:10%;
+}
   flex: 0.9;
   .name {
     font-size: 24px;
@@ -1086,16 +1098,6 @@ margin: 80px;
   width:50%;
 }
 
-@media (max-width: 576px){
-  display:inline-block;
-  margin:0;
-  .image{
-   margin-top:20%;
-    height:100%;
-    width:100%;
-    padding:0 3%; 
-  }
-}
 @media (max-width: 991px){
   display:inline-block;
   margin:0;
@@ -1103,10 +1105,9 @@ margin: 80px;
     margin-top:20%;
     height:100%;
     width:100%;
-    padding:0 8%;
+    padding:0 3%;
   }
 }
-
 `;
 
 export const Details = styled.div`

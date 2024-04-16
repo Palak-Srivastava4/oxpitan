@@ -20,12 +20,12 @@ const Sponsors = () => {
           return (
             <>
               <Styled.SponsorsData>
-                <Styled.Evanto>
+                <Styled.EvantoImg>
                   <Styled.BtnBg backgroundColor={item.color}>
                         <div className="img">  <Image src={item.img} /></div>
                       </Styled.BtnBg>
 
-                </Styled.Evanto>
+                </Styled.EvantoImg>
                 <Styled.CompanyName>
                   <div className="name">{item.companyName}</div>
                   <div className="aut">{item.country}</div>
