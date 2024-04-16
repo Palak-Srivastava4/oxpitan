@@ -265,7 +265,7 @@ export const BtnDark = styled.a`
 `;
 export const AboutSectionBox = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 25px;
   margin: 100px 0px 100px 0px;
   @media (max-width: 1200px) {
@@ -291,8 +291,11 @@ export const BtnBG = styled.div`
     padding: 0px 10px 0px 10px;
     &.btnWidth {
       width: 83%;
-      max-width:83%;
+      max-width: 83%;
     }
+  }
+  @media (max-width: 1500px) and (min-width: 1210px) {
+    width: 25%;
   }
   text-transform: uppercase;
   background: ${({ backgroundColor }) => backgroundColor};

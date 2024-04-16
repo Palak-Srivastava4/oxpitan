@@ -2,6 +2,8 @@ import * as Styled from "./style";
 import React from "react";
 import footerBg from "../../assets/image/footerBg.svg";
 import { Data, icons } from "./data";
+import logo1 from "../../assets/image/logo1.svg";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -10,10 +12,22 @@ const Footer = () => {
         <Styled.NewsContainer className="container">
           <Styled.MainContainer>
             <div className="newsStay">
-              <h2 className="news">Newsletter</h2>
-              <span className="update">stay updated</span>
+              <Image
+                src={logo1}
+                alt="logo"
+                className="img"
+                style={{ background: "white" }}
+              />
+              <Styled.Text>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </Styled.Text>
+              {/* <h2 className="news">Newsletter</h2>
+              <span className="update">stay updated</span> */}
             </div>
-            <div className="textItem">
+            {/* <div className="textItem">
               <input
                 type="text"
                 placeholder="Email address"
@@ -21,9 +35,9 @@ const Footer = () => {
               />
               <Styled.BtnDark href="">subscribe</Styled.BtnDark>
 
-            </div>
+            </div> */}
 
-            <Styled.Blogs>
+            {/* <Styled.Blogs>
               {Data?.map((item, index) => {
                 return (
                   <div className="indexData">
@@ -38,9 +52,8 @@ const Footer = () => {
                   </div>
                 );
               })}
-            </Styled.Blogs>
+            </Styled.Blogs> */}
 
-          
             <div className="itemStyle">
               {icons?.map((item) => {
                 return (
@@ -53,9 +66,11 @@ const Footer = () => {
           </Styled.MainContainer>
         </Styled.NewsContainer>
         <Styled.Copy>
-        <div>
-        <div className="copy">© Copyright 2020 by <a href="">Layerdrops.com</a></div>
-        </div>
+          <div>
+            <div className="copy">
+              © Copyright 2020 by <a href="">Layerdrops.com</a>
+            </div>
+          </div>
         </Styled.Copy>
       </Styled.FooterBackground>
     </>

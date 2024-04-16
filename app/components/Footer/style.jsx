@@ -32,11 +32,11 @@ export const Copy = styled.div`
 export const MainContainer = styled.div`
   .itemStyle {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     gap: 20px;
     @media (max-width: 1200px) {
       margin-top: 17px;
-      justify-content: left;
+      justify-content: center;
     }
   }
   .colorChng {
@@ -266,4 +266,9 @@ export const BtnDark = styled.a`
     background-color: #f1ae44;
     color: #fff;
   }
+`;
+export const Text = styled.div`
+  color: #ffffff;
+  margin: 30px 10px;
+  text-align: center;
 `;
