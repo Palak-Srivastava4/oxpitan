@@ -31,6 +31,11 @@ display:inline-block;
     margin-top:110px;
     margin-bottom:80px;
   }
+  .headProg{
+     margin-top:110px;
+    margin-bottom:80px;
+    text-align: center;
+  }
 .volHead{
     margin-top:110px;
     margin-bottom:80px;
@@ -40,6 +45,13 @@ display:inline-block;
   .volHead{
      margin-top:50px;
     margin-bottom:80px;
+    font-size:58px;
+  }
+  .headProg{
+    font-size: 56px;
+  }
+  .head{
+    font-size:64px;
   }
 }
   /* @media (max-width: 991px){
@@ -342,9 +354,9 @@ export const Requirements = styled.div`
   }
 `;
 export const Team = styled.div`
-margin: 120px ;
+margin: 3% ;
 @media (max-width: 991px){
-  margin:120px 0;
+  margin:2% 0;
 }
   .abc {
     background: blue;
@@ -589,6 +601,7 @@ export const SponsorsData = styled.div`
   display: flex;
   align-items:center;
   justify-content:center;
+  margin:60px 0;
   gap: 9%;
   @media (max-width: 991px){
     display:inline-block;
@@ -613,18 +626,19 @@ height:400px;
 
 export const Line=styled.div`
 height:2px;
-background:#818181;
+background:lightgrey;
+margin:0 7%;
 `
 export const CompanyName = styled.div`
 @media (max-width:991px){
   margin-top:10%;
 }
   flex: 0.9;
+  padding:0 10%;
   .name {
     font-size: 24px;
     font-weight: 800;
     margin-bottom: 6px;
-    margin-top: -6px;
     color: #424242;
   }
   .aut {
@@ -644,8 +658,8 @@ export const CompanyName = styled.div`
 `;
 
 export const BtnDark = styled.div`
-margin-left:100px;
-margin-bottom:60x;
+margin-left:7%;
+/* margin-bottom:60px; */
   font-size: 12px;
   text-transform: uppercase;
   background: #E36955;
@@ -686,11 +700,6 @@ margin-bottom:60x;
     -ms-transition: 0.3s ease-in;
     -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
-  }
-  @media (max-width: 995px){
-    margin-left: 2%;
-   margin-bottom:0px;
-
   }
 `;
 
@@ -964,6 +973,9 @@ export const Latest = styled.div`
           font-size: 36px;
     line-height: 38px;
     width:auto;
+  .cause{
+    text-align:left;
+  }
     }
   margin: 60px 0px 60px 0px;
   .latest {
@@ -1120,15 +1132,13 @@ margin-left:40px;
 list-style:none ;
 text-align: justify;
 }
-span{
-  font-size:18px;
-color:gray;
-padding:8px;
-margin-left:40px;
-}
 
 @media (max-width: 991px){
   margin-bottom:10%;
+  ul{
+    margin:2%;
+    padding:0;
+  }
   li{
     margin:0;
     margin-right:4%;

@@ -15,7 +15,7 @@ const Sponsors = () => {
         </Styled.Contact>
         <Styled.BtnDark href="">home .Sponsors</Styled.BtnDark>
       </Styled.BreadCrumb>
-      <Styled.Team className="container">
+      <Styled.Team >
         {sponsorsData?.map((item) => {
           return (
             <>

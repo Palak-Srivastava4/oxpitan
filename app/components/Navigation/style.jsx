@@ -363,7 +363,6 @@ export const IconBox = styled.div`
     display: none;
 
     }
-}
 `;
 export const Icon = styled.div`
   @media only screen and (max-width: 1200px) {

@@ -35,9 +35,10 @@ display:inline-block;
 
 export const EventList = styled.div`
 margin:8%;
+padding:2%;
   @media (max-width: 991px){
-margin-left:3%;
-margin-right:3%;
+margin-left:2%;
+margin-right:2%;
 display:inline-block;
 .image{
   width:100%;
@@ -183,8 +184,6 @@ export const Play = styled.div`
 `;
 
 export const BtnDark = styled.div`
-margin-left:100px;
-margin-bottom:60x;
   font-size: 12px;
   text-transform: uppercase;
   background: #E36955;
@@ -225,11 +224,6 @@ margin-bottom:60x;
     -ms-transition: 0.3s ease-in;
     -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
-  }
-  @media (max-width: 995px){
-    margin-left: 2%;
-   margin-bottom:0px;
-
   }
 `;
 export const BtnStatic = styled.div`
