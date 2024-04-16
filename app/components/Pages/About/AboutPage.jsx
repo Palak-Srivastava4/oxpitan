@@ -1,35 +1,36 @@
+import React from "react";
 import * as Styled from "../style";
 import Footer from "../../Footer/Footer";
 import Image from "next/image";
 import Navigation from "../../Navigation/Navigation";
-import React from "react";
+
 import about from "../../../assets/image/about.svg";
 import aboutPage2 from "../../../assets/image/aboutPage2.svg";
 import mixerBg2 from "../../../assets/image/mixerBg2.svg";
-import { Volun, para, questions, evanto } from "./data";
+import { Volun, para, questions, evanto, Data } from "./data";
 import faq from "../../../assets/image/faq.jpg";
+import Accordion from 'react-bootstrap/Accordion';
+import { AiOutlinePlus } from "react-icons/ai";
 
 const AboutPage = () => {
   return (
     <div>
       <Navigation />
-      <Styled.BreadCrumb>
-        <Styled.Contact className="container">
+      <Styled.BreadCrumb >
+        <Styled.Contact >
           <div className="head">About</div>
         </Styled.Contact>
-        <div>
         <Styled.BtnDark href="">home .about</Styled.BtnDark>
-        </div>
       </Styled.BreadCrumb>
-      <div className="container">
-        <Styled.About>
-          <Image src={about} />
+      <div style={{width:"100%"}} >
+        <Styled.About className="container">
+          <Image className="aboutimg" src={about} />
         </Styled.About>
-        <Styled.Discover>
+        <Styled.Discover className="container">
           <Styled.Oxpitan>
             <div>
               {" "}
-              <Image src={aboutPage2} />
+              <Image className="image" src={aboutPage2} />
             </div>
           </Styled.Oxpitan>
           <Styled.Agency>
@@ -70,13 +71,13 @@ const AboutPage = () => {
               <p className="help">meet profesionals</p>
             </div>
           </Styled.Latest>
-          <Styled.Cards >
+          <Styled.VolunteersCards >
             {Volun.map((item) => {
               return (
                 <Styled.First backgroundColor={item.color}>
                   <div className="mainDiv">
                     <div>
-                      <Image className="" src={item.img} />
+                      <Image className="image" src={item.img} />
                     </div>
                     <div style={{ width: "100%" }}>
                       <div className="brownBlock">
@@ -94,20 +95,37 @@ const AboutPage = () => {
                 </Styled.First>
               );
             })}
-          </Styled.Cards>
+          </Styled.VolunteersCards>
 
-
-<Styled.FAQ>
+<Styled.FAQ >
 <Styled.Heading>
             <div className="container latest">
               <h2 className="head">Have any Question?</h2>
               <p className="subhead">FREQUENTLY ASKED QUESTIONS</p>
-              <Image src={faq}></Image>
+              <Image className="faqimg" src={faq}></Image>
             </div>
           </Styled.Heading>
-          <Styled.QA>
-<h4>collapse section</h4>
-          </Styled.QA>
+          <Styled.Ques>
+          <Accordion defaultActiveKey="-1" bsPrefix="mt=3">
+            {questions?.map((q)=>{
+              return (<Accordion.Item eventKey={`${q.id}`}>
+                <Styled.Head>
+              <Accordion.Header className="headerBg" bsPrefix="mt=3 bg-white">
+                <div className="headingChanges" style={{ display: "flex", width: "100%", textAlign: "left", alignItems: "center"}}><h3>{q.ques}</h3> 
+                <div className="icon-right"> <AiOutlinePlus /></div>
+                </div>
+                </Accordion.Header>
+              </Styled.Head>
+              <Styled.para>
+              <Accordion.Body bsPrefix="bg-white">
+             <p className="accordion-body" > {q.ans} </p>
+              </Accordion.Body> 
+              </Styled.para>
+            </Accordion.Item>)
+            })}
+            
+        </Accordion>
+          </Styled.Ques>
 </Styled.FAQ>
 
 <Styled.Latest>
@@ -122,9 +140,8 @@ const AboutPage = () => {
          
           <div>
             <Styled.Cards>
-              
-
-              {para?.map((item, index) => {
+  
+   {para?.map((item, index) => {
                 return (
                   <>
                   <div className="belive">
@@ -138,9 +155,12 @@ const AboutPage = () => {
                 );
               })}
               
-            </Styled.Cards>
+            </Styled.Cards> 
+            <Styled.BtnDon>
             <Styled.BtnDarkCenter className="btnCenter" href="">donate now</Styled.BtnDarkCenter>
+            </Styled.BtnDon>
           </div>
+        
 
           <Styled.Evanto>
             {evanto.map((item) => {

@@ -15,14 +15,14 @@ const Team = () => {
         </Styled.Contact>
         <Styled.BtnDark href="">home .our team</Styled.BtnDark>
       </Styled.BreadCrumb>
-      <Styled.Team className="container">
+      <Styled.Team >
 
-      <Styled.Cards >
+      <Styled.VolunteersCards >
             {Volun.map((item) => {
               return (
                 <Styled.First backgroundColor={item.color}>
                   <div className="mainDiv">
-                      <Image className="" src={item.img} />           
+                      <Image className="image" src={item.img} />           
                     <div style={{ width: "100%" }}>
                       <div className="brownBlock">
                         <div className="mid">
@@ -37,14 +37,14 @@ const Team = () => {
                 </Styled.First>
               );
             })}
-          </Styled.Cards>         
+          </Styled.VolunteersCards>         
           
-           <Styled.Cards >
+           <Styled.VolunteersCards >
             {Volun2.map((item) => {
               return (
                 <Styled.First backgroundColor={item.color}>
                   <div className="mainDiv">
-                      <Image className="" src={item.img} />
+                      <Image className="image" src={item.img} />
                     <div style={{ width: "100%" }}>
                       <div className="brownBlock">
                         <div className="mid">
@@ -59,7 +59,7 @@ const Team = () => {
                 </Styled.First>
               );
             })}
-          </Styled.Cards>
+          </Styled.VolunteersCards>
 
       </Styled.Team>
       <Footer />

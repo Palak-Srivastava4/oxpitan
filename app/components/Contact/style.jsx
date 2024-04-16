@@ -18,6 +18,7 @@ export const BreadCrumb = styled.div`
 `;
 export const Contact = styled.div`
   font-size: 60px;
+  font-family: "Playfair Display", serif;
   line-height: 60px;
   letter-spacing: 0;
   color: #424242;
@@ -56,12 +57,13 @@ export const Touch = styled.div`
   .touch {
     padding: 86px 20px 0px 0px;
 }
-  }
+  
   .touchwith {
     font-size: 50px;
     line-height: 60px;
     font-weight: 700;
     color: #424242;
+     font-family: "Playfair Display", serif;
   }
   .message {
     color: #863bae;
@@ -105,6 +107,9 @@ export const Form = styled.div`
 
 export const FormSection = styled.div`
   display: flex;
+  @media (max-width: 991px){
+    display:inline-block;
+  }
 `;
 
 export const MainForm = styled.div`
@@ -240,9 +245,19 @@ export const AboutSectionBox=styled.div`
     justify-content: space-between;
     gap: 25px;
         margin: 100px 0px 100px 0px;
+        @media (max-width: 991px){
+flex-direction:column;
+width:80%;
+        }
 `
 export const BtnBG =styled.div`
-
+.head{
+  font-size: 20px;
+    /* line-height: 60px; */
+    font-weight: 700;
+    padding:40px 0 0 0;
+    font-family: "Playfair Display", serif;
+}
   text-transform: uppercase;
   background:${({ backgroundColor }) => backgroundColor};
   color: #ffffff;

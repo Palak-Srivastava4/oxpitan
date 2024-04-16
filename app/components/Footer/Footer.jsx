@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
 
             <Styled.Blogs>
-              {Data?.map((item, index) => {
+              {Data?.map((item) => {
                 return (
                   <div className="indexData">
                     <div className="head">{item.heading}</div>
@@ -33,7 +33,7 @@ const Footer = () => {
                       <div className="subData">{item.subData2}</div>
                       <div className="subData">{item.subData3}</div>
                       <div className="subData">{item.subData4}</div>
-                      <div>{item.subData5}</div>
+                      <div className="subData">{item.subData5}</div>
                     </div>
                   </div>
                 );

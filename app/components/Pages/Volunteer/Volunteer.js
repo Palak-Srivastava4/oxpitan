@@ -12,11 +12,9 @@ const Volunteer = () => {
       <Navigation />
       <Styled.BreadCrumb>
         <Styled.Contact className="container">
-          <div className="head">Become A Volunteer</div>
+          <div className="volHead">Become A Volunteer</div>
         </Styled.Contact>
-        <div>
         <Styled.BtnDark href="">home .become a Volunteer</Styled.BtnDark>
-        </div>
       </Styled.BreadCrumb>
       <div className="container" style={{ marginTop: "70px" }}>
         <Styled.Register>
@@ -25,7 +23,7 @@ const Volunteer = () => {
         </Styled.Register>
         <Styled.Form>
           <Styled.Requirements>
-            <Image src={formImg} />
+            <Image className="image" src={formImg} />
             <div>
               <h3 className="require">Requirements</h3>
               <div className="para">
@@ -42,13 +40,13 @@ const Volunteer = () => {
                 <div className="vixat"><TiTick className="tick"/> Dius lorem tincidunt vixat</div>
               </div>
               <div className="numEmail">
-                <div>
+                <div className="num">
                   <h3 className="call">Call us</h3>
                   <span className="no">666 888 0000</span>
                 </div>
-                <div>
+                <div className="email">
                   <h3 className="call">Send email</h3>
-                  <span className="no">needhelp@oxpitan.com</span>
+                  <span className="no" id="break">needhelp@oxpitan.com</span>
                 </div>
               </div>
             </div>
@@ -58,12 +56,12 @@ const Volunteer = () => {
             <Styled.Input type="text" placeholder="Email Address" />
 
             <Styled.Input type="number" placeholder="Phone Number" />
-
+ 
             <Styled.Input type="text" placeholder="Address" />
             <Styled.Input type="text" placeholder="Date of Birth" />
             <Styled.Input type="text" placeholder="Occupation" />
-            <Styled.TextArea type="text" placeholder="Write a Message" />
-            <Styled.Btn href="">send message</Styled.Btn> 
+            <Styled.TextArea type="text" className="mess" placeholder="Write a Message" />
+            <Styled.Btn className="submit" href="">send message</Styled.Btn> 
 
           </Styled.FormData>
         </Styled.Form>

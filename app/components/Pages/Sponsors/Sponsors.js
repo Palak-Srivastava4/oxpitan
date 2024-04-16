@@ -13,21 +13,18 @@ const Sponsors = () => {
         <Styled.Contact className="container">
           <div className="head">Sponsors</div>
         </Styled.Contact>
+        <Styled.BtnDark href="">home .Sponsors</Styled.BtnDark>
       </Styled.BreadCrumb>
       <Styled.Team className="container">
-        {sponsorsData?.map((item, index) => {
+        {sponsorsData?.map((item) => {
           return (
             <>
               <Styled.SponsorsData>
                 <Styled.Evanto>
-                  <div className="maindiv" style={{ background: item.color }}>
-                    <div
-                      className="BtnDonate"
-                      style={{ background: item.color }}
-                    >
-                      <Image src={item.img} className="btn" />
-                    </div>
-                  </div>
+                  <Styled.BtnBg backgroundColor={item.color}>
+                        <div className="img">  <Image src={item.img} /></div>
+                      </Styled.BtnBg>
+
                 </Styled.Evanto>
                 <Styled.CompanyName>
                   <div className="name">{item.companyName}</div>

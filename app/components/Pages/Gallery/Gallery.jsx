@@ -13,10 +13,11 @@ const Gallery = () => {
         <Styled.Contact className="container">
           <div className="head">Gallery</div>
         </Styled.Contact>
+        <Styled.BtnDark href="">home .gallery</Styled.BtnDark>
       </Styled.BreadCrumb>
       <div className="container" style={{marginTop:"70px"}}>
         <Styled.Pictures>
-          {ImageData?.map((item, index) => {
+          {ImageData?.map((item) => {
             return (
               <Styled.Images>
                 <Image src={item.img} />
@@ -25,7 +26,7 @@ const Gallery = () => {
           })}
         </Styled.Pictures>
         <Styled.Pictures>
-          {ImageData1?.map((item, index) => {
+          {ImageData1?.map((item) => {
             return (
               <Styled.Images>
                 <Image src={item.img} />
@@ -34,13 +35,15 @@ const Gallery = () => {
           })}
         </Styled.Pictures>
         <Styled.Pictures>
-          {ImageData2?.map((item, index) => {
+          <div className="spacing">
+          {ImageData2?.map((item) => {
             return (
               <Styled.Images>
                 <Image src={item.img} />
               </Styled.Images>
             );
           })}
+          </div>
         </Styled.Pictures>
       </div>
       <Footer />

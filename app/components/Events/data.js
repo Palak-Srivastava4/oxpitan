@@ -12,8 +12,8 @@ export const eventData = [
     head: "Save the planets",
     data: "8:00am to 2:00pm .San marcos",
     color: "#863bae",
-    today: "7",
-    month: "Mar",
+    today: "6",
+    month: "May",
   },
   {
     id: 1,
@@ -21,8 +21,8 @@ export const eventData = [
     head: "Play for the world",
     data: "8:00am to 2:00pm .San marcos",
     color: "#50bac3",
-    today: "10",
-    month: "Feb",
+    today: "9",
+    month: "Mar",
   },
   {
     id: 2,
@@ -30,8 +30,8 @@ export const eventData = [
     head: "Water for charity",
     data: "8:00am to 2:00pm .San marcos",
     color: "#e36955",
-    today: "2",
-    month: "Apr",
+    today: "4",
+    month: "Mar",
   },
 ];
 export const eventData2 = [
@@ -41,7 +41,7 @@ export const eventData2 = [
     head: "Help for education",
     data: "8:00am to 2:00pm .San marcos",
     color: "#863bae",
-    today: "7",
+    today: "2",
     month: "Mar",
   },
   {
@@ -50,8 +50,8 @@ export const eventData2 = [
     head: "Protect eco system",
     data: "8:00am to 2:00pm .San marcos",
     color: "#50bac3",
-    today: "9",
-    month: "Feb",
+    today: "22",
+    month: "Mar",
   },
   {
     id: 2,
@@ -59,7 +59,7 @@ export const eventData2 = [
     head: "Fight for right cause",
     data: "8:00am to 2:00pm .San marcos",
     color: "#e36955",
-    today: "10",
-    month: "Apr",
+    today: "11",
+    month: "Feb",
   },
 ];
