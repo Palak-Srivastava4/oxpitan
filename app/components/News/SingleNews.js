@@ -16,6 +16,7 @@ const SingleNews = () => {
         <Styled.Contact className="container">
           <div className="head">Single News</div>
         </Styled.Contact>
+        <Styled.BtnDark href="">home .Single news</Styled.BtnDark>
       </Styled.BreadCrumb>
       <Styled.Category className="container">
         <Styled.Search>

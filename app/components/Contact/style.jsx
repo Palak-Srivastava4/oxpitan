@@ -29,6 +29,7 @@ export const MainContainer = styled.div`
 `;
 export const Contact = styled.div`
   font-size: 60px;
+  font-family: "Playfair Display", serif;
   line-height: 60px;
   letter-spacing: 0;
   color: #424242;
@@ -67,12 +68,13 @@ export const Touch = styled.div`
   .touch {
     padding: 86px 20px 0px 0px;
 }
-  }
+  
   .touchwith {
     font-size: 50px;
     line-height: 60px;
     font-weight: 700;
     color: #424242;
+     font-family: "Playfair Display", serif;
   }
   .message {
     color: #863bae;
@@ -122,8 +124,13 @@ export const Form = styled.div`
 
 export const FormSection = styled.div`
   display: flex;
+<<<<<<< HEAD
   @media (max-width: 1200px) {
     flex-direction: column;
+=======
+  @media (max-width: 991px){
+    display:inline-block;
+>>>>>>> 9df57114ebcb1a11aae645c0a9d1222068a215d5
   }
 `;
 

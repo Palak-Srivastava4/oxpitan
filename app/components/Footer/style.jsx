@@ -78,6 +78,7 @@ export const MainContainer = styled.div`
     }
   }
 
+
   .BtnDonate:hover {
     background: #f1ae44;
     cursor: pointer;
@@ -170,6 +171,7 @@ export const BtnBg = styled.a`
     background-color: #f1ae44;
     color: #fff;
   }
+
 `;
 
 export const NewsContainer = styled.div`

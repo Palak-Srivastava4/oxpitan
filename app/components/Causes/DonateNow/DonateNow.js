@@ -11,6 +11,7 @@ const DonateNow = () => {
         <Styled.Contact className="container">
           <div className="head">Donate</div>
         </Styled.Contact>
+        <Styled.BtnDark href="">home .donate</Styled.BtnDark>
       </Styled.BreadCrumb>
       <Styled.Donation className="container">
         <Styled.Personal>

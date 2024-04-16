@@ -231,7 +231,6 @@ export const Hunger = styled.div`
     padding-left: 0px;
     padding-bottom: 10px;
     margin-top: 66px;
-    margin-left: -50px;
     font-weight: 400;
     font-size: 38px;
     color: #4d4d4d;
