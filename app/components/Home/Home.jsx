@@ -94,9 +94,11 @@ const Home = () => {
               <Styled.CharityPoor>
                 <Styled.Lives>
                   <div className="hiw">
-                    <div className="child-container" style={{backgroundColor: "#00baa3"}}>
-                      <div className="bg">  </div>
-                    
+                    <div
+                      className="child-container"
+                      style={{ backgroundColor: "#00baa3" }}
+                    >
+                      <div className="bg"> </div>
                     </div>
                     <div className="heading-container">
                       {" "}
@@ -112,28 +114,30 @@ const Home = () => {
                   <div className="hiw">
                     <div className="child-container">
                       <div className="bg"> </div>
-                      <Image className="image"src={hiwImg} />
+                      <Image className="image" src={hiwImg} />
                     </div>
                     <div className="heading-container">
-                    <h3 className="hiwTitle">
-                      How to <br />
-                      become <br /> volunteer
-                    </h3>
+                      <h3 className="hiwTitle">
+                        How to <br />
+                        become <br /> volunteer
+                      </h3>
                     </div>
                   </div>
                 </Styled.Volun>
                 <Styled.Poor>
                   <div className="hiw">
                     <div className="child-container" id="child-container">
-                      <div className="bg"  id="bg"> </div>
-                      <Image className="image" id='image'  src={hiw} />
+                      <div className="bg" id="bg">
+                        {" "}
+                      </div>
+                      <Image className="image" id="image" src={hiw} />
                     </div>
                     <div className="heading-container">
-                    <h3 className="hiwTitle">
-                      Poor <br />
-                      children <br />
-                      education
-                    </h3>
+                      <h3 className="hiwTitle">
+                        Poor <br />
+                        children <br />
+                        education
+                      </h3>
                     </div>
                   </div>
                 </Styled.Poor>
@@ -169,8 +173,8 @@ const Home = () => {
           <Styled.DonationBtnCenterPadding>
             <Styled.BtnDark href="">Donate Now</Styled.BtnDark>
           </Styled.DonationBtnCenterPadding>
-          
-            <Styled.Fundraising src={mixerBg2.src}>
+
+          <Styled.Fundraising src={mixerBg2.src}>
             <Styled.Container>
               <Styled.About>
                 <div className="lives">
@@ -180,9 +184,8 @@ const Home = () => {
                   <Styled.Btn href="">Start Donation</Styled.Btn>
                 </Styled.DonationBtnStart>
               </Styled.About>
-              </Styled.Container>
-            </Styled.Fundraising>
-          
+            </Styled.Container>
+          </Styled.Fundraising>
 
           <Styled.Charity>
             <Styled.CharityData>
@@ -191,7 +194,7 @@ const Home = () => {
                   <div className="raised">
                     <span>
                       {/* <Image src={charity} className="charity" /> */}
-                      <BsFillHeartPulseFill  className="icon"/>
+                      <BsFillHeartPulseFill className="icon" />
                     </span>
                     <div>
                       <span className="number">785000</span>
@@ -201,7 +204,7 @@ const Home = () => {
                   <div className="raised">
                     <span>
                       {/* <Image src={icoChar} className="charity" /> */}
-                      <FaHandsHoldingChild className="icon"/>
+                      <FaHandsHoldingChild className="icon" />
                     </span>
                     <div>
                       <span className="number">63000</span>
@@ -227,7 +230,7 @@ const Home = () => {
               </Styled.Darkness>
             </Styled.CharityData>
           </Styled.Charity>
-          <Styled.Latest>
+          {/* <Styled.Latest>
             <div className="container latest">
               <div></div>
               <h2 className="cause">Latest Causes</h2>
@@ -309,15 +312,15 @@ const Home = () => {
                 </div>
               </Styled.Card3>
             </div>
-          </Styled.Card>
-          <Styled.Container>
+          </Styled.Card> */}
+          {/* <Styled.Container>
           <Styled.Evanto>
             {evanto.map((item) => {
               return <Image src={item.imgs} />;
             })}
           </Styled.Evanto>
-          </Styled.Container>
-          
+          </Styled.Container> */}
+
           <Styled.Fund>
             <Styled.Children>
               <div className="main">
@@ -352,11 +355,11 @@ const Home = () => {
               </Styled.TextData>
             </Styled.Text>
           </Styled.Fund>
-         
+
           <Styled.Creative>
             <Styled.Charity>
               <div className="create">
-                <Image className="image "src={helpingImg} />
+                <Image className="image " src={helpingImg} />
                 <div className="charity">
                   Charity activities are taken place around the world
                 </div>
@@ -392,7 +395,7 @@ const Home = () => {
                     <div>
                       <Image className="image" src={item.img} />
                     </div>
-                    <div className="textContainer" >
+                    <div className="textContainer">
                       <div className="brownBlock">
                         <div className="mid">
                           <h3>
@@ -494,7 +497,7 @@ const Home = () => {
                         Sponsor an entire trending project
                       </h3>
                       <Styled.BtnBottom>
-                      <Styled.Btn href="">become an sponsor</Styled.Btn>
+                        <Styled.Btn href="">become an sponsor</Styled.Btn>
                       </Styled.BtnBottom>
                     </div>
                   </div>
