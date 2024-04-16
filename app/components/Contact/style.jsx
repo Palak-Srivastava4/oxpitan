@@ -124,13 +124,8 @@ export const Form = styled.div`
 
 export const FormSection = styled.div`
   display: flex;
-<<<<<<< HEAD
   @media (max-width: 1200px) {
     flex-direction: column;
-=======
-  @media (max-width: 991px){
-    display:inline-block;
->>>>>>> 9df57114ebcb1a11aae645c0a9d1222068a215d5
   }
 `;
 

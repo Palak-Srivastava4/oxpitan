@@ -131,7 +131,7 @@ const Navbar = () => {
                 </Styled.DropdownMenu> */}
                 </Styled.NavItem>
                 <Styled.NavLink href="aboutPage">About</Styled.NavLink>
-                <Styled.NavLink href="#">Programme</Styled.NavLink>
+                <Styled.NavLink href="programme">Programme</Styled.NavLink>
                 {/* <Styled.NavLink href="team">Our Team</Styled.NavLink> */}
                 {/* <Styled.NavItem className="dropdown">
                 <Styled.NavLink href="#">Causes</Styled.NavLink>
@@ -236,7 +236,7 @@ const Navbar = () => {
               About
             </a>
             <hr />
-            <a className="heading" href="#">
+            <a className="heading" href="programme">
               Programme
             </a>
             <hr />
