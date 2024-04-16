@@ -9,49 +9,50 @@ export const Nav = styled.ul`
   background: white;
   list-style: none;
   display: flex;
+  align-items: center;
+  margin: 0px;
 `;
-export const RightContainer=styled.div`
-display: flex;
-    width: 100%;
-    color: black;
-    align-items: end;
-    justify-content: right;
-    padding-top: 20px;
-    padding-right: 100px;
-    flex-wrap: wrap;
+export const RightContainer = styled.div`
+  display: flex;
+  width: 100%;
+  color: black;
+  align-items: end;
+  justify-content: right;
+  // padding-top: 20px;
+  padding-right: 100px;
+  flex-wrap: wrap;
+  background-color: rgb(242, 240, 236);
+  @media (max-width: 1200px) {
+    display: flex;
     background-color: rgb(242, 240, 236);
-    @media (max-width: 1200px) {
-    
-      display: flex;
-        background-color: rgb(242, 240, 236);
-        align-items: center;
-        justify-content: center;
-        padding:0px;
-      } 
-`
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+  }
+`;
 export const SocialLinks = styled.div`
- @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     display: none;
   }
   .flex {
     display: flex;
     justify-content: center;
     background-color: rgb(242, 240, 236);
+    align-items: center;
   }
   @media (max-width: 1200px) {
     .flex {
-    display: flex;
-    flex-direction: column;
+      display: flex;
+      flex-direction: column;
       background-color: rgb(242, 240, 236);
       align-items: center;
       display: flex;
-        justify-content: center;
-            padding:0px;
-    } 
-    .left h3{
-font-size:12px;
+      justify-content: center;
+      padding: 0px;
     }
-    
+    .left h3 {
+      font-size: 12px;
+    }
   }
   @media (max-width: 1200) {
     .left {
@@ -66,15 +67,15 @@ font-size:12px;
     font-weight: 400;
     padding: 20px;
     text-align: center;
-     @media (max-width: 1200px){
+    @media (max-width: 1200px) {
       font-size: 12px;
       padding: 14px;
-     }
+    }
   }
   h3 span {
     color: #f1ae44;
   }
- 
+
   .right ul li {
     display: inline-block;
     list-style: none;
@@ -87,8 +88,8 @@ font-size:12px;
     font-weight: 700;
     position: relative;
     font-family: "DM Sans", sans-serif;
-    @media (max-width: 1200px){
-        font-size: 12px;
+    @media (max-width: 1200px) {
+      font-size: 12px;
     }
   }
 `;
@@ -98,18 +99,18 @@ export const Btn = styled.div`
     background: rgb(242, 240, 236);
     display: flex;
     justify-content: center;
-    color:rgb(87, 86, 86);
-     padding: 0px;
-  line-height: 0px;
+    color: rgb(87, 86, 86);
+    padding: 0px;
+    line-height: 0px;
   }
-  @media(max-width:450px){
+  @media (max-width: 450px) {
     background: rgb(242, 240, 236);
     display: flex;
-    flex-direction:coloum;
+    flex-direction: coloum;
     justify-content: center;
-    color:rgb(87, 86, 86);
-     padding: 0px;
-  line-height: 0px;
+    color: rgb(87, 86, 86);
+    padding: 0px;
+    line-height: 0px;
   }
   font-size: 12px;
   width: 75%;
@@ -151,10 +152,9 @@ export const Btn = styled.div`
     -ms-transition: 0.3s ease-in;
     -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
-     @media (max-width: 1200px) {
-    background: rgb(242, 240, 236);
-
-  }
+    @media (max-width: 1200px) {
+      background: rgb(242, 240, 236);
+    }
   }
 `;
 
@@ -215,15 +215,15 @@ export const SubDropdownMenu = styled.ul`
 export const NavLinks = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 30px 0px;
-  @media(max-width:600px){
+  padding: 10px 0px;
+  @media (max-width: 600px) {
     justify-content: space-between;
-    padding: 30px 10px;
+    padding: 10px 10px;
   }
 `;
 export const DataNav = styled.div`
   position: sticky;
-  top: 0;
+  top: -1px;
   z-index: 999;
   background: white;
 `;
@@ -337,7 +337,7 @@ export const BtnDark = styled.a`
     color: #fff;
   }
 `;
-export const IconBox=styled.div`
+export const IconBox = styled.div`
     display: flex;
     align-items: center;
     gap: 24px;
@@ -363,6 +363,7 @@ export const IconBox=styled.div`
     display: none;
 
     }
+}
 `;
 export const Icon = styled.div`
   @media only screen and (max-width: 1200px) {
@@ -375,13 +376,11 @@ export const Icon = styled.div`
     width: 35px;
     height: 35px;
     justify-content: center;
-    .icon{
-      font-size:21px;
+    .icon {
+      font-size: 21px;
     }
   }
   display: none;
-
-
 `;
 export const NavWidth = styled.div`
   @media only screen and (max-width: 1200px) {
@@ -396,29 +395,29 @@ export const BtnDarkWidth = styled.div`
   display: block;
 `;
 export const MainContainer = styled.div`
-background: black;
-color: white;
-position: absolute;
-width: 80%;
-z-index: 3;
-left: 20%;
-border-radius: 5px;
+  background: black;
+  color: white;
+  position: absolute;
+  width: 80%;
+  z-index: 3;
+  left: 20%;
+  border-radius: 5px;
   .list {
     text-decoration: none;
     color: #ffff;
     list-style-type: none;
-      @media (max-width:1200px) and (min-width:500px){
-       font-size:25px;
-  }
+    @media (max-width: 1200px) and (min-width: 500px) {
+      font-size: 25px;
+    }
   }
   .heading {
     font-size: 25px;
     text-decoration: none;
     color: #ffff;
     padding-left: 13px;
-     @media (max-width:1200px) and (min-width:500px){
-       font-size:30px;
-  }
+    @media (max-width: 1200px) and (min-width: 500px) {
+      font-size: 30px;
+    }
   }
 `;
 export const CrossIcon = styled.div`
@@ -482,26 +481,25 @@ export const BtnDarkMedia = styled.a`
     color: #fff;
   }
 `;
-export const SocialIcon=styled.div`
-    display: flex;
-    justify-content: center;
-    gap: 21px;
-    margin-bottom: 23px;
-    @media only screen and (max-width:800px)and (min-width:458px){
-      gap:9px;
-    }
-    @media(max-width:457px){
-      gap:18px;
-    }
-
-`
+export const SocialIcon = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 21px;
+  margin-bottom: 23px;
+  @media only screen and (max-width: 800px) and (min-width: 458px) {
+    gap: 9px;
+  }
+  @media (max-width: 457px) {
+    gap: 18px;
+  }
+`;
 export const BtnBg = styled.a`
   font-size: 18px;
-  background:${({ backgroundColor }) => backgroundColor};
+  background: ${({ backgroundColor }) => backgroundColor};
   color: #fff;
   font-weight: 600;
-    padding: 0 5px 0 12px;
-    line-height: 42px;
+  padding: 0 5px 0 12px;
+  line-height: 42px;
   position: relative;
   z-index: 1;
   display: inline-block;
@@ -537,7 +535,7 @@ export const BtnBg = styled.a`
   }
   &:hover,
   &:hover:after {
-    background-color: #F1AE44;
+    background-color: #f1ae44;
     color: #fff;
   }
 `;

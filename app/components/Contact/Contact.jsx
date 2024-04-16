@@ -20,7 +20,7 @@ const Contact = () => {
         <Styled.BtnDark href="" backgroundColor={"#E36955"} hover={" #F1AE44"}>HOME . CONTACT</Styled.BtnDark>
         </div>
       </Styled.BreadCrumb>
-      <div className="container">
+      <Styled.MainContainer className="container">
         <Styled.FormSection>
           <Styled.Touch>
             <div className="touch">
@@ -33,6 +33,15 @@ const Contact = () => {
                 suspendisse.
               </p>
               <div className="itemStyle">
+              {icons?.map((item) => {
+                return (
+                  <Styled.BtnBg backgroundColor={item.color}>
+                    <div> {item.icon}</div>
+                  </Styled.BtnBg>
+                );
+              })}
+            </div>
+              {/* <div className="itemStyle">
                 {icons?.map((item, index) => {
                   return (
                     <>
@@ -43,7 +52,7 @@ const Contact = () => {
                   </>
                   );
                 })}
-              </div>
+              </div> */}
             </div>
           </Styled.Touch>
           <Styled.Form>
@@ -64,30 +73,30 @@ const Contact = () => {
             </div>
           </Styled.Form>
         </Styled.FormSection>
-        <Styled.AboutSectionBox>
-          <Styled.BtnBG className="about" padding={"0px 30px 0px 35px"} backgroundColor={"#50bac3"}>
-            <div className="head">About</div><br/>
-            <div>
-              Lorem ipsum is simply free<br/> text dolor sit amet, duise<br/> consectetur
+        <Styled.AboutSectionBox >
+          <Styled.BtnBG className="about btnWidth" padding={"0px 30px 0px 35px"} backgroundColor={"#50bac3"}>
+            <div className="heading">About</div>
+            <div className="para">
+              Lorem ipsum is simply free  text dolor sit amet, duise  consectetur
               ullam blandit
             </div>
           </Styled.BtnBG>
-          <Styled.BtnBG className="address" padding={"0px 30px 0px 35px"} backgroundColor={"#e36955"}>
-            <div className="head">Address</div><br/>
-            <div>
-              660 broklyn street , 88 new <br/>york, United states of <br/>america
+          <Styled.BtnBG className="address btnWidth" padding={"0px 30px 0px 35px"} backgroundColor={"#e36955"}>
+            <div className="heading">Address</div>
+            <div className="para">
+              660 broklyn street , 88 new  york, United states of america
             </div>
           </Styled.BtnBG>
-          <Styled.BtnBG className="contact" padding={"0px 30px 0px 35px"} backgroundColor={"#f1ae44"}>
-            <div className="head">Contact</div><br/>
-            <div>
+          <Styled.BtnBG className="contact btnWidth" padding={"0px 30px 0px 35px"} backgroundColor={"#f1ae44"}>
+            <div className="heading">Contact</div>
+            <div className="para">
               needhelp@oxpitan.com
-              <br />
+            <br/>
               666 888 000
             </div>
           </Styled.BtnBG>
         </Styled.AboutSectionBox>
-      </div>
+      </Styled.MainContainer>
       <Footer />
     </div>
   );
