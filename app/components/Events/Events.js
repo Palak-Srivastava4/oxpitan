@@ -4,16 +4,19 @@ import Image from "next/image";
 import Navigation from "../Navigation/Navigation";
 import React from "react";
 import { eventData, eventData2 } from "./data";
+import * as CommonStyled from "../commonStyle"
 
 const Events = () => {
   return (
     <div>
       <Navigation />
       <Styled.BreadCrumb>
+        <CommonStyled.Container>
         <Styled.Contact className="container">
           <div className="head">Events</div>
         </Styled.Contact>
         <Styled.BtnDark href="">home .events</Styled.BtnDark>
+        </CommonStyled.Container>
       </Styled.BreadCrumb>
         <Styled.EventList>
       <Styled.Events >

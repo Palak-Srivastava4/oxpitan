@@ -183,8 +183,6 @@ export const Play = styled.div`
 `;
 
 export const BtnDark = styled.div`
-margin-left:100px;
-margin-bottom:60x;
   font-size: 12px;
   text-transform: uppercase;
   background: #E36955;

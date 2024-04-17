@@ -632,8 +632,6 @@ export const CompanyName = styled.div`
 `;
 
 export const BtnDark = styled.div`
-margin-left:100px;
-margin-bottom:60x;
   font-size: 12px;
   text-transform: uppercase;
   background: #E36955;
@@ -675,11 +673,7 @@ margin-bottom:60x;
     -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
   }
-  @media (max-width: 995px){
-    margin-left: 2%;
-   margin-bottom:0px;
 
-  }
 `;
 
 export const Btn = styled.a`
