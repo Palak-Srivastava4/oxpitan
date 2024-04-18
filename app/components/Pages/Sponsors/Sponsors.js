@@ -23,8 +23,7 @@ const Sponsors = () => {
                 <Styled.EvantoImg>
                   <Styled.BtnBg backgroundColor={item.color}>
                         <div className="img">  <Image src={item.img} /></div>
-                      </Styled.BtnBg>
-
+                  </Styled.BtnBg>
                 </Styled.EvantoImg>
                 <Styled.CompanyName>
                   <div className="name">{item.companyName}</div>
