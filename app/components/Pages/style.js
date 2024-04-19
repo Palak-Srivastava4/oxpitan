@@ -1197,9 +1197,3 @@ text-align: justify;
     margin-right:4%;
   }
 }`;
-export const EvantoImg = styled.div`
-@media (max-width: 991px){
-  width:100%;
-  height:auto;
-}
-`;

@@ -360,6 +360,7 @@ export const IconBox = styled.div`
     @media only screen and (max-width: 600px) {
       display: flex;
     }
+  }
 `;
 export const Icon = styled.div`
   @media only screen and (max-width: 1200px) {
