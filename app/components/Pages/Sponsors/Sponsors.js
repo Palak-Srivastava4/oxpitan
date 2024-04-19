@@ -25,7 +25,7 @@ const Sponsors = () => {
               <Styled.SponsorsData>
                 <Styled.EvantoImg>
                   <Styled.BtnBg backgroundColor={item.color}>
-                        <div className="img">  <Image src={item.img} /></div>
+                        <div className="img">  <Image className="image" src={item.img} /></div>
                   </Styled.BtnBg>
                 </Styled.EvantoImg>
                 <Styled.CompanyName>

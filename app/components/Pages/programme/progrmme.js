@@ -32,7 +32,7 @@ const Programme = () =>{
             </div>
           </Styled.Latest>
         <ul>
-            <li> <FaRegDotCircle /> Around 6 in 10 students in Grade 5 can't read Grade-2 text, 8 out of 10 cannot do simple math.</li>
+            <li> <FaRegDotCircle />Around 6 in 10 students in Grade 5 can't read Grade-2 text, 8 out of 10 cannot do simple math.</li>
             <li><FaRegDotCircle /> 6 million children in the age group 6-14 are estimated to be out of school and 36% of the children drop out even before completing primary education.</li>
             <li><FaRegDotCircle /> Rural Government Schools Struggle with Limited Resources and Poor Infrastructure.</li>
             <li><FaRegDotCircle /> Challenges of Multi-Grade Classrooms and Low Teacher-Student Ratios.</li>

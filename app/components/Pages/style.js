@@ -127,6 +127,7 @@ export const Agency = styled.div`
     font-size: 48px;
     line-height: 60px;
     font-weight: 700;
+    color:#424242;
     font-family: "Playfair Display", serif;
   }
   .profit {
@@ -149,6 +150,10 @@ export const Agency = styled.div`
  margin-top: 10%;
  padding:0;
  display:inline-block;
+ .discover{
+  font-size:42px;
+  line-height:44px;
+ }
     }
     @media (min-width: 991px){
       width:100%;
@@ -354,9 +359,9 @@ export const Requirements = styled.div`
   }
 `;
 export const Team = styled.div`
-margin: 3% ;
+margin: 6% ;
 @media (max-width: 991px){
-  margin:2% 0;
+  margin:4% 2%;
 }
   .abc {
     background: blue;
@@ -496,7 +501,8 @@ export const VolunteersCards = styled.div`
   @media (max-width: 1200px) {
     display: flex;
     flex-direction: column;
-    margin: 10px !important
+    margin: 10px !important;
+    padding-bottom: 100px;
   }
   display: flex;
   align-items: center;
@@ -551,6 +557,11 @@ export const Cards = styled.div`
   @media (max-width: 650px) {
     display: flex;
     flex-direction: column;
+    .textPara{
+      margin:0;
+      padding:0;
+      width:100%;
+    }
   }
   display: flex;
   align-items: center;
@@ -610,7 +621,7 @@ export const SponsorsData = styled.div`
 
 
 export const Evanto = styled.div`
-height:400px;
+height:260px;
   display: flex;
   justify-content:flex-end;
   align-items:center;
@@ -771,7 +782,8 @@ export const Finger = styled.div`
     text-align: center;
       @media(max-width:500px){
           word-wrap: break-word;
-          font-size:59px;
+          font-size:49px;
+          line-height:56px;
     }
   }
 `;
@@ -783,7 +795,9 @@ align-items:center;
 @media (max-width: 991px){
 display:inline-block;
 width:100%;
-padding-bottom:160px;
+padding:2%;
+padding-bottom:100px;
+padding-top:50px;
 }
 @media (min-width: 991px){
   display:flex;
@@ -814,6 +828,10 @@ margin:80px 40px 80px 40px;
     margin:40px 0 40px 0;
 .head .subhead{
   margin:40px 10px 40px 10px;
+}
+.head{
+  font-size:38px;
+  line-height:44px;
 }
     .faqimg{
       width: 100%;
@@ -852,6 +870,10 @@ export const Head = styled.div`
 /* margin-top:20px; */
 @media (max-width:991px){
   padding:0 2% 0 2%;
+  h3{
+    font-size:16px;
+  }
+  
 }
 .icon-right{
     text-align: end;
@@ -966,8 +988,23 @@ export const Latest = styled.div`
           font-size: 36px;
     line-height: 38px;
     width:auto;
-      .cause{
+      h2.cause{
     text-align:left;
+           font-size: 36px;
+    line-height: 38px;
+  }
+  #vol{
+    text-align:center;
+    line-height:10px;
+  }
+  .cause{
+      text-align:left;
+  }
+  h2.causeBelive{
+    padding-top:60px;
+    margin:0;
+    font-size: 36px;
+    line-height: 38px;
   }
     }
 
@@ -982,6 +1019,15 @@ export const Latest = styled.div`
     font-weight: 700;
     color: #424242;
     font-family: "Playfair Display", serif;
+   
+  }
+  .causeBelive{
+       font-size: 56px;
+    line-height: 64px;
+    font-weight: 700;
+    color: #424242;
+    font-family: "Playfair Display", serif;
+margin:0 20%;
   }
   .btn {
     -ms-transform: skewX(20deg);
@@ -1043,6 +1089,13 @@ export const Latest = styled.div`
 // `;
 
 export const BtnBg = styled.div`
+@media (max-width: 991px){
+ width:87%;
+  height:160px;
+  .image{
+margin-top:24%;
+  }
+}
 .img{
   text-align:center;
   font-size:50px;

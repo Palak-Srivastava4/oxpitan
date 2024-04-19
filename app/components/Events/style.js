@@ -38,6 +38,7 @@ margin:8%;
   @media (max-width: 991px){
 margin-left:3%;
 margin-right:3%;
+margin-bottom:100px;
 display:inline-block;
 .image{
   width:100%;

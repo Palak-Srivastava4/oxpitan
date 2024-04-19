@@ -70,7 +70,7 @@ const AboutPage = () => {
           
           <Styled.Latest>
             <div className="container latest">
-              <h2 className="cause">Our Volunteers</h2>
+              <h2 className="cause" id="vol">Our Volunteers</h2>
               <p className="help">meet profesionals</p>
             </div>
           </Styled.Latest>
@@ -134,7 +134,7 @@ const AboutPage = () => {
 <Styled.Latest>
             <div className="container latest">
               <div className="bgClr"></div>
-              <h2 className="cause">
+              <h2 className="causeBelive">
                 We Believe that We can Save More Lifes with you
               </h2>
               <p className="help">help us now</p>
