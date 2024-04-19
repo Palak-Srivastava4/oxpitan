@@ -658,8 +658,6 @@ export const CompanyName = styled.div`
 `;
 
 export const BtnDark = styled.div`
-margin-left:7%;
-/* margin-bottom:60px; */
   font-size: 12px;
   text-transform: uppercase;
   background: #E36955;

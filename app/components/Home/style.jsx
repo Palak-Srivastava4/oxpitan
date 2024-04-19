@@ -1,15 +1,19 @@
 import { color } from "@/app/Theme/color";
 import styled from "styled-components";
 export const HomePageContainer = styled.div`
-@media (min-width: 1200px){
-  .container-xl, .container-lg, .container-md, .container-sm, .container {
+  @media (min-width: 1200px) {
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
       max-width: 1200px;
+    }
   }
-}
 `;
-export const Container=styled.div.attrs({
-  className: 'container',
-  })``;
+export const Container = styled.div.attrs({
+  className: "container",
+})``;
 export const MainContainer = styled.div`
   overflow: hidden;
 `;
@@ -64,9 +68,9 @@ export const Welcome = styled.div`
     position: absolute;
     top: 280px;
     z-index: 2;
-    @media(max-width:500px){
-          top: 208px;
-          left: -21px;
+    @media (max-width: 500px) {
+      top: 208px;
+      left: -21px;
     }
   }
   .heading p {
@@ -102,8 +106,8 @@ export const Bg = styled.div`
     width: 50%;
     height: 651px;
   }
-  @media (max-width:1300px) and (min-width:1100px){
-        width: 25%;
+  @media (max-width: 1300px) and (min-width: 1100px) {
+    width: 27%;
   }
   height: 848px;
   width: 29%;
@@ -152,12 +156,12 @@ export const Bg = styled.div`
 `;
 
 export const Hunger = styled.div`
-.video-item{
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .video-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   @media (max-width: 1200px) {
     .flex {
       flex-direction: column;
@@ -165,19 +169,18 @@ export const Hunger = styled.div`
   }
   .videoImage {
     width: 100%;
-   @media (max-width:1300px) and (min-width:1100px){
+    @media (max-width: 1300px) and (min-width: 1100px) {
       width: auto;
-  }
+    }
   }
   .flex {
     display: flex;
     margin-bottom: 80px;
     gap: 7%;
-     
-  @media (max-width:1300px) and (min-width:1100px){
-       gap:13%;
-  }
 
+    @media (max-width: 1300px) and (min-width: 1100px) {
+      gap: 13%;
+    }
   }
   .left h3 {
     color: #fff;
@@ -192,7 +195,7 @@ export const Hunger = styled.div`
     @media (max-width: 600px) {
       margin: 0px;
       padding-right: 0px;
-          margin-left: -39px;
+      margin-left: -39px;
     }
   }
   .right {
@@ -222,7 +225,7 @@ export const Hunger = styled.div`
   }
   .yellowBtn {
     position: absolute;
-    @media(max-width:1200px){
+    @media (max-width: 1200px) {
       position: absolute;
     }
   }
@@ -235,7 +238,7 @@ export const Hunger = styled.div`
     font-size: 38px;
     color: #4d4d4d;
     font-family: "Playfair Display", serif;
-     @media(max-width:1200px){
+    @media (max-width: 1200px) {
       margin-left: 0px;
     }
     @media (max-width: 500px) {
@@ -254,7 +257,7 @@ export const Hunger = styled.div`
     font-size: 22px;
     font-weight: 400px;
     margin-left: -45px;
-    @media(max-width:1200px){
+    @media (max-width: 1200px) {
       margin-left: 0px;
     }
     @media (max-width: 500px) {
@@ -277,9 +280,9 @@ export const LeftHunger = styled.a`
     width: 84%;
     padding: 30px 0px 30px 50px;
   }
-  
-  @media (max-width:1300px) and (min-width:1100px){
-           width: 326px;
+
+  @media (max-width: 1300px) and (min-width: 1100px) {
+    width: 385px;
   }
   width: 32%;
   background: #424242;
@@ -322,10 +325,10 @@ export const CharityPoor = styled.div`
 `;
 
 export const Lives = styled.div`
-width:100%;
-  .hiw{
-    position:relative;
-    .heading-container{
+  width: 100%;
+  .hiw {
+    position: relative;
+    .heading-container {
       position: absolute;
       left: 0;
       top: 0;
@@ -397,13 +400,13 @@ width:100%;
 `;
 
 export const Volun = styled.div`
-.image{
-      width: 100%;
-      height: 100%;
-}
-  .hiw{
-    position:relative;
-    .heading-container{
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+  .hiw {
+    position: relative;
+    .heading-container {
       position: absolute;
       top: 0;
       left: 0;
@@ -422,7 +425,7 @@ export const Volun = styled.div`
     text-align: center;
   }
   position: relative;
-  width:100%;
+  width: 100%;
   z-index: 1;
   .bg {
     background-color: #e95252;
@@ -465,32 +468,31 @@ export const Volun = styled.div`
   }
 `;
 export const Poor = styled.div`
-.hiw{
-  position:relative;
-  .heading-container{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .hiw {
+    position: relative;
+    .heading-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .hiwTitle {
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+  }
+  position: relative;
+  width: 100%;
+  .image {
     width: 100%;
     height: 100%;
-  }
-}
-.hiwTitle {
-  color: white;
-  font-size: 50px;
-  font-weight: 800;
-  text-align: center;
-}
-  position: relative;
-  width:100%;
-  .image{
-    width:100%;
-    height: 100%;
-
   }
   z-index: 1;
   .bg {
@@ -536,8 +538,8 @@ export const Poor = styled.div`
 export const Child = styled.div`
   display: flex;
   gap: 20px;
-  @media(max-width:1300px){
-        gap: 56px;
+  @media (max-width: 1300px) {
+    gap: 56px;
   }
   @media (max-width: 1200px) {
     width: 100%;
@@ -683,8 +685,8 @@ export const Creative = styled.div`
     flex: 0.6;
     position: relative;
     padding-left: 45px;
-    @media(max-width:1300px){
-          padding-left: 28px;
+    @media (max-width: 1300px) {
+      padding-left: 28px;
     }
     @media (max-width: 414px) {
       padding: 12px;
@@ -703,8 +705,8 @@ export const Line = styled.div`
   height: 1px;
   background: #f2f0ec;
   margin-top: 40px;
-  @media(max-width:1300px){
-        margin-left: 28px;
+  @media (max-width: 1300px) {
+    margin-left: 28px;
   }
   @media (max-width: 414px) {
     margin: 1px 11px;
@@ -819,15 +821,15 @@ export const VolunteersCards = styled.div`
   @media (max-width: 1200px) {
     display: flex;
     flex-direction: column;
-    margin: 10px !important
+    margin: 10px !important;
   }
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
   margin: 60px;
-  @media(max-width:1300px){
-        margin: 60px 35px;
+  @media (max-width: 1300px) {
+    margin: 60px 35px;
   }
   .icon {
     text-align: center;
@@ -873,12 +875,12 @@ export const First = styled.div`
     width: 100%;
     height: auto;
   }
-  .textContainer{
-    @media (max-width:1300px) and (min-width:1100px){
-      width:94%;
+  .textContainer {
+    @media (max-width: 1300px) and (min-width: 1100px) {
+      width: 94%;
     }
-    @media(max-width:1100px){
-      width:100%!important;
+    @media (max-width: 1100px) {
+      width: 100% !important;
     }
   }
   .image {
@@ -987,13 +989,12 @@ export const Blogs = styled.div`
   display: flex;
   gap: 20px;
   margin: 66px;
-@media(max-width:1300px){
-      margin: 66px 32px;
-
-}
+  @media (max-width: 1300px) {
+    margin: 66px 32px;
+  }
   @media only screen and (max-width: 1200px) {
     flex-direction: column;
-    margin: 12px!important;
+    margin: 12px !important;
   }
   .image {
     @media (max-width: 1200px) {
@@ -1100,8 +1101,8 @@ export const Charity = styled.div`
   width: 100%;
   padding-left: 45px;
   position: relative;
-  @media(max-width:1300px){
-        padding-left: 0px;
+  @media (max-width: 1300px) {
+    padding-left: 0px;
   }
   @media (max-width: 1200px) {
     padding-left: 0px;
@@ -1152,20 +1153,19 @@ export const CharityData = styled.div`
   }
 `;
 export const Raised = styled.div`
-.icon{
-      font-size: 77px;
-}
+  .icon {
+    font-size: 77px;
+  }
   flex: 0.6;
   padding-left: 12px;
   padding-right: 151px;
-     
 
   @media (max-width: 1200px) {
     padding-right: 0px;
   }
   .raised {
     border-bottom: 2px solid #f2f0ec;
-   margin: 30px 0px 30px 18px;
+    margin: 30px 0px 30px 18px;
     display: flex;
     gap: 27px;
     align-items: center;
@@ -1513,7 +1513,7 @@ export const Card1 = styled.div`
     width: 100%;
   }
   .cardImg {
-       margin: 0px 0 20px 0px;
+    margin: 0px 0 20px 0px;
     @media (max-width: 600px) {
       margin: 0px;
     }
@@ -1845,10 +1845,10 @@ export const BtnBg = styled.div`
   @media (max-width: 1200px) {
     margin-left: 0px;
   }
-  @media(max-width:1300px){
-      margin-left: 0px;
-      width: 37%;
-      padding:0px;
+  @media (max-width: 1300px) {
+    margin-left: 0px;
+    width: 37%;
+    padding: 0px;
   }
   margin-left: 30px;
   width: 141px;

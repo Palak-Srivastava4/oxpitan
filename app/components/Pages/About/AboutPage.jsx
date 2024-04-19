@@ -1,5 +1,6 @@
 import React from "react";
 import * as Styled from "../style";
+import * as CommonStyled from "../../commonStyle";
 import Footer from "../../Footer/Footer";
 import Image from "next/image";
 import Navigation from "../../Navigation/Navigation";
@@ -17,10 +18,12 @@ const AboutPage = () => {
     <div>
       <Navigation />
       <Styled.BreadCrumb >
-        <Styled.Contact >
-          <div className="head">About</div>
-        </Styled.Contact>
-        <Styled.BtnDark href="">home .about</Styled.BtnDark>
+        <CommonStyled.Container>
+          <Styled.Contact >
+            <div className="head">About</div>
+          </Styled.Contact>
+          <Styled.BtnDark href="">home .about</Styled.BtnDark>
+        </CommonStyled.Container>
       </Styled.BreadCrumb>
       <div style={{width:"100%"}} >
         <Styled.About className="container">

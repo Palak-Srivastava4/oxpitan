@@ -4,16 +4,19 @@ import Image from "next/image";
 import Navigation from "../../Navigation/Navigation";
 import React from "react";
 import { Volun, Volun2 } from "./data";
+import * as CommonStyled from "../../commonStyle"
 
 const Team = () => {
   return (
     <div>
       <Navigation />
       <Styled.BreadCrumb>
+      <CommonStyled.Container>
         <Styled.Contact className="container">
           <div className="head">Our Team</div>
         </Styled.Contact>
         <Styled.BtnDark href="">home .our team</Styled.BtnDark>
+        </CommonStyled.Container>
       </Styled.BreadCrumb>
       <Styled.Team >
 
