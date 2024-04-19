@@ -5,6 +5,7 @@ import Navigation from "../../Navigation/Navigation";
 import Image from "next/image";
 import program from "../../../assets/image/program.jpg";
 import { FaRegDotCircle } from "react-icons/fa";
+import * as CommonStyled from "../../commonStyle"
 
 
 const Programme = () =>{
@@ -12,10 +13,12 @@ const Programme = () =>{
         <>
         <Navigation />
         <Styled.BreadCrumb>
+        <CommonStyled.Container>
         <Styled.Contact className="container">
           <div className="head">Programme</div>
         </Styled.Contact>
         <Styled.BtnDark href="">home .Programme</Styled.BtnDark>
+        </CommonStyled.Container>
       </Styled.BreadCrumb>
 
 

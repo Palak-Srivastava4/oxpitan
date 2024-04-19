@@ -1,4 +1,5 @@
 import * as Styled from "./style";
+import * as CommonStyled from "../commonStyle";
 import Footer from "../Footer/Footer";
 import FormDonate from "../FormDonation/FormDonate";
 import Image from "next/image";
@@ -175,7 +176,7 @@ const Home = () => {
           </Styled.DonationBtnCenterPadding>
 
           <Styled.Fundraising src={mixerBg2.src}>
-            <Styled.Container>
+            <CommonStyled.Container>
               <Styled.About>
                 <div className="lives">
                   Fundraising for the people and causes you care about
@@ -184,7 +185,7 @@ const Home = () => {
                   <Styled.Btn href="">Start Donation</Styled.Btn>
                 </Styled.DonationBtnStart>
               </Styled.About>
-            </Styled.Container>
+            </CommonStyled.Container>
           </Styled.Fundraising>
 
           <Styled.Charity>

@@ -4,16 +4,19 @@ import Image from "next/image";
 import Navigation from "../../Navigation/Navigation";
 import React from "react";
 import { sponsorsData } from "../data";
+import * as CommonStyled from "../../commonStyle"
 
 const Sponsors = () => {
   return (
     <div>
       <Navigation />
       <Styled.BreadCrumb>
+      <CommonStyled.Container>
         <Styled.Contact className="container">
           <div className="head">Sponsors</div>
         </Styled.Contact>
         <Styled.BtnDark href="">home .Sponsors</Styled.BtnDark>
+        </CommonStyled.Container>
       </Styled.BreadCrumb>
       <Styled.Team className="container">
         {sponsorsData?.map((item) => {

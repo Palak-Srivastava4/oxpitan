@@ -5,16 +5,19 @@ import Navigation from "../../Navigation/Navigation";
 import React from "react";
 import formImg from "../../../assets/image/formImg.svg";
 import { TiTick } from "react-icons/ti";
+import * as CommonStyled from "../../commonStyle"
 
 const Volunteer = () => {
   return (
     <div>
       <Navigation />
       <Styled.BreadCrumb>
+      <CommonStyled.Container>
         <Styled.Contact className="container">
           <div className="volHead">Become A Volunteer</div>
         </Styled.Contact>
         <Styled.BtnDark href="">home .become a Volunteer</Styled.BtnDark>
+        </CommonStyled.Container>
       </Styled.BreadCrumb>
       <div className="container" style={{ marginTop: "70px" }}>
         <Styled.Register>
