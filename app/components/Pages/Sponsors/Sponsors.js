@@ -18,7 +18,7 @@ const Sponsors = () => {
         <Styled.BtnDark href="">home .Sponsors</Styled.BtnDark>
         </CommonStyled.Container>
       </Styled.BreadCrumb>
-      <Styled.Team>
+      <Styled.Team >
         {sponsorsData?.map((item) => {
           return (
             <>

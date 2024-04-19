@@ -259,7 +259,7 @@ const Navbar = () => {
               <hr />
             </ul> */}
             <a className="heading" href="#">
-              Resurses
+              Resources
             </a>
             <hr />
             <ul>

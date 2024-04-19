@@ -31,7 +31,7 @@ display:inline-block;
     margin-top:110px;
     margin-bottom:80px;
   }
-    .headProg{
+  .headProg{
      margin-top:110px;
     margin-bottom:80px;
     text-align: center;
@@ -45,9 +45,9 @@ display:inline-block;
   .volHead{
      margin-top:50px;
     margin-bottom:80px;
-    font-size: 58px;
+    font-size:58px;
   }
-    .headProg{
+  .headProg{
     font-size: 56px;
   }
   .head{
@@ -612,13 +612,19 @@ export const SponsorsData = styled.div`
   display: flex;
   align-items:center;
   justify-content:center;
-   margin:60px 0;
+  margin:60px 0;
   gap: 9%;
-    @media (max-width: 991px){
+  @media (max-width: 991px){
     display:inline-block;
   }
 `;
 
+export const EvantoImg = styled.div`
+@media (max-width: 991px){
+  width:100%;
+  height:auto;
+}
+`;
 
 export const Evanto = styled.div`
 height:260px;
@@ -631,7 +637,7 @@ height:260px;
 
 export const Line=styled.div`
 height:2px;
-background:lightgray;
+background:lightgrey;
 margin:0 7%;
 `
 export const CompanyName = styled.div`
@@ -1157,16 +1163,6 @@ margin: 80px;
   width:50%;
 }
 
-@media (max-width: 576px){
-  display:inline-block;
-  margin:0;
-  .image{
-   margin-top:20%;
-    height:100%;
-    width:100%;
-    padding:0 3%; 
-  }
-}
 @media (max-width: 991px){
   display:inline-block;
   margin:0;
@@ -1177,7 +1173,6 @@ margin: 80px;
     padding:0 3%;
   }
 }
-
 `;
 
 export const Details = styled.div`
@@ -1193,7 +1188,7 @@ text-align: justify;
 
 @media (max-width: 991px){
   margin-bottom:10%;
-   ul{
+  ul{
     margin:2%;
     padding:0;
   }

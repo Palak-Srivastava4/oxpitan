@@ -35,6 +35,7 @@ display:inline-block;
 
 export const EventList = styled.div`
 margin:8%;
+padding:2%;
   @media (max-width: 991px){
 margin-left:3%;
 margin-right:3%;
@@ -224,11 +225,6 @@ export const BtnDark = styled.div`
     -ms-transition: 0.3s ease-in;
     -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
-  }
-  @media (max-width: 995px){
-    margin-left: 2%;
-   margin-bottom:0px;
-
   }
 `;
 export const BtnStatic = styled.div`
