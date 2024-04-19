@@ -272,7 +272,7 @@ const Navbar = () => {
               </a>{" "}
               <hr />
               <a className="list" href="volunteer">
-                Welcome to Volunteer
+                Become A Volunteer
               </a>
               <hr />
               <a className="list" href="sponsors">

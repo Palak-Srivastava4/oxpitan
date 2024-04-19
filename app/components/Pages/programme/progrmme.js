@@ -15,7 +15,7 @@ const Programme = () =>{
         <Styled.BreadCrumb>
         <CommonStyled.Container>
         <Styled.Contact className="container">
-          <div className="head">Programme</div>
+          <div className="headProg">Programme</div>
         </Styled.Contact>
         <Styled.BtnDark href="">home .Programme</Styled.BtnDark>
         </CommonStyled.Container>
