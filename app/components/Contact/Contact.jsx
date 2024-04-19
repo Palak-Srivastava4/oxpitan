@@ -24,7 +24,7 @@ const Contact = () => {
         <Styled.FormSection>
           <Styled.Touch>
             <div className="touch">
-              <div className="touchwith">Get in Touch With Us</div>
+              <h2 className="touchwith">Get in Touch With Us</h2>
               <p className="message">Write a message</p>
               <p className="aliq">
                 Aliq is notm hendr erit a augue insu image pellen tes que id

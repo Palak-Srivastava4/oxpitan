@@ -64,6 +64,12 @@ export const Lorem = styled.div`
   }
 `;
 export const Touch = styled.div`
+@media (max-width: 991px){
+  h2.touchwith{
+    font-size:36px;
+    line-height:38px;
+  }
+}
   flex: 0.6;
   .touch {
     padding: 86px 20px 0px 0px;
@@ -274,16 +280,20 @@ export const AboutSectionBox = styled.div`
     flex-direction: column;
   }
   .heading {
+    margin-left:30px;
     color: #fff;
-    font-weight: 800;
-    font-size: 26px;
+    font-weight: 900;
+    font-size: 32px;
+    margin-bottom:20px;
     font-family: "Playfair Display", serif;
     margin-top: 65px;
   }
   .para {
+    margin-left:30px;
     color: #fff;
-    line-height: 30px;
-    font-weight: 500;
+    font-size:20px;
+    line-height: 24px;
+    font-weight: 600;
     font-family: "Playfair Display", serif;
     min-height: 180px;
   }
@@ -299,10 +309,10 @@ export const BtnBG = styled.div`
   @media (max-width: 1500px) and (min-width: 1210px) {
     width: 25%;
   }
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   background: ${({ backgroundColor }) => backgroundColor};
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 900;
   letter-spacing: 1px;
   padding: ${({ padding }) => padding};
   line-height: 45px;
