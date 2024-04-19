@@ -338,17 +338,17 @@ export const BtnDark = styled.a`
   }
 `;
 export const IconBox = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    .callIcon{
-      font-size:21px;
-       @media only screen and (max-width: 600px) {
-    display: block;
-  }
-  display:none
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  .callIcon {
+    font-size: 21px;
+    @media only screen and (max-width: 600px) {
+      display: block;
     }
-    .iconBox{
+    display: none;
+  }
+  .iconBox {
     display: flex;
     background-color: rgba(35, 35, 35, 0.1);
     width: 35px;
@@ -356,13 +356,12 @@ export const IconBox = styled.div`
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-      font-size:21px;
-       @media only screen and (max-width: 600px) {
-    display: flex;
-  }
-    display: none;
-
+    font-size: 21px;
+    @media only screen and (max-width: 600px) {
+      display: flex;
     }
+    display: none;
+  }
 `;
 export const Icon = styled.div`
   @media only screen and (max-width: 1200px) {
@@ -396,11 +395,13 @@ export const BtnDarkWidth = styled.div`
 export const MainContainer = styled.div`
   background: black;
   color: white;
-  position: absolute;
   width: 80%;
   z-index: 3;
   left: 20%;
   border-radius: 5px;
+  position: fixed;
+  overflow-y: scroll;
+  height: 100%;
   .list {
     text-decoration: none;
     color: #ffff;
