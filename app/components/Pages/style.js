@@ -508,7 +508,6 @@ export const VolunteersCards = styled.div`
   align-items: center;
   justify-content: center;
   gap: 20px;
-  
   margin: 120px ;
   @media(max-width:1300px){
         margin: 60px 35px;
