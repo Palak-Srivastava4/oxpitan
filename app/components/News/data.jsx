@@ -1,9 +1,3 @@
-import blogimg1 from "../../assets/image/blogimg1.svg";
-import blogimg5 from "../../assets/image/blogimg5.svg";
-import blogimg6 from "../../assets/image/blogimg6.svg";
-import blogimg7 from "../../assets/image/blogimg7.svg";
-import blogimg8 from "../../assets/image/blogimg8.svg";
-import blogimg9 from "../../assets/image/blogimg9.svg";
 import comment1 from "../../assets/image/comment1.svg";
 import comment2 from "../../assets/image/comment2.svg";
 import postLogo1 from "../../assets/image/postLogo1.svg";
@@ -13,7 +7,6 @@ import postLogo3 from "../../assets/image/postLogo3.svg";
 export const newsData = [
   {
     id: 0,
-    img: blogimg1,
     refrence: "A place where start new life with peace",
     date: "09 mar, 2019",
     color: "#50bac3",
@@ -26,7 +19,6 @@ export const newsData = [
   },
   {
     id: 1,
-    img: blogimg5,
     refrence: "Learn how access to clean water",
     date: "07 mar, 2019",
     color: "#e36955",
@@ -41,7 +33,6 @@ export const newsData = [
 export const newsData1 = [
   {
     id: 0,
-    img: blogimg6,
     refrence: "Build school for poor childrens",
     date: "04 mar, 2019",
     color: "#f1ae44",
@@ -54,7 +45,6 @@ export const newsData1 = [
   },
   {
     id: 1,
-    img: blogimg7,
     refrence: "Do something crazy to raise money",
     date: "30 mar, 2019",
     color: "#863bae",
@@ -69,7 +59,6 @@ export const newsData1 = [
 export const newsData2 = [
   {
     id: 0,
-    img: blogimg8,
     refrence: "Do something crazy to raise money",
     date: "09 mar, 2019",
     color: "#50bac3",
@@ -82,7 +71,6 @@ export const newsData2 = [
   },
   {
     id: 1,
-    img: blogimg9,
     refrence: "Learn how access to clean water",
     date: "07 mar, 2019",
     color: "#e36955",
